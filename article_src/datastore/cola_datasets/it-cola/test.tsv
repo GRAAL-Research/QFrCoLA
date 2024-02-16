@@ -1,0 +1,976 @@
+UniqueIndexID	Source	label	sentence	Split
+8748	Graffi_1994	1	Quell'uomo e quella donna mi hanno colpito.	test
+8749	Graffi_1994	1	Il mio testo preferito è la Divina Commedia.	test
+8750	Graffi_1994	1	La mia lettura preferita è la Divina Commedia.	test
+8751	Graffi_1994	1	Francesco lo ha portato dentro la casa.	test
+8752	Graffi_1994	1	Lorenzo ha incontrato Sofia la settimana scorsa.	test
+8753	Graffi_1994	0	Lorenzo ha incontrato la settimana scorsa.	test
+8754	Graffi_1994	1	Ha telefonato il padre del ragazzo.	test
+8755	Graffi_1994	1	Ne sono partiti molti.	test
+8756	Graffi_1994	1	Gorbaciov ha donato un'icona al Papa.	test
+8757	Graffi_1994	1	Gli do subito il libro.	test
+8758	Graffi_1994	0	Lo e la ho incontrato.	test
+8759	Graffi_1994	0	Ho incontrato la, non lo.	test
+8760	Graffi_1994	1	Lo incontrerò domani.	test
+8761	Graffi_1994	1	Ho scoperto solo ieri il colpevole del delitto.	test
+8762	Graffi_1994	1	In quella biblioteca non ho trovato il tuo libro.	test
+8763	Graffi_1994	1	Ho dato ad Alessandro alcuni libri.	test
+8764	Graffi_1994	0	Ne gli ho dati.	test
+8765	Graffi_1994	1	L'ho incontrata.	test
+8766	Graffi_1994	1	Ha ingannato se stesso.	test
+8767	Graffi_1994	1	Andrea dice che Tommaso ha ingannato solo se stesso.	test
+8768	Graffi_1994	1	L'avvocato Azzeccagarbugli pronuncerà domani la propria arringa.	test
+8769	Graffi_1994	1	Tommaso nella sua città natale è tornato l'anno scorso.	test
+8770	Graffi_1994	1	Dov'è tornato Tommaso l'anno scorso?	test
+8771	Graffi_1994	1	Alessandro è tornato nella sua città natale l'anno scorso e l'ultimo giorno di gennaio.	test
+8772	Graffi_1994	1	Alice li ha salutati.	test
+8773	Graffi_1994	1	Dentro il sacco a pelo, Edoardo ha dormito.	test
+8774	Graffi_1994	1	Gabriele ha incontrato suo padre.	test
+8775	Graffi_1994	0	Molte hanno chiamato quel numero persone.	test
+8776	Graffi_1994	1	Mattia cammina e recita a memoria tutta la Divina Commedia.	test
+8777	Graffi_1994	1	Sembra che Tommaso sia partito.	test
+8778	Graffi_1994	1	Tommaso ha incontrato Andrea.	test
+8779	Graffi_1994	1	Gabriele ha sparso i fogli sul cassetto.	test
+8780	Graffi_1994	1	In quale cassetto hai detto che Riccardo ha messo i fogli?	test
+8781	Graffi_1994	1	Abbiamo dovuto cenare in fretta.	test
+8782	Graffi_1994	1	Lorenzo ha promesso a Paola di studiare ogni giorno.	test
+8783	Graffi_1994	0	Mattia ha promesso a Beatrice di lui studiare ogni giorno.	test
+8784	Graffi_1994	1	È ora di partire.	test
+8785	Graffi_1994	1	Sofia se ne rammarica.	test
+8786	Graffi_1994	1	Giulia ha visto lui uscire dal cinema.	test
+8787	Graffi_1994	1	Ho fatto parlare Mattia.	test
+8788	Graffi_1994	1	Avendo Leonardo incontrato di nuovo Giorgia, la nostra storia può proseguire.	test
+8789	Graffi_1994	1	Mattia si è accorto di Andrea.	test
+8790	Graffi_1994	1	Non so se Edoardo ha comprato il giornale.	test
+8791	Graffi_1994	0	Partito me, avrete più spazio a disposizione.	test
+8792	Graffi_1994	1	Tommaso ha promesso a Leonardo di difenderlo.	test
+8793	Graffi_1994	1	Leonardo ha promesso ad Andrea di difendersi.	test
+8794	Graffi_1994	1	Giudico la situazione senza speranza.	test
+8795	Graffi_1994	1	Edoardo ama Sofia.	test
+8796	Graffi_1994	1	Paola è stata salutata.	test
+8797	Graffi_1994	1	Ho comprato un libro da leggere in treno.	test
+8798	Graffi_1994	0	Ho comprato un libro che leggere in treno.	test
+8799	Graffi_1994	0	Questa è la sedia su cui Francesco ha domandato quando Alessandro si è seduto.	test
+8800	Graffi_1994	0	Questa è la persona che Riccardo ha fatto l'affermazione che Alessandro apprezza di più.	test
+8801	Graffi_1994	0	Come non sai che problema potremo risolvere?	test
+8802	Graffi_1994	1	Beatrice ha detto di essere stata inseguita.	test
+8803	Graffi_1994	0	Che cosa hai parlato su?	test
+8804	Graffi_1994	1	Lui ha detto che Emma incontrato Riccardo (e non Andrea).	test
+8805	Graffi_1994	1	Tommaso e Giulia si amano.	test
+8806	Graffi_1994	1	Emma ha molto apprezzato la mia descrizione di lei.	test
+8807	Graffi_1994	1	Alessandro ritiene che Francesco sia convinto che quella casa appartenga ancora alla propria famiglia.	test
+8808	Graffi_1994	0	Che argomento non sai quando discuteremo?	test
+8809	Graffi_2008	1	Ho incontrato Andrea e Giorgia, e ho parlato di te.	test
+8810	Graffi_2008	1	Mattia vuole partire.	test
+8811	Graffi_2008	1	Beatrice è stata baciata da Edoardo.	test
+8812	Graffi_2008	1	Edoardo ha ordinato ad Emma di partire.	test
+8813	Graffi_2008	1	Paola vuole che Edoardo veda Lorenzo.	test
+8814	Graffi_2008	0	I ragazzi di cui mi ha parlato la ragazza parte.	test
+8815	Graffi_2008	1	Lorenzo mangia la mela.	test
+8816	Graffi_2008	1	Mattia mangia.	test
+8817	Graffi_2008	0	Alessandro conosce che Leonardo è partito.	test
+8818	Graffi_2008	1	Tommaso conosce quell'uomo.	test
+8819	Graffi_2008	1	In questo luogo ne sono arrivati molti.	test
+8820	Graffi_2008	1	Tommaso ha promesso ad Aurora.	test
+8821	Graffi_2008	0	Se stesso guarda Andrea.	test
+8822	Graffi-Scalise_2002	1	I vicini credono che i ragazzi dicano che Beatrice mi ha colpito.	test
+8823	Graffi-Scalise_2002	1	I Rossi sostengono che i vicini credono che i ragazzi dicano che Giorgia mi ha colpito.	test
+8824	Graffi-Scalise_2002	1	Tommaso ha trovato una foto di qualcuno.	test
+8825	Graffi-Scalise_2002	0	Molteplici operai intervennero al banchetto.	test
+8826	Graffi-Scalise_2002	1	Il fratello di Mattia si guarda.	test
+8827	Graffi-Scalise_2002	0	La sporcizia legge il libro.	test
+8828	Graffi-Scalise_2002	1	Due parole di spiega non farebbero male.	test
+8829	Graffi-Scalise_2002	1	Leonardo passeggia.	test
+8830	Graffi-Scalise_2002	1	Questo libro, non lo avevo mai letto.	test
+8831	Graffi-Scalise_2002	1	Cosa ha comprato Lorenzo?	test
+8832	Graffi-Scalise_2002	1	Leonardo ha l'opinione che invaderemo quel paese.	test
+8833	Graffi-Scalise_2002	0	Quale paese Leonardo ha l'opinione che invaderanno?	test
+8834	Graffi-Scalise_2002	1	Dopo aver salutato la moglie, Gabriele uscì.	test
+8835	Graffi-Scalise_2002	1	Il ragazzo ha dato una rosa a Giorgia.	test
+8836	Graffi-Scalise_2002	1	Lorenzo si è dimenticato che aveva chiuso la porta e allora, visto che non aveva con sé le chiavi, ha dovuto sfondarla.	test
+8837	Graffi-Scalise_2002	1	Ogni ragazzo ama una ragazza.	test
+8838	Simone-Masini_2013	1	Il bambino dorme.	test
+8839	Simone-Masini_2013	1	Ti aiuto a studiare.	test
+8840	Simone-Masini_2013	1	Ascoltami.	test
+8841	Simone-Masini_2013	1	Vittoria saluta Tommaso.	test
+8842	Simone-Masini_2013	1	Francesco, saluta Sofia!	test
+8843	Simone-Masini_2013	1	Ho visto il mio amico.	test
+8844	Simone-Masini_2013	1	Esco col cappotto!	test
+8845	Simone-Masini_2013	1	Siamo usciti in macchina.	test
+8846	Simone-Masini_2013	1	Egli venne qui.	test
+8847	Simone-Masini_2013	1	Gabriele prende l'autobus.	test
+8848	Simone-Masini_2013	1	Chi hai visto?	test
+8849	Simone-Masini_2013	1	Il supremo diritto è la più grande ingiustizia.	test
+8850	Simone-Masini_2013	1	La dea è pigra.	test
+8851	Simone-Masini_2013	1	Ho visto il ragazzo che ha vinto il concorso.	test
+8852	Simone-Masini_2013	1	La persona con cui Mattia studiò.	test
+8853	Simone-Masini_2013	1	Perché sia venuto è un mistero.	test
+8854	Simone-Masini_2013	0	So di aver detto.	test
+8855	Simone-Masini_2013	1	È caduto e si è fatto male.	test
+8856	Simone-Masini_2013	1	Andate al cinema?	test
+8857	Simone-Masini_2013	1	Ho incontrato tuo fratello.	test
+8858	Simone-Masini_2013	1	Avete visto?	test
+8859	Simone-Masini_2013	1	Alice arriva subito.	test
+8860	Simone-Masini_2013	1	Ho mantenuto solo una versione, l'altra sarebbe: tra poco vado a scuola.	test
+8861	Simone-Masini_2013	1	Sono appena arrivato.	test
+8862	Simone-Masini_2013	1	Che prende da bere?	test
+8863	Simone-Masini_2013	1	Gabriele uccise sua madre e i suoi amici.	test
+8864	Simone-Masini_2013	1	Pochi soldati, solo tremila, caddero in battaglia.	test
+8865	Simone-Masini_2013	1	Pochi bambini, solo tre, sono stati bocciati.	test
+8866	Simone-Masini_2013	1	Lei è una donna fascinosa.	test
+8867	Simone-Masini_2013	1	Siamo arrivati tardi ma lo immaginavamo.	test
+8868	Simone-Masini_2013	1	L'alluvione ha distrutto il paese; questa circostanza rende difficile ogni ricostruzione.	test
+8869	Simone-Masini_2013	1	Andrea guidò una folla, io un esercito.	test
+8870	Simone-Masini_2013	1	Dicono che sta per piovere.	test
+8871	Simone-Masini_2013	1	Mi fa male la testa.	test
+8872	Simone-Masini_2013	1	È venuto il ragazzo che aspettavo.	test
+8873	Simone-Masini_2013	1	Il padrone parla.	test
+8874	Simone-Masini_2013	1	Dare premi al vincitore.	test
+8875	Simone-Masini_2013	1	Leggerò.	test
+8876	Simone-Masini_2013	0	Tommaso si addormenta per tre ore.	test
+8877	Simone-Masini_2013	1	Facevamo il bagno ogni giorno.	test
+8878	Simone-Masini_2013	1	Sembra che Alessandro sia tornato.	test
+8879	Simone-Masini_2013	1	È vero che piove.	test
+8880	Simone-Masini_2013	1	Può darsi che sia arrivato.	test
+8881	Simone-Masini_2013	1	Saranno le tre.	test
+8882	Simone-Masini_2013	1	Leonardo scrive una lettera a sua zia.	test
+8883	Simone-Masini_2013	1	Egli leggeva.	test
+8884	Simone-Masini_2013	1	Edoardo ordina a Mattia di restare a casa.	test
+8885	Simone-Masini_2013	1	Mattia legge un libro.	test
+8886	Simone-Masini_2013	1	Paola è sua moglie.	test
+8887	Simone-Masini_2013	1	Dorme il sonno del giusto.	test
+8888	Simone-Masini_2013	1	Può uscire dalla crisi.	test
+8889	Simone-Masini_2013	1	È lui che lo ha fatto.	test
+8890	Simone-Masini_2013	1	Se lo dice lui bisogna fare così.	test
+8891	Simone-Masini_2013	1	Quest'operazione vuol farla proprio lui.	test
+8892	Simone-Masini_2013	1	Gli ho dato un libro.	test
+8893	Simone-Masini_2013	1	Tu, se gli dei ti amano, è il momento buono per fare il tuo affare.	test
+8894	Simone-Masini_2013	1	Questo libro, la matematica proprio non mi piace.	test
+8895	Simone-Masini_2013	1	Quanto a cantare, lei canta stupendamente.	test
+8896	Simone-Masini_2013	1	Vive in America da tre anni; ha una fabbrica di scarpe.	test
+8897	Simone-Masini_2013	1	È arrivato tuo padre?	test
+8898	Simone-Masini_2013	1	Quando siamo arrivati, pioveva.	test
+8899	Simone-Masini_2013	1	L'alito gli appannò gli occhiali.	test
+8900	Simone-Masini_2013	1	Mi ha detto di andare via, cioè mi ha licenziato.	test
+8901	Simone-Masini_2013	1	I tuoi amici sono andati al teatro, io sono rimasto a casa.	test
+8902	Simone-Masini_2013	1	Il problema resta però grave: le presenze dei turisti calano.	test
+8903	Simone-Masini_2013	1	Andò a trovarlo e gli chiese se poteva prestargliela.	test
+8904	Simone-Masini_2013	1	Ho subito diverse crudeltà da lui.	test
+8905	Simone-Masini_2013	1	Ho ucciso suo fratello.	test
+8906	Simone-Masini_2013	1	Mettersi a studiare.	test
+8907	Simone-Masini_2013	1	È partito ieri.	test
+8908	Simone-Masini_2013	1	Dopo il primo scroscio di pioggia il tempo è tornato bello.	test
+8909	Simone-Masini_2013	1	Gli animali sono oggi al centro di un dibattito concernente i loro diritti.	test
+8910	Simone-Masini_2013	1	Il postino parte alle otto.	test
+8911	Simone-Masini_2013	1	La fuga del bandito non è riuscita.	test
+8912	Simone-Masini_2013	1	È Andrea che lascia sempre in disordine la stanza.	test
+8913	Jezek_2003	1	Sta piovendo.	test
+8914	Jezek_2003	1	Alessandro ha dedicato un libro alla madre.	test
+8915	Jezek_2003	1	Ho impiegato due ore a parcheggiare.	test
+8916	Jezek_2003	0	Lavora.	test
+8917	Jezek_2003	0	Andrea ha dato un libro a Vittoria, ma lei non l'ha mai ricevuto.	test
+8918	Jezek_2003	1	Beatrice è corsa a casa.	test
+8919	Jezek_2003	1	Hai telefonato a Sofia?	test
+8920	Jezek_2003	1	Gabriele sta scrivendo.	test
+8921	Jezek_2003	1	Non consumare.	test
+8922	Jezek_2003	0	La legge ha abolito.	test
+8923	Jezek_2003	1	Andrea lavora il legno.	test
+8924	Jezek_2003	0	Le mie piantine non si attecchiscono.	test
+8925	Jezek_2003	1	Il pacco è finalmente arrivato.	test
+8926	Jezek_2003	1	Alessandro noleggerà una bicicletta.	test
+8927	Jezek_2003	0	Andrea noleggerà.	test
+8928	Jezek_2003	0	La bicicletta noleggerà.	test
+8929	Jezek_2003	1	Giorgia non sopporta le tue battute.	test
+8930	Jezek_2003	1	Lorenzo ha piantato un albero.	test
+8931	Jezek_2003	1	Alice beve.	test
+8932	Jezek_2003	1	Edoardo non mangia.	test
+8933	Jezek_2003	1	Chiedere scusa.	test
+8934	Jezek_2003	1	Le scarpe sono state lucidate da Beatrice.	test
+8935	Jezek_2003	1	Le scarpe sono state macchiate da Alice.	test
+8936	Jezek_2003	1	Leonardo è caduto.	test
+8937	Jezek_2003	0	La nebbia si è svanita.	test
+8938	Jezek_2003	1	La nebbia si è dileguata.	test
+8939	Jezek_2003	1	Le bandiere hanno svolazzato sui tetti.	test
+8940	Jezek_2003	1	Ha incespicato in un gradino ed è caduto.	test
+8941	Jezek_2003	0	Beatrice ha sparito la macchina.	test
+8942	Jezek_2003	1	Tommaso si è impaperato.	test
+8943	Jezek_2003	1	La palla ha rimbalzato sul muro	test
+8944	Jezek_2003	0	Si è approfittato dell'esperienza.	test
+8945	Jezek_2003	1	Il figlio di Andrea si siede in prima fila.	test
+8946	Jezek_2003	1	Alle 8 in punto, il figlio di Riccardo entrò nel teatro e si sedette in prima fila.	test
+8947	Jezek_2003	1	Il muro è ammuffito da molti anni.	test
+8948	Jezek_2003	1	Giulia dorme sonni tranquilli.	test
+8949	Jezek_2003	0	I sonni dormono.	test
+8950	Jezek_2003	1	Il sole abbaglia tutti.	test
+8951	Jezek_2003	1	Il coltello taglia.	test
+8952	Jezek_2003	1	La mia vecchia macchina beve sempre di più benzina.	test
+8953	Jezek_2003	1	Riccardo sta compilando un modulo.	test
+8954	Jezek_2003	1	Andrea aspira sempre il fumo del sigaro.	test
+8955	Jezek_2003	0	Alessandro ha aspirato.	test
+8956	Jezek_2003	1	Il liquore ha decantato.	test
+8957	Jezek_2003	1	L'acqua ha bollito per ore.	test
+8958	Jezek_2003	1	Francesco è guarito.	test
+8959	Jezek_2003	1	Andrea ha diffuso la notizia.	test
+8960	Jezek_2003	1	Andrea ha raccontato la notizia.	test
+8961	Jezek_2003	1	La notizia è stata raccontata da Leonardo.	test
+8962	Jezek_2003	1	Edoardo ha mancato il treno.	test
+8963	Jezek_2003	0	Edoardo ha mancato la luce.	test
+8964	Jezek_2003	1	Il vino macchia.	test
+8965	Jezek_2003	1	L'acqua del lago è gelata.	test
+8966	Jezek_2003	1	Il bosco ha bruciato per ore.	test
+8967	Jezek_2003	1	Giorgia ha bruciato le tappe.	test
+8968	Jezek_2003	1	L'erba brucia.	test
+8969	Jezek_2003	0	Edoardo si cade.	test
+8970	Jezek_2003	0	Mi guardo la macchina.	test
+8971	Jezek_2003	1	Mattia si ricordava di esserci già stato.	test
+8972	Jezek_2003	1	Hai bevuto tutto il vino?	test
+8973	Jezek_2003	1	Ti sei bevuto tutto il vino?	test
+8974	Jezek_2003	1	Andrea ha giocato tutti i soldi.	test
+8975	Jezek_2003	0	Ha lavorato il ragazzo.	test
+8976	Jezek_2003	1	Il lago si è ghiacciato a causa del gran freddo.	test
+8977	Jezek_2003	1	Il tetto si è sfondato (a causa del peso della neve).	test
+8978	Jezek_2003	1	Alice si è seduta.	test
+8979	Jezek_2003	0	Accorcia le giornate.	test
+8980	Jezek_2003	1	Andrea ha continuato il discorso.	test
+8981	Jezek_2003	1	Bollire il latte.	test
+8982	Jezek_2003	1	È suonata la sveglia.	test
+8983	Jezek_2003	1	È suonato il telefono.	test
+8984	Jezek_2003	0	Il livello è alzato.	test
+8985	Jezek_2003	0	La borsa è crollata per un'ora.	test
+8986	Jezek_2003	1	La borsa è crollata in un'ora.	test
+8987	Jezek_2003	1	È scattato l'allarme a mezzanotte.	test
+8988	Jezek_2003	1	Gabriele è cresciuto di parecchio.	test
+8989	Jezek_2003	0	Francesco ha corso di parecchio.	test
+8990	Jezek_2003	0	Mattia è partito di parecchio.	test
+8991	Jezek_2003	1	Il treno si è fermato alle 8 in punto.	test
+8992	Jezek_2003	1	Alle 7 in punto è scoppiato un violento temporale.	test
+8993	Jezek_2003	1	La biancheria si è un po' asciugata.	test
+8994	Jezek_2003	0	Il latte è un po' scaduto.	test
+8995	Jezek_2003	0	Ho notato un treno fermato.	test
+8996	D-Agostino_1983	1	Mattia ode un canto di sirene.	test
+8997	D-Agostino_1983	1	Francesco fa che i propri dipendenti costruiscano ponti.	test
+8998	D-Agostino_1983	1	Francesco fa bere molto caffè ai suoi amici.	test
+8999	D-Agostino_1983	1	La tenda tocca la finestra.	test
+9000	D-Agostino_1983	0	Lorenzo li esce.	test
+9001	D-Agostino_1983	1	Edoardo fruga nelle sue tasche.	test
+9002	D-Agostino_1983	1	Tommaso vive un'esistenza allegra.	test
+9003	D-Agostino_1983	1	Tommaso ama Beatrice.	test
+9004	D-Agostino_1983	0	Coraggio è stato fatto da Gabriele a Sofia.	test
+9005	D-Agostino_1983	1	Ci sono due lingue tali che tutti i miei studenti le parlano.	test
+9006	D-Agostino_1983	1	Che cosa Francesco studia?	test
+9007	D-Agostino_1983	1	Lorenzo ama questa cosa.	test
+9008	D-Agostino_1983	1	Questa cosa emerge.	test
+9009	D-Agostino_1983	1	Le stelle brillano nel cielo.	test
+9010	D-Agostino_1983	1	Il cielo brilla di stelle.	test
+9011	D-Agostino_1983	1	La parete è tappezzata di carta e fiori.	test
+9012	D-Agostino_1983	0	Gabriele mette l'astuccio negli occhiali.	test
+9013	D-Agostino_1983	1	Tommaso mise la cassa nel mobile in camera da pranzo.	test
+9014	D-Agostino_1983	1	Riccardo mise la cassa nel mobile che sta in camera da pranzo.	test
+9015	D-Agostino_1983	1	Andrea accostò la barca.	test
+9016	D-Agostino_1983	0	Gabriele addossò il banco.	test
+9017	D-Agostino_1983	1	Edoardo addossa la scrivania alla parete.	test
+9018	D-Agostino_1983	1	A letto Lorenzo legge il giornale.	test
+9019	D-Agostino_1983	1	Da Dove Edoardo ha preso una sigaretta?	test
+9020	D-Agostino_1983	1	In quest'ufficio Gabriele ci ha lavorato tutto il giorno.	test
+9021	D-Agostino_1983	1	A questo progetto Tommaso ci ha lavorato tutto il giorno.	test
+9022	D-Agostino_1983	1	Tommaso ne parla sempre.	test
+9023	D-Agostino_1983	1	Mattia corre verso la collina.	test
+9024	D-Agostino_1983	1	Francesco mette le casse sul camion.	test
+9025	D-Agostino_1983	1	Francesco mette le casse nel camion.	test
+9026	D-Agostino_1983	1	Francesco affigge il manifesto sul muro.	test
+9027	D-Agostino_1983	1	Alessandro ha messo il quadro di Gris su quello di Picasso.	test
+9028	D-Agostino_1983	1	Riccardo esamina il problema nel suo ufficio.	test
+9029	D-Agostino_1983	1	Mattia sta nel suo ufficio.	test
+9030	D-Agostino_1983	1	I titoli stanno sul giornale.	test
+9031	D-Agostino_1983	1	Tommaso sta in camera.	test
+9032	D-Agostino_1983	1	Le pere stanno sull'albero.	test
+9033	D-Agostino_1983	1	La piastra sta sul pavimento.	test
+9034	D-Agostino_1983	0	È dal giardino al garage che Francesco ha piantato fiori.	test
+9035	D-Agostino_1983	1	Lorenzo ha lanciato il pacchetto in strada.	test
+9036	D-Agostino_1983	1	La nave imbarca le casse.	test
+9037	D-Agostino_1983	0	I rivoltosi incarcerarono l'auto nelle segrete della fortezza.	test
+9038	D-Agostino_1983	1	Gabriele appese Emma per i piedi.	test
+9039	D-Agostino_1983	1	Riccardo mise la testa di Paola sotto la mannaia.	test
+9040	D-Agostino_1983	1	Alessandro concesse appoggio al libro.	test
+9041	D-Agostino_1983	0	Francesco dette appoggio al libro sul letto.	test
+9042	D-Agostino_1983	1	Questo latte deterge il volto.	test
+9043	D-Agostino_1983	1	La caduta delle foglie accompagna l'autunno.	test
+9044	D-Agostino_1983	1	Mattia stipò i vestiti nell'armadio.	test
+9045	D-Agostino_1983	0	La fotografia ed il quadro stanno attaccati insieme.	test
+9046	D-Agostino_1983	0	Edoardo riempie i libri nell'armadio.	test
+9047	D-Agostino_1983	1	I libri stanno nell'armadio.	test
+9048	D-Agostino_1983	1	Lorenzo attraversò il fiume nella parte meno pericolosa.	test
+9049	Elia-et-al_1981	1	Francesco guarda Giorgia.	test
+9050	Elia-et-al_1981	0	Essi guarda Giorgia.	test
+9051	Elia-et-al_1981	1	Essi guardano Aurora.	test
+9052	Elia-et-al_1981	1	Ti dico di stare zitta!	test
+9053	Elia-et-al_1981	1	Quella mattina pioveva a dirotto sulla pianura.	test
+9054	Elia-et-al_1981	1	Aurora lavora.	test
+9055	Elia-et-al_1981	1	Emma studia dove lavora.	test
+9056	Elia-et-al_1981	1	Che tu venga è un fatto.	test
+9057	Elia-et-al_1981	1	Riccardo mangia il pollo.	test
+9058	Elia-et-al_1981	1	Egli mangia questo.	test
+9059	Elia-et-al_1981	1	Alessandro annuncia la sua partenza a Beatrice.	test
+9060	Elia-et-al_1981	0	È al successo ciò a cui Alessandro tiene.	test
+9061	Elia-et-al_1981	1	Francesco le adora le donne che hanno gambe lunghe.	test
+9062	Elia-et-al_1981	1	Leonardo adora le donne dalle gambe lunghe.	test
+9063	Elia-et-al_1981	1	Lorenzo le adora lunghe le gambe.	test
+9064	Elia-et-al_1981	1	Gabriele mangia il brodo con il cucchiaio.	test
+9065	Elia-et-al_1981	0	Lo scompiglio ne nasce dal disordine.	test
+9066	Elia-et-al_1981	1	Mattia ci si inoltra nella foresta.	test
+9067	Elia-et-al_1981	1	Leonardo ci mette la statua nella stanza da pranzo.	test
+9068	Elia-et-al_1981	1	Riccardo racconta una storia.	test
+9069	Elia-et-al_1981	1	Leonardo guarda un costume da bagno.	test
+9070	Elia-et-al_1981	1	Aurora involontariamente assorbe la sua attenzione.	test
+9071	Elia-et-al_1981	1	Sofia diverte qualcuno.	test
+9072	Elia-et-al_1981	1	Francesco apprezzò quel discorso.	test
+9073	Elia-et-al_1981	0	Mattia dorme un pisolino.	test
+9074	Elia-et-al_1981	1	Riccardo parla di sesso a Giulia.	test
+9075	Elia-et-al_1981	1	Emma obbedisce.	test
+9076	Elia-et-al_1981	1	Aurora mangia con Alessandro.	test
+9077	Elia-et-al_1981	1	Paola schermisce ogni giorno.	test
+9078	Elia-et-al_1981	1	Leonardo fa che il pollo cuocia.	test
+9079	Elia-et-al_1981	1	Francesco fa che il pollo si cuocia.	test
+9080	Elia-et-al_1981	1	Emma traveste Sofia da principessa.	test
+9081	Elia-et-al_1981	0	Alice trasale verso la cucina.	test
+9082	Elia-et-al_1981	1	Un lento desiderio sonnecchiava nel suo spirito.	test
+9083	Elia-et-al_1981	1	Un lento desiderio gli sonnecchiava nello spirito.	test
+9084	Elia-et-al_1981	1	Tommaso si dibatte tra mille difficoltà.	test
+9085	Elia-et-al_1981	1	Giulia mente a Paola.	test
+9086	Elia-et-al_1981	1	Francesco ci manca.	test
+9087	Elia-et-al_1981	1	Quell'idea sorrideva nel suo animo.	test
+9088	Elia-et-al_1981	1	I bambini giocano sulla spiaggia.	test
+9089	Elia-et-al_1981	1	I ministeri abbondano di burocrati.	test
+9090	Elia-et-al_1981	1	Quel macchinario cigola di un cigolio.	test
+9091	Elia-et-al_1981	0	Il cielo splende di una stella.	test
+9092	Elia-et-al_1981	0	Il cielo scintilla di una stella.	test
+9093	Elia-et-al_1981	0	Un ragno brulica nel giardino.	test
+9094	Elia-et-al_1981	1	Uno stendardo sventola sulla torre del castello.	test
+9095	Elia-et-al_1981	1	I capelli di Giulia biondeggiano.	test
+9096	Elia-et-al_1981	1	I gelsomini profumavano dal giardino.	test
+9097	Elia-et-al_1981	1	Il racconto di Emma abbondava in particolari disgustosi.	test
+9098	Elia-et-al_1981	1	La contessa era tutta uno sfavillare di gioielli.	test
+9099	Elia-et-al_1981	1	La scuola era tutta un cantare di bambini.	test
+9100	Elia-et-al_1981	1	Sofia splende dall'allegria.	test
+9101	Elia-et-al_1981	0	La tibia e il perone di Alessandro fremono di terrore.	test
+9102	Elia-et-al_1981	0	Quell'idea spunta nel suo animo.	test
+9103	Elia-et-al_1981	1	I risultati dipendono dal suo impegno.	test
+9104	Elia-et-al_1981	1	Le tue lamentele prescindono da ogni dignità.	test
+9105	Elia-et-al_1981	1	Le conseguenze ne dipendono.	test
+9106	Elia-et-al_1981	1	Lorenzo dipende volontariamente da Giulia.	test
+9107	Elia-et-al_1981	1	La neve vi approda.	test
+9108	Elia-et-al_1981	1	La barca attracca alla banchina.	test
+9109	Elia-et-al_1981	1	L'acqua vi scorre.	test
+9110	Elia-et-al_1981	1	Il ricamo zigzagava sulla gonna di Sofia.	test
+9111	Elia-et-al_1981	1	La roccia affiora dal terreno.	test
+9112	Elia-et-al_1981	1	Mattia fraternizza con Sofia.	test
+9113	Elia-et-al_1981	1	Leonardo rima con animale.	test
+9114	Elia-et-al_1981	1	Il giallo contrasta con il rosso.	test
+9115	Elia-et-al_1981	1	Mattia mette il cappello sul tavolo.	test
+9116	Elia-et-al_1981	1	Leonardo compara Francesco a Riccardo.	test
+9117	Elia-et-al_1981	1	Sofia pulì la macchina a Riccardo.	test
+9118	Elia-et-al_1981	1	Tommaso ha ricavato uno splendido studio da vecchi mobili.	test
+9119	Elia-et-al_1981	1	Non c'era nessun capanno in giardino.	test
+9120	Elia-et-al_1981	1	Gabriele conta per noi.	test
+9121	Elia-et-al_1981	1	Sofia analizza il testo in un'analisi documentatissima.	test
+9122	Elia-et-al_1981	1	Riccardo ha scomposto il nostro progetto di partire nei suoi aspetti positivi e negativi.	test
+9123	Elia-et-al_1981	1	Sofia dimezzò la torta in due stupende metà.	test
+9124	Elia-et-al_1981	1	Giulia solleticò il collo a Mattia.	test
+9125	Elia-et-al_1981	1	I gatti graffiano.	test
+9126	Elia-et-al_1981	1	Il braccio di Riccardo è massaggiato per due ore.	test
+9127	Elia-et-al_1981	1	Il vetriolo sfigura i volti.	test
+9128	Elia-et-al_1981	1	Alice ha inciso le sue iniziali nel cuoio.	test
+9129	Elia-et-al_1981	1	Tommaso costruisce case in legno di abete.	test
+9130	Elia-et-al_1981	1	Andrea costruisce case con legno di abete.	test
+9131	Elia-et-al_1981	1	La speculazione edilizia ha alzato rapidamente case su tutta la collina.	test
+9132	Elia-et-al_1981	1	Mattia ha costruito una casa in mattoni rossi sulla collina.	test
+9133	Elia-et-al_1981	1	Sofia incide il cuoio.	test
+9134	Elia-et-al_1981	1	L'ingegner Smith costruisce palazzi abusivamente.	test
+9135	Elia-et-al_1981	1	Giorgia ha designato Francesco suo rappresentante legale.	test
+9136	Elia-et-al_1981	1	Abbiamo lasciato Gabriele al Circolo dei cacciatori.	test
+9137	Elia-et-al_1981	1	Beatrice ruba un libro ad Edoardo.	test
+9138	Elia-et-al_1981	1	Leonardo gli accoppia Mattia.	test
+9139	Elia-et-al_1981	1	Tommaso dispensava continuamente ceffoni al figlio.	test
+9140	Elia-et-al_1981	1	Sofia cedette a Riccardo.	test
+9141	Elia-et-al_1981	1	Lo schiavista cedette Giulia ad Edoardo.	test
+9142	Elia-et-al_1981	1	Vittoria cedette alle lusinghe di Alessandro.	test
+9143	Elia-et-al_1981	1	Giorgia cedette a farsi fotografare nuda.	test
+9144	Elia-et-al_1981	1	Leonardo traforò la parete con tanti piccoli buchi.	test
+9145	Elia-et-al_1981	1	L'aviazione nemica bombardò la città di napalm.	test
+9146	Elia-et-al_1981	1	L'acqua bagna i piedi a Francesco.	test
+9147	Elia-et-al_1981	0	La spugna è imbevuta di acqua durante due ore.	test
+9148	Elia-et-al_1981	1	Andrea cosparge Sofia di olio solare.	test
+9149	Elia-et-al_1981	1	Giorgia profumò Leonardo fra i capelli.	test
+9150	Elia-et-al_1981	1	Il cedro bruciato profuma.	test
+9151	Elia-et-al_1981	1	Riccardo dissemina i suoi racconti di aneddoti divertenti.	test
+9152	Elia-et-al_1981	1	Disegni coprivano tutte le pareti.	test
+9153	Elia-et-al_1981	1	Edoardo colora la stanza di colori vivaci.	test
+9154	Elia-et-al_1981	1	Leonardo liberò Vittoria dal vizio.	test
+9155	Elia-et-al_1981	0	Mattia liberò Sofia sul vizio.	test
+9156	Elia-et-al_1981	1	L'appartamento passa da suo nonno ad Edoardo.	test
+9157	Elia-et-al_1981	1	Il sapone pulisce la pelle dalle impurità.	test
+9158	Elia-et-al_1981	1	Sofia studiava storia fra montagne di cartacce.	test
+9159	Elia-et-al_1981	1	Francesco toglie il portafoglio dal pantalone.	test
+9160	Elia-et-al_1981	0	Andrea ci toglie il portafoglio.	test
+9161	Elia-et-al_1981	1	Paola prende un fiore fra le erbacce.	test
+9162	Elia-et-al_1981	1	Emma prende un giornale dal tavolo.	test
+9163	Elia-et-al_1981	1	Riccardo avvicinò Emma.	test
+9164	Elia-et-al_1981	1	Lorenzo avvicinò l'auto a casa sua.	test
+9165	Elia-et-al_1981	1	Tommaso spennellò la parete con un pennello da imbianchino.	test
+9166	Elia-et-al_1981	1	Lorenzo gli gettò il libro sulla testa.	test
+9167	Elia-et-al_1981	1	Gabriele alloggia gli zii in casa sua.	test
+9168	Elia-et-al_1981	1	Il chirurgo amputò il pollice dalla mano destra di Gabriele.	test
+9169	Elia-et-al_1981	1	Riccardo cancellò il fatto che era stato sfortunato al gioco dalla sua memoria.	test
+9170	Elia-et-al_1981	1	Gabriele raccoglie pietre nel cassetto.	test
+9171	Elia-et-al_1981	1	L'acqua di rose deterge.	test
+9172	Elia-et-al_1981	1	Riccardo portò la valigia alla stazione.	test
+9173	Elia-et-al_1981	1	Paola spostò la ceneriera verso la sedia.	test
+9174	Elia-et-al_1981	1	Un vecchio canale canalizza l'acqua dal fiume ai campi.	test
+9175	Elia-et-al_1981	1	Il comando avanzò l'esercito da Roma a Velletri.	test
+9176	Elia-et-al_1981	1	Leonardo litiga con Tommaso.	test
+9177	Elia-et-al_1981	1	I russi e i cinesi lottano.	test
+9178	Elia-et-al_1981	1	I fiumi ed il mare comunicano.	test
+9179	Elia-et-al_1981	1	Alessandro negozia la libertà di Emma con Edoardo.	test
+9180	Elia-et-al_1981	1	Gabriele coordina le necessità dell'impresa con la propria ricerca.	test
+9181	Elia-et-al_1981	0	Una donna aveva separato Leonardo a Lorenzo.	test
+9182	Elia-et-al_1981	1	Il cuoco amalgama le patate con le uova nella padella.	test
+9183	Elia-et-al_1981	0	Una coppia esiste tra Edoardo ed Emma.	test
+9184	Elia-et-al_1981	0	Alessandro legava la vita di Emma.	test
+9185	Elia-et-al_1981	1	Riccardo legava la vita di Beatrice alla vita di Aurora.	test
+9186	Elia-et-al_1981	1	Giorgia desidera che tu venga.	test
+9187	Elia-et-al_1981	0	Vittoria desidera a ciò.	test
+9188	Elia-et-al_1981	1	Sofia bada a ciò.	test
+9189	Elia-et-al_1981	1	Paola approva che Alice danzi.	test
+9190	Elia-et-al_1981	0	Tommaso desidera ciò che Vittoria parte.	test
+9191	Elia-et-al_1981	1	Tommaso desidera ciò: che Paola parta.	test
+9192	Elia-et-al_1981	1	Beatrice dubita di ciò.	test
+9193	Elia-et-al_1981	0	Tommaso approva l'idea di ciò che Vittoria danzi.	test
+9194	Elia-et-al_1981	0	Edoardo pensa di Vittoria essere bella.	test
+9195	Elia-et-al_1981	0	Tu desideri che tu venga.	test
+9196	Elia-et-al_1981	0	Io desidero di venire.	test
+9197	Elia-et-al_1981	1	Capita a tutti che prima o poi si sposi qualcuno.	test
+9198	Elia-et-al_1981	1	Edoardo tiene a che Sofia lo ami.	test
+9199	Elia-et-al_1981	1	Che Alice parta atterrisce Edoardo.	test
+9200	Elia-et-al_1981	1	Il suo dimenare il corpo sconvolge i presenti.	test
+9201	Elia-et-al_1981	0	Gabriele allieta Paola del fatto che Alice ride.	test
+9202	Elia-et-al_1981	1	Il fatto che Giulia vada a Cagliari distrugge Francesco.	test
+9203	Elia-et-al_1981	0	Il fatto che Paola vada a Cagliari distrugge le case.	test
+9204	Elia-et-al_1981	1	Il fatto che Alessandro parli di magia suggestiona Aurora.	test
+9205	Elia-et-al_1981	1	Aver studiato filosofia per trenta anni ha appesantito il suo comportamento.	test
+9206	Elia-et-al_1981	0	Il ministro è dal ritiro del passaporto.	test
+9207	Elia-et-al_1981	0	Disgrazia avvengono.	test
+9208	Elia-et-al_1981	1	Lorenzo deplora che il figlio esca di notte.	test
+9209	Elia-et-al_1981	0	Io condanno che Erode uccise i bambini	test
+9210	Elia-et-al_1981	1	Andrea escogita di tradire Beatrice	test
+9211	Elia-et-al_1981	1	Riccardo guarda Alice lavorare.	test
+9212	Elia-et-al_1981	0	Aurora lo considera che Edoardo sia un buffone.	test
+9213	Elia-et-al_1981	1	Sofia adora che la si baci.	test
+9214	Elia-et-al_1981	1	Leonardo sospetta che il padre beva troppo.	test
+9215	Elia-et-al_1981	1	Leonardo accondiscende a che Aurora si sposi.	test
+9216	Elia-et-al_1981	1	Emma aspira a soppiantare Sofia.	test
+9217	Elia-et-al_1981	1	Giorgia allude al continuo partire di Lorenzo.	test
+9218	Elia-et-al_1981	1	Sofia ci allude.	test
+9219	Elia-et-al_1981	1	Giorgia bada se Sofia beve o no.	test
+9220	Elia-et-al_1981	1	Giulia vi bada a ciò.	test
+9221	Elia-et-al_1981	1	Giorgia se ne ricorda di te.	test
+9222	Elia-et-al_1981	1	Alessandro si dimentica di aver promesso un viaggio a Poi.	test
+9223	Elia-et-al_1981	1	Sofia si è dimenticata se Leonardo è bruno o biondo.	test
+9224	Elia-et-al_1981	1	Questa reazione scaturisce dal fatto di aver atteso troppo.	test
+9225	Elia-et-al_1981	1	Questa tua reazione scaturisce dal tuo aver atteso troppo.	test
+9226	Elia-et-al_1981	1	Francesco chiarisce la situazione ad Emma.	test
+9227	Elia-et-al_1981	1	Edoardo abbaia ad Aurora che ha fame.	test
+9228	Elia-et-al_1981	1	Le campane ricordare ai cittadini che fa sera.	test
+9229	Elia-et-al_1981	1	Tommaso comunica via cavo a Leonardo che verrà domani.	test
+9230	Elia-et-al_1981	1	Leonardo dice ad Aurora di partire.	test
+9231	Elia-et-al_1981	1	Aurora evoca a Giorgia il fatto di essere stata benedetta dal Papa.	test
+9232	Elia-et-al_1981	1	La situazione comporta che Beatrice vi accompagni al cinema.	test
+9233	Elia-et-al_1981	0	La situazione le comporta di accompagnarvi al cinema.	test
+9234	Elia-et-al_1981	0	Lo scandalo politico gli implica di dimettersi.	test
+9235	Elia-et-al_1981	1	Lo scandalo politico lo implica per il ministro.	test
+9236	Elia-et-al_1981	0	Riccardo ne ha escluso che i rumeni danzino.	test
+9237	Elia-et-al_1981	1	Andrea scommette con Leonardo che Edoardo partirà.	test
+9238	Elia-et-al_1981	1	Sofia abitua Alessandro all'idea che lo trasferiscano.	test
+9239	Elia-et-al_1981	1	Tommaso vi invita Sofia.	test
+9240	Elia-et-al_1981	0	Andrea vi sollecita Sofia.	test
+9241	Elia-et-al_1981	1	Edoardo autorizza che si parta subito.	test
+9242	Elia-et-al_1981	1	Emma avvisa Mattia che Riccardo arriva.	test
+9243	Elia-et-al_1981	1	Lorenzo convince Tommaso che lo sciopero è giusto.	test
+9244	Elia-et-al_1981	1	Aurora incarica Tommaso di comprare il pane.	test
+9245	Elia-et-al_1981	1	Edoardo castiga Emma del fatto che ha perso.	test
+9246	Elia-et-al_1981	1	Vittoria giustifica Tommaso del fatto che ha paura.	test
+9247	Elia-et-al_1981	1	Paola svincola il vecchio della necessità che si impegni.	test
+9248	Elia-et-al_1981	1	Questo fatto equivale alla partenza per noi.	test
+9249	Elia-et-al_1981	1	Beatrice discute della sua partenza con Aurora.	test
+9250	Elia-et-al_1981	1	Beatrice parla della sua partenza con Sofia.	test
+9251	Elia-et-al_1981	1	Aurora discute di voler partire con Paola.	test
+9252	Elia-et-al_1981	1	Vittoria discorre di voler partire con Sofia.	test
+9253	Elia-et-al_1981	1	Andrea si lamenta di mangiare poco con Aurora.	test
+9254	Elia-et-al_1981	1	Gabriele si informa dall'albergatore che tutto sia in ordine.	test
+9255	Elia-et-al_1981	1	Mattia capisce di sbagliare dal peggiorare della situazione.	test
+9256	Elia-et-al_1981	1	Il fatto di essere vaccinati immunizza i cavalli dalle malattie.	test
+9257	Elia-et-al_1981	1	Il fatto che fa judo corazza Vittoria contro i nemici.	test
+9258	Elia-et-al_1981	1	Giulia trova da mangiare.	test
+9259	Elia-et-al_1981	1	Mattia deve mangiare.	test
+9260	Elia-et-al_1981	0	Mattia sale dalla camera.	test
+9261	Elia-et-al_1981	1	Alice saltella verso il ponte.	test
+9262	Elia-et-al_1981	1	Emma attraversa la riva ad abbracciare Edoardo.	test
+9263	Elia-et-al_1981	1	La folla corre a salutarlo.	test
+9264	Elia-et-al_1981	1	Riccardo invia Sofia a comprare il pane.	test
+9265	Elia-et-al_1981	1	Riccardo attira Paola in piazza a vedere il papa.	test
+9266	Vietri_2004	1	Vittoria legge il giornale e guarda la Tv.	test
+9267	Vietri_2004	1	Sofia legge il giornale, guarda la Tv e cucina il pollo.	test
+9268	Vietri_2004	1	Molte ragazze leggono il giornale.	test
+9269	Vietri_2004	0	Quell'ha architetto progettato alcuni musei.	test
+9270	Vietri_2004	1	Molte ragazze hanno letto il giornale l'anno scorso.	test
+9271	Vietri_2004	1	Una tribù abita la casa in campagna.	test
+9272	Vietri_2004	1	Ha abbandonato la moglie.	test
+9273	Vietri_2004	1	Ha abbandonato il marito.	test
+9274	Vietri_2004	1	Alice studia.	test
+9275	Vietri_2004	0	Beatrice mangia e ciò avviene la pizza.	test
+9276	Vietri_2004	0	Francesco obbedisce Sofia.	test
+9277	Vietri_2004	0	Andrea irrompe teatro.	test
+9278	Vietri_2004	1	Mattia ha fatto una fotografia.	test
+9279	Vietri_2004	1	Giulia sorride a Mattia.	test
+9280	Vietri_2004	1	Giorgia ha reciso il capo al pupazzo.	test
+9281	Vietri_2004	1	Emma ha segato la testa al pupazzo.	test
+9282	Vietri_2004	0	I ragazzi hanno tagliato le corde.	test
+9283	Vietri_2004	1	Paola ha preso il toro per le corna.	test
+9284	Vietri_2004	1	Emma ha mangiato davvero la mela.	test
+9285	Vietri_2004	1	È Sofia che ha preso il toro per le corna e non Gabriele.	test
+9286	Vietri_2004	1	Il lupo ulula.	test
+9287	Vietri_2004	1	Gabriele aveva lavorato fino alle 11:00.	test
+9288	Vietri_2004	1	Edoardo ci ha messo due ore per tagliare il vecchio tiglio.	test
+9289	Vietri_2004	1	Lorenzo ha perso l'abitudine che aveva di fumare.	test
+9290	Vietri_2004	1	Sofia pensa che tu torni immediatamente.	test
+9291	Vietri_2004	1	Lorenzo ha mangiato la pizza.	test
+9292	Vietri_2004	0	I bambini hanno calpestato.	test
+9293	Vietri_2004	1	I bambini hanno calpestato le aiuole e ciò avvenne tutto il giorno.	test
+9294	Vietri_2004	0	Il vulcano ha calpestato le aiuole.	test
+9295	Vietri_2004	0	I ragazzi eruttarono.	test
+9296	Vietri_2004	0	Quell'uomo vi ha fotografato.	test
+9297	Vietri_2004	0	Quell'uomo fotografa che tu te ne vai.	test
+9298	Vietri_2004	1	La malattia ha paralizzato Beatrice.	test
+9299	Vietri_2004	0	Il bambino pesava e ciò succedeva nove chili.	test
+9300	Vietri_2004	1	La gallina cova le uova.	test
+9301	Vietri_2004	1	Vittoria monta l'albume.	test
+9302	Vietri_2004	1	Lorenzo fuma una sigaretta.	test
+9303	Vietri_2004	1	Paola corre i cento metri.	test
+9304	Vietri_2004	1	Paola elencò i volumi letti.	test
+9305	Vietri_2004	1	Quell'uomo ha cantato una canzone.	test
+9306	Vietri_2004	1	Giulia ne ha tolto i vestiti.	test
+9307	Vietri_2004	0	Beatrice riempie il frigo da frutta.	test
+9308	Vietri_2004	0	Beatrice svuota l'armadio con vestiti.	test
+9309	Vietri_2004	1	Edoardo carica le birre nel frigo.	test
+9310	Vietri_2004	1	Beatrice spruzza i fiori d'acqua.	test
+9311	Vietri_2004	1	Francesco associa la linguistica alla conoscenza della lingua.	test
+9312	Vietri_2004	1	Sofia negozia la libertà con Francesco.	test
+9313	Vietri_2004	1	Tommaso delega Alessandro come suo rappresentante.	test
+9314	Vietri_2004	1	Mattia delega un suo rappresentante.	test
+9315	Vietri_2004	1	Vittoria ha chiamato Alice.	test
+9316	Vietri_2004	1	Francesco ha suddiviso il testo in capitoli.	test
+9317	Vietri_2004	1	Le critiche tuonano da ogni parte su un film di Bertolucci.	test
+9318	Vietri_2004	1	La macchina frena bene.	test
+9319	Vietri_2004	1	La macchina carbura perfettamente.	test
+9320	Vietri_2004	1	Il professore disse ai ragazzi che bisognava fare silenzio, ruggendo.	test
+9321	Vietri_2004	1	Tommaso e Sofia divorziano.	test
+9322	Vietri_2004	1	Tommaso convive con Sofia.	test
+9323	Vietri_2004	1	I ragazzi escono di casa.	test
+9324	Vietri_2004	1	Vittoria torna da Napoli a Milano.	test
+9325	Vietri_2004	1	Giulia verifica di avere corretto il testo.	test
+9326	Vietri_2004	1	Alice bada che tutto sia fatto bene.	test
+9327	Vietri_2004	1	Che si vada al cinema piace a Beatrice.	test
+9328	Vietri_2004	1	Gabriele ama che Emma vada sempre a trovarlo.	test
+9329	Vietri_2004	1	Alessandro ama il cinema americano.	test
+9330	Vietri_2004	1	Alessandro detesta il cinema americano.	test
+9331	Vietri_2004	1	Tommaso aspetta che Sofia arrivi.	test
+9332	Vietri_2004	1	Lorenzo condanna che Beatrice arrivi.	test
+9333	Vietri_2004	1	Che tutto funzioni alla perfezione è desiderato da Sofia.	test
+9334	Vietri_2004	1	Emma acconsente che la figlia esca con quel ragazzo.	test
+9335	Vietri_2004	0	La tua decisione dipende che non sia stata fatta nessuna proposta.	test
+9336	Vietri_2004	1	Aurora consente a che tu parta.	test
+9337	Vietri_2004	1	Alice piace a Leonardo.	test
+9338	Vietri_2004	0	Andrea crede partirà.	test
+9339	Vietri_2004	0	Francesco va al fumo.	test
+9340	Vietri_2004	1	Paola comincia a fumare.	test
+9341	Vietri_2004	1	Emma convince Alessandro alla partenza.	test
+9342	Vietri_2004	1	Beatrice informa Alessandro di dover partire.	test
+9343	Vietri_2004	0	Paola distoglie Andrea da che dovrà partire.	test
+9344	Vietri_2004	1	Sofia distoglie Leonardo dal dover partire.	test
+9345	Vietri_2004	1	Sofia manda Lorenzo a comprare la moto.	test
+9346	Vietri_2004	1	Mattia accompagnò Emma a vedere un film.	test
+9347	Vietri_2004	1	Il fatto che tu sia qui apporta benefici a Vittoria.	test
+9348	Vietri_2004	1	Alessandro fa sì che Mattia mangi la pizza.	test
+9349	Vietri_2004	1	Il dado è tratto.	test
+9350	Vietri_2004	1	Alessandro ha messo Aurora nel sacco.	test
+9351	Vietri_2004	1	Riccardo va a genio a Gabriele.	test
+9352	Vietri_2004	1	Lorenzo parla la stessa lingua di Alice.	test
+9353	Vietri_2004	1	Andrea fa amicizia con Paola.	test
+9354	Vietri_2004	1	Edoardo ha il nome di quella donna sulla lingua.	test
+9355	Vietri_2004	1	Essere in balia delle onde.	test
+9356	Vietri_2004	1	Quando non c'è la gatta i topi ballano.	test
+9357	Vietri_2004	1	Una persona canta un canto.	test
+9358	Vietri_2004	1	Mattia è una persona.	test
+9359	Vietri_2004	1	Il libro è in stampa.	test
+9360	Vietri_2004	1	Comportarsi così è caratteristico di certa gente.	test
+9361	Vietri_2004	1	Partire è differente da rimanere.	test
+9362	Vietri_2004	1	Lo porto in cucina, lo zucchero.	test
+9363	Vietri_2004	1	Io ed Emma teniamo conto della notizia.	test
+9364	Vietri_2004	1	Sofia ha presentato quella a dei suoi amici.	test
+9365	Vietri_2004	1	Lei ha presentato questa a dei suoi amici.	test
+9366	Vietri_2004	1	Edoardo ne ride.	test
+9367	Vietri_2004	0	Francesco lo detesta mangiare.	test
+9368	Vietri_2004	1	Dì la storia a Lorenzo e vedrai!	test
+9369	Vietri_2004	1	Dilla ad Alessandro e vedrai!	test
+9370	Vietri_2004	0	Prendilla!	test
+9371	Vietri_2004	1	Francesco legge un romanzo.	test
+9372	Vietri_2004	1	Ѐ scappare che Andrea desidera.	test
+9373	Vietri_2004	1	Francesco mangia e Francesco beve.	test
+9374	Vietri_2004	1	Alessandro sa che è bello.	test
+9375	Vietri_2004	1	Tommaso sa che Tommaso è bello.	test
+9376	Vietri_2004	1	Ѐ stata mangiata la pizza da Lorenzo.	test
+9377	Vietri_2004	1	Chi studia la matematica?	test
+9378	Vietri_2004	1	Che studia Giorgia?	test
+9379	Vietri_2004	1	Ho telefonato a casa.	test
+9380	Vietri_2004	1	Ho avvertito che avevi fatto tardi.	test
+9381	Vietri_2004	1	Ho localizzato lo stabilimento.	test
+9382	Vietri_2004	1	Agli studenti si ponevano alcune domande.	test
+9383	Vietri_2004	1	Dispiace non riuscire a prendere il Leone d'Oro a Venezia.	test
+9384	Vietri_2004	1	Ha recitato la parte di Amleto a teatro.	test
+9385	Vietri_2004	1	Lo spettacolo durò due ore.	test
+9386	Vietri_2004	1	Hanno caricato le armi dei ragazzi di proiettili.	test
+9387	Vietri_2004	1	Ha perso i contatti con i suoi amici.	test
+9388	Vietri_2004	1	Gabriele ha sbattuto la testa contro il muro.	test
+9389	Vietri_2004	1	Leonardo ha preso in castagna Giorgia.	test
+9390	Vietri_2004	1	Il concerto durò due ore.	test
+9391	Vietri_2004	1	Sono scesa di 2 kg.	test
+9392	Vietri_2004	1	Aurora e Lorenzo stanno mercanteggiando.	test
+9393	Vietri_2004	1	Vittoria non accettava che la trattassero così.	test
+9394	Vietri_2004	1	Beatrice pensa che tutto proceda nel migliore dei modi.	test
+9395	Vietri_2004	1	Alessandro ha reso i soldi a Tommaso.	test
+9396	Vietri_2004	1	Quel ragazzo è nato con la camicia!	test
+9397	Vietri_2004	1	Tappagli la bocca!	test
+9398	Vietri_2004	1	La sua memoria è di ferro.	test
+9399	Vietri_2004	1	Quella donna Francesco la baciò.	test
+9400	Vietri_2004	1	Ѐ baciare quella donna che Mattia desidera.	test
+9401	Vietri_2004	1	Ѐ la moto che Francesco parcheggia che è una Harley Davidson.	test
+9402	Vietri_2004	1	Gli sembra sia andato tutto bene.	test
+9403	Vietri_2004	0	Non voleva che pensasse che ciò fosse la sua preoccupazione e così non le fece domanda che aveva pensato di farle e che l'avrebbe fatta infuriare.	test
+9404	Vietri_2004	1	Mattia non caricò di significati quel fatto.	test
+9405	Vietri_2004	1	Disse a tutti le opinioni di quella donna.	test
+9406	Vietri_2004	1	A Sofia disse che quella festa fu triste.	test
+9407	Vietri_2017	1	Il vento ha fatto rompere il vetro.	test
+9408	Vietri_2017	1	Mio padre si è fatto essiccare i funghi dal contadino.	test
+9409	Vietri_2017	0	L'acceleratore si è schiacciato.	test
+9410	Vietri_2017	1	Riccardo ha distrutto il manoscritto.	test
+9411	Vietri_2017	1	La polizia ha ucciso il terrorista.	test
+9412	Vietri_2017	1	Il terrorista si è ucciso.	test
+9413	Vietri_2017	1	Alessandro ha fatto avariare il cibo al sole.	test
+9414	Vietri_2017	1	Lo speronamento del vano motore da parte nemica affondò la nave.	test
+9415	Vietri_2017	1	Una improvvisa raffica di vento ha rotto il vetro.	test
+9416	Vietri_2017	1	La nave fu affondata da un siluro.	test
+9417	Vietri_2017	1	La nave fu affondata da una forte tempesta.	test
+9418	Vietri_2017	1	La vetrata si è rotta al primo urto violento.	test
+9419	Vietri_2017	0	Francesco ha diplomato se stesso.	test
+9420	Vietri_2017	1	Quella spugna abrasiva ha graffiato lo sportello dell'auto.	test
+9421	Vietri_2017	1	I rovi hanno graffiato il viso di Alessandro.	test
+9422	Vietri_2017	1	Lorenzo ha incastrato la chiave nella toppa.	test
+9423	Vietri_2017	1	L'intonaco si è distaccato dalla parete.	test
+9424	Vietri_2017	1	Il pasticciere ha inzuppato il pan di spagna con il rum.	test
+9425	Vietri_2017	1	I sassi hanno riempito il fossato.	test
+9426	Vietri_2017	1	Giulia ha sporcato la tovaglia di caffè.	test
+9427	Vietri_2017	1	L'umidità ha ricoperto la parete con la muffa.	test
+9428	Vietri_2017	1	L'umidità ha ricoperto la parete di muffa.	test
+9429	Vietri_2017	1	La parete si è coperta di muffa.	test
+9430	Vietri_2017	1	Le condizioni meteo hanno alzato il livello dell'acqua di 20 cm.	test
+9431	Vietri_2017	1	Il livello dell'acqua si è alzato di 20 cm.	test
+9432	Vietri_2017	1	Il livello dell'acqua si è abbassato di 20 cm.	test
+9433	Vietri_2017	1	Gli amministratori hanno fuso la Fiat con la Chrysler.	test
+9434	Vietri_2017	1	La Chrysler e la Fiat si sono fuse.	test
+9435	Vietri_2017	1	Il vetro è in frantumi.	test
+9436	Vietri_2017	1	Le vendite aumentano.	test
+9437	Vietri_2017	1	Le vendite sono in incremento.	test
+9438	Vietri_2017	1	Le vendite sono in aumento.	test
+9439	Vietri_2017	1	Le vendite sono in calo.	test
+9440	Vietri_2017	1	Il sindaco ha abbellito la città.	test
+9441	Vietri_2017	1	La frutta si è maturata.	test
+9442	Vietri_2017	1	La roccia si è corrosa negli anni.	test
+9443	Vietri_2017	1	Le foglie secche si sono ammucchiate in giardino per giorni.	test
+9444	Vietri_2017	1	La finestra si è aperta per un secondo.	test
+9445	Vietri_2017	0	Il serbatoio si è riempito per un'ora.	test
+9446	Vietri_2017	1	Il governo ha aumentato le tasse del 30 % in 5 anni.	test
+9447	Vietri_2017	1	Le tasse sono aumentate del 31 % in 5 anni.	test
+9448	Vietri_2017	1	La sua elezione cambia lo scenario politico per i prossimi anni.	test
+9449	Vietri_2017	1	Le foglie sono sbiadite per giorni.	test
+9450	Vietri_2017	0	La lezione è iniziata per ore.	test
+9451	Vietri_2017	0	Il treno ha ritardato in due ore.	test
+9452	Vietri_2017	0	Le vendite si sono incrementate del 10 % per anni.	test
+9453	Vietri_2017	1	Il frigo ha sbrinato per tre ore.	test
+9454	Vietri_2017	1	L'incendio ha bruciato il bosco per giorni.	test
+9455	Vietri_2017	1	Il bosco è bruciato per giorni.	test
+9456	Vietri_2017	0	La carne è cotta per 5 minuti.	test
+9457	Vietri_2017	1	L'inflazione ha rallentato in un mese.	test
+9458	Vietri_2017	1	Le pareti sono recentemente ingiallite.	test
+9459	Vietri_2017	0	Il ramo è diventato curvato.	test
+9460	Vietri_2017	0	Le alici sono diventate marinate.	test
+9461	Vietri_2017	0	La stanza si è fatta ingrandita.	test
+9462	Vietri_2017	1	I commercianti hanno reso i prezzi cari.	test
+9463	Vietri_2017	1	Il mare è diventato agitato.	test
+9464	Vietri_2017	1	La carne viene insaporita dalle spezie.	test
+9465	Vietri_2017	1	Lorenzo è simile a uno scheletro.	test
+9466	Vietri_2017	1	Il pullover di lana è infeltrito.	test
+9467	Vietri_2017	1	La dieta lo ha reso simile a uno scheletro.	test
+9468	Vietri_2017	0	La carne si è fatta gustosa.	test
+9469	Vietri_2017	0	Riccardo è diventato magro.	test
+9470	Vietri_2017	1	Il maglione si è fatto infeltrito.	test
+9471	Vietri_2017	1	La sala si è fatta affollata.	test
+9472	Vietri_2017	1	La carne si è fatta saporita.	test
+9473	Vietri_2017	0	I prezzi diventano aumentatissimi.	test
+9474	Vietri_2017	1	La gente depressa spaventa Lorenzo.	test
+9475	Vietri_2017	1	Le ragazze hanno spaventato Riccardo.	test
+9476	Vietri_2017	1	Quei fuochi hanno spaventato Gabriele.	test
+9477	Vietri_2017	1	Alice ha calmato Lorenzo.	test
+9478	Vietri_2017	1	Gabriele si è calmato.	test
+9479	Vietri_2017	1	Aurora ha fatto odiare Edoardo.	test
+9480	Vietri_2017	0	Paola si preoccuperà per l'organizzazione di quell'evento per farlo ben riuscire.	test
+9481	Vietri_2017	1	Quel medico si preoccupa della sua paziente per farla guarire in fretta.	test
+9482	Vietri_2017	1	Alessandro si è agitato con quella notizia.	test
+9483	Vietri_2017	1	Gabriele si è irritato di quella notizia.	test
+9484	Vietri_2017	0	Alessandro si è irritato di Emma.	test
+9485	Vietri_2017	1	Alessandro si è irritato che Alice non fosse ancora rientrata.	test
+9486	Vietri_2017	1	Che Giorgia sia tranquilla calma Edoardo.	test
+9487	Vietri_2017	0	Francesco viene preoccupato da questa situazione.	test
+9488	Vietri_2017	1	Ciò inorridisce Giulia.	test
+9489	Vietri_2017	1	Sofia si sente agitata.	test
+9490	Vietri_2017	1	Quel discorso ha annoiato Francesco.	test
+9491	Vietri_2017	1	Quel discorso è noioso per Francesco.	test
+9492	Vietri_2017	1	Quel discorso è annoiato per Edoardo.	test
+9493	Vietri_2017	1	I film horror inquietano Andrea.	test
+9494	Vietri_2017	0	Il tuo comportamento è spazientante.	test
+9495	Vietri_2017	1	L'operaio ha abbattuto la casa.	test
+9496	Vietri_2017	1	La tempesta agitava gli alberi.	test
+9497	Vietri_2017	1	Il mare si agitava.	test
+9498	Vietri_2017	1	Il freddo secca le foglie.	test
+9499	Vietri_2017	1	Tommaso ha cementato i mattoni.	test
+9500	Vietri_2017	1	Il vento ha scoperchiato la casa.	test
+9501	Vietri_2017	1	Gli elogi di Leonardo hanno montato la testa ad Aurora.	test
+9502	Vietri_2017	1	Giulia si è montata la testa con gli elogi di Leonardo.	test
+9503	Vietri_2017	0	Giulia ha montato la testa a se stessa.	test
+9504	Elia_1982	1	Leonardo ha il desiderio di un libro.	test
+9505	Elia_1982	1	Tommaso fa una bestialità.	test
+9506	Elia_1982	1	Sofia ha perso il treno.	test
+9507	Elia_1982	1	Alice mangia un gelato in camera da pranzo.	test
+9508	Elia_1982	0	Giorgia ha messo il figlio a scuola svizzera.	test
+9509	Elia_1982	1	Paola cade in terra.	test
+9510	Elia_1982	0	Tommaso cade per la terra.	test
+9511	Elia_1982	0	Il libro sta in sedia.	test
+9512	Elia_1982	1	La palla è lì dietro.	test
+9513	Elia_1982	1	La palla è lì a terra.	test
+9514	Elia_1982	1	La palla è finita al suolo.	test
+9515	Elia_1982	1	Beatrice fa il proprio interesse.	test
+9516	Elia_1982	1	La casa è vicino là dove tu sai.	test
+9517	Elia_1982	1	Giulia scende da sotto.	test
+9518	Elia_1982	1	Sverniamo al mare.	test
+9519	Elia_1982	1	Tutti gettano la croce addosso a Riccardo.	test
+9520	Elia_1982	0	Mattia corre in addiaccio.	test
+9521	Vietri_1985	1	Beatrice ha coraggio da vendere.	test
+9522	Vietri_1985	1	Sofia porta il pacco a Lorenzo.	test
+9523	Vietri_1985	1	Aurora mette la sicura alla pistola di Gabriele.	test
+9524	Vietri_1985	1	Francesco ha bruciato i quadri.	test
+9525	Vietri_1985	0	Leonardo ha incendiato le palle.	test
+9526	Vietri_1985	0	Vittoria rapinò un cioccolatino a Riccardo.	test
+9527	Vietri_1985	1	Andrea ha bruciato tutte le tappe.	test
+9528	Vietri_1985	0	Le tappe sono state bruciate da Francesco.	test
+9529	Vietri_1985	1	Sono state bruciate le tappe.	test
+9530	Vietri_1985	0	Il cuore che Aurora rubò a Francesco era già impegnato.	test
+9531	Vietri_1985	1	Francesco ne vide di tutti i colori.	test
+9532	Vietri_1985	1	Ѐ Alessandro che ha bruciato le tappe.	test
+9533	Vietri_1985	1	Alice è come l'araba fenice.	test
+9534	Vietri_1985	1	Alessandro corre velocemente.	test
+9535	Vietri_1985	1	Beatrice ha smesso di fare qualcosa.	test
+9536	Vietri_1985	1	Francesco si è ravveduto.	test
+9537	Vietri_1985	1	Tommaso lasciò l'abito.	test
+9538	Vietri_1985	1	Francesco cadde nella trappola del truffatore.	test
+9539	Vietri_1985	1	Aurora prese la carne.	test
+9540	Vietri_1985	0	Mattia prese il tumore.	test
+9541	Vietri_1985	1	Vittoria prese camera.	test
+9542	Vietri_1985	1	Leonardo ebbe il tifo.	test
+9543	Vietri_1985	1	Riccardo si raffreddò.	test
+9544	Vietri_1985	1	Vittoria ed Edoardo presero la fuga.	test
+9545	Vietri_1985	1	Sofia e Lorenzo fuggirono.	test
+9546	Vietri_1985	1	Riccardo si prese una sbronza.	test
+9547	Vietri_1985	1	I gabbiani cominciarono a volare.	test
+9548	Vietri_1985	1	Leonardo ebbe fresco.	test
+9549	Vietri_1985	1	Tommaso ebbe caldo.	test
+9550	Vietri_1985	1	Aurora fece un bagno.	test
+9551	Vietri_1985	1	Edoardo si sposò.	test
+9552	Vietri_1985	1	Tommaso cominciò a correre.	test
+9553	Vietri_1985	1	Edoardo prese sonno.	test
+9554	Vietri_1985	1	Tommaso prese la pioggia.	test
+9555	Vietri_1985	1	Vittoria prese la pioggia.	test
+9556	Vietri_1985	1	Beatrice prese l'acqua piovana nel secchio.	test
+9557	Vietri_1985	1	Riccardo e Tommaso fuggirono.	test
+9558	Vietri_1985	1	Gli uccelli cominciarono.	test
+9559	Vietri_1985	1	Sofia si è vestita a lutto.	test
+9560	Vietri_1985	1	Edoardo si innervosì.	test
+9561	Vietri_1985	1	Alice prese impegno con Aurora.	test
+9562	Vietri_1985	1	Sofia si impegnò con Alice.	test
+9563	Vietri_1985	1	Leonardo si imbarcò sulla nave.	test
+9564	Vietri_1985	1	La lite originò dalla discussione.	test
+9565	Vietri_1985	1	Gli uccelli presero l'imbeccata dalla madre.	test
+9566	Vietri_1985	1	Beatrice si prese l'imbeccata da Edoardo.	test
+9567	Vietri_1985	1	La lezione iniziò al XV secolo.	test
+9568	Vietri_1985	1	Edoardo si alleò con Alessandro.	test
+9569	Vietri_1985	0	Alessandro confidò con il nuovo lavoro.	test
+9570	Vietri_1985	1	Il cavallo è sfuggito al controllo del fantino.	test
+9571	Vietri_1985	1	Il cavallo ha preso la mano del fantino.	test
+9572	Vietri_1985	1	Andrea prese il coltello per la lama dal cassetto.	test
+9573	Vietri_1985	1	Gabriele prese le altrui parole per buona moneta.	test
+9574	Vietri_1985	1	La stoffa perse colore.	test
+9575	Vietri_1985	1	La stoffa non ha più colore.	test
+9576	Vietri_1985	1	Riccardo ha preso una buona occasione.	test
+9577	Vietri_1985	1	Leonardo non ebbe più tracce di Sofia.	test
+9578	Vietri_1985	1	Alessandro vide le stelle.	test
+9579	Vietri_1985	1	Riccardo mostrò i denti al dentista.	test
+9580	Vietri_1985	1	Leonardo tirò le cuoia della vacca.	test
+9581	Vietri_1985	1	Riccardo non torse un capello a Giulia.	test
+9582	Vietri_1985	1	Gabriele prese una cotta per Aurora.	test
+9583	Vietri_1985	1	Lorenzo portò acqua al mare.	test
+9584	Vietri_1985	1	Riccardo costruisce castelli in aria.	test
+9585	Vietri_1985	1	Leonardo cercava l'ago nel pagliaio.	test
+9586	D-Agostino_1992	1	La madre mise il bimbo nella culla.	test
+9587	D-Agostino_1992	0	La madre avvolge un panno in il bimbo.	test
+9588	D-Agostino_1992	1	Che tu sia partito tocca Sofia profondamente.	test
+9589	D-Agostino_1992	1	Io sono certo che voi sappiate che essi perdono il loro tempo.	test
+9590	D-Agostino_1992	1	Lorenzo ama Alice.	test
+9591	D-Agostino_1992	1	Piove, mi bagno.	test
+9592	D-Agostino_1992	1	Alessandro ha angoscia su di sé.	test
+9593	D-Agostino_1992	1	Il quadro sta sulla parete.	test
+9594	D-Agostino_1992	1	Vittoria ha caldo.	test
+9595	D-Agostino_1992	1	Il padre agita Leonardo.	test
+9596	D-Agostino_1992	0	Lo squalo ama i bignè.	test
+9597	D-Agostino_1992	1	Mattia lascia il calcio.	test
+9598	D-Agostino_1992	1	Tommaso si è lasciato con Sofia.	test
+9599	D-Agostino_1992	1	Ti lascio un libro in prestito.	test
+9600	D-Agostino_1992	1	Emma ha fegato.	test
+9601	D-Agostino_1992	1	Il sindacati hanno elogiato l'accordo con il governo.	test
+9602	D-Agostino_1992	1	Tommaso è di una rigida condotta morale.	test
+9603	D-Agostino_1992	1	Paola ha una forte cotta per Tommaso.	test
+9604	D-Agostino_1992	0	Il frigorifero è di una rigida condotta morale.	test
+9605	D-Agostino_1992	0	Il frigorifero sostiene una rigida condotta morale.	test
+9606	D-Agostino_1992	0	Il frigorifero si è beccato una forte cotta per Andrea.	test
+9607	D-Agostino_1992	0	Alessandro è di una rigida condotta morale di Mattia.	test
+9608	D-Agostino_1992	0	Lorenzo sostiene una rigida condotta morale di Tommaso.	test
+9609	D-Agostino_1992	0	Paola si è pigliata una forte cotta per Tommaso di Giulia.	test
+9610	D-Agostino_1992	1	Mattia si è raffreddato.	test
+9611	D-Agostino_1992	1	Francesco ha acchiappato un raffreddore.	test
+9612	D-Agostino_1992	1	Gabriele schiaffeggiò Sofia.	test
+9613	D-Agostino_1992	1	Andrea mollò uno schiaffo ad Alice.	test
+9614	D-Agostino_1992	1	Tommaso sospetta di Sofia.	test
+9615	D-Agostino_1992	1	Mattia non sospetta di Alice.	test
+9616	D-Agostino_1992	1	Lorenzo analizza il testo di Paola.	test
+9617	D-Agostino_1992	1	Lorenzo ha caricato la casse sul camion.	test
+9618	D-Agostino_1992	0	Leonardo procede a fare la carica del camion di casse.	test
+9619	D-Agostino_1992	0	Le casse sono la carica del camion.	test
+9620	D-Agostino_1992	0	Il camion è il carico delle casse.	test
+9621	D-Agostino_1992	1	Mattia ha caricato i libri sulla mensola.	test
+9622	D-Agostino_1992	1	Mattia procede al caricamento del fucile.	test
+9623	D-Agostino_1992	1	L'architrave è carico di pietre.	test
+9624	D-Agostino_1992	1	L'architrave è caricato di pietre.	test
+9625	D-Agostino_1992	1	La bimba carica il carillon.	test
+9626	D-Agostino_1992	1	Il terzino ha caricato contro l'attaccante.	test
+9627	D-Agostino_1992	1	Edoardo dà molto affetto a Giorgia.	test
+9628	D-Agostino_1992	1	Edoardo fa avere molte responsabilità a Beatrice.	test
+9629	D-Agostino_1992	1	Andrea risale le scale di corsa.	test
+9630	D-Agostino_1992	1	Edoardo ricarica il camion di casse.	test
+9631	D-Agostino_1992	1	Alessandro scarica le casse dal camion.	test
+9632	D-Agostino_1992	1	Leonardo scaricò i giornali vecchi in cantina.	test
+9633	D-Agostino_1992	1	Alice è l'incaricato del rapimento di Sofia.	test
+9634	D-Agostino_1992	1	Il rapimento di Giorgia è l'incarico di Aurora.	test
+9635	D-Agostino_1992	1	Leonardo prende il toro per le corna.	test
+9636	D-Agostino_1992	1	Tommaso mette il bastone fra le ruote a Francesco.	test
+9637	D-Agostino_1992	0	Oggi, la candela non è valsa dal gioco.	test
+9638	D-Agostino_1992	0	Il frigo ha sedotto una minorenne.	test
+9639	D-Agostino_1992	0	Gabriele ha ferito, con il fucile, il cane.	test
+9640	D-Agostino_1992	1	Tommaso ha pizzicato la guancia di Vittoria.	test
+9641	D-Agostino_1992	1	Mattia ha pizzicato Sofia sulla guancia.	test
+9642	D-Agostino_1992	1	Lorenzo mantiene la scala contro il muro.	test
+9643	D-Agostino_1992	1	Leonardo infila la mano nel cassetto.	test
+9644	D-Agostino_1992	1	Alice corre in giardino.	test
+9645	D-Agostino_1992	1	Mattia fornisce i guerriglieri di armi.	test
+9646	D-Agostino_1992	1	Edoardo vede la fronte di Vittoria nello specchio.	test
+9647	D-Agostino_1992	1	Mattia si dilata la testa.	test
+9648	D-Agostino_1992	1	La musica rock rompe le orecchie ad Andrea.	test
+9649	D-Agostino_1992	1	Leonardo le ha tirate le cuoia.	test
+9650	D-Agostino_1992	1	Andare a genio a qualcuno.	test
+9651	D-Agostino_1992	1	Sciogliere la lingua di qualcuno.	test
+9652	D-Agostino_1992	1	Essere l'occhio destro di qualcuno.	test
+9653	D-Agostino_1992	1	Essere geloso come una tigre.	test
+9654	D-Agostino_1992	1	Fare la bocca a qualcuno.	test
+9655	D-Agostino_1992	1	Sofia raccolse i cioccolatini a manciate.	test
+9656	D-Agostino_1992	1	La moto è nuova di zecca.	test
+9657	D-Agostino_1992	0	I tappeti sono grigi-verdi.	test
+9658	D-Agostino_1992	1	Sofia ha mangiato molto.	test
+9659	D-Agostino_1992	1	Ho visto un'unità di copertura in marcia.	test
+9660	D-Agostino_1992	1	La situazione comporta per Emma che si svesta.	test
+9661	D-Agostino_1992	1	Andrea chiacchiera con Emma del fatto che piove.	test
+9662	D-Agostino_1992	1	Il cielo brilla di mille stelle.	test
+9663	D-Agostino_1992	1	Riccardo guarda questa persona.	test
+9664	D-Agostino_1992	0	Ciò guarda questa persona.	test
+9665	D-Agostino_1992	1	Alessandro perfora questa cosa.	test
+9666	D-Agostino_1992	1	Ciò bagna questa cosa.	test
+9667	D-Agostino_1992	1	Mattia non studia la geometria.	test
+9668	D-Agostino_1992	1	Le spalle di Edoardo toccano la parete.	test
+9669	D-Agostino_1992	1	Il premio è meritato da Gabriele.	test
+9670	D-Agostino_1992	1	Il perimetro del rettangolo è misurato da Leonardo.	test
+9671	D-Agostino_1992	1	Giulia canta un tango.	test
+9672	D-Agostino_1992	1	L'acqua bolle.	test
+9673	D-Agostino_1992	1	Tommaso spalma il burro sul pane.	test
+9674	D-Agostino_1992	1	Leonardo studia geografia.	test
+9675	D-Agostino_1992	1	Francesco è uno scrittore.	test
+9676	D-Agostino_1992	1	Lorenzo beve vino.	test
+9677	D-Agostino_1992	1	Leonardo disegna.	test
+9678	D-Agostino_1992	1	Egli legge qualcosa.	test
+9679	D-Agostino_1992	1	La rumba è un ballo.	test
+9680	D-Agostino_1992	1	I panni asciuga al sole.	test
+9681	D-Agostino_1992	1	Un incidente d'auto ha accecato Mattia.	test
+9682	D-Agostino_1992	1	La forte siccità ha abbassato il livello del fiume.	test
+9683	D-Agostino_1992	1	La pianura si ghiaccia.	test
+9684	D-Agostino_1992	0	Le speranze di Leonardo raddoppiano se stesse.	test
+9685	D-Agostino_1992	1	Edoardo e Vittoria si baciano.	test
+9686	D-Agostino_1992	1	Mattia bacia Sofia e Sofia bacia Mattia.	test
+9687	D-Agostino_1992	0	Riccardo afferra se stesso alla balaustra.	test
+9688	D-Agostino_1992	1	Andrea discute il tuo atteggiamento.	test
+9689	D-Agostino_1992	1	Mattia possiede molti soldi.	test
+9690	D-Agostino_1992	1	Alessandro carica le casse sul camion.	test
+9691	D-Agostino_1992	1	Leonardo ruba un libro a Paola.	test
+9692	D-Agostino_1992	0	C'è un concordato su Tommaso tra il prezzo dell'auto ed Edoardo.	test
+9693	D-Agostino_1992	1	L'artiglieria sparava proiettili da 120 dalla collina verso la linea difensiva nemica.	test
+9694	D-Agostino_1992	1	Il meccanismo di funzionamento del rotore si alloggia in quell'involucro.	test
+9695	D-Agostino_1992	1	Le foto di Gabriele e Tommaso si conservano in quella scatola.	test
+9696	D-Agostino_1992	1	I guerrieri fronteggiavano i troiani.	test
+9697	D-Agostino_1992	1	Emma ha estratto la pistola dalla borsa.	test
+9698	D-Agostino_1992	1	Vittoria ha acquistato una casa sulla collina.	test
+9699	D-Agostino_1992	1	Andrea fa che Gabriele studi.	test
+9700	D-Agostino_1992	1	Riccardo avvolge la statuetta in un foglio di giornale.	test
+9701	D-Agostino_1992	0	Gli operai caricano le casse al camion.	test
+9702	D-Agostino_1992	1	L'antenna gira verso il ripetitore.	test
+9703	D-Agostino_1992	1	Aurora seppellisce il padre sotto un albero.	test
+9704	D-Agostino_1992	1	Gabriele accosta la scrivania alla poltrona.	test
+9705	D-Agostino_1992	1	Lorenzo passò un panno sul mobile.	test
+9706	D-Agostino_1992	1	Andrea passò il pallone a Leonardo.	test
+9707	D-Agostino_1992	1	Tommaso spalma la tartina di burro.	test
+9708	D-Agostino_1992	1	Tommaso ha spalmato il panino di maionese.	test
+9709	D-Agostino_1992	1	Il cognac non sta sulla torta.	test
+9710	D-Agostino_1992	1	Mattia ha colmato il vaso d'acqua.	test
+9711	D-Agostino_1992	1	Tommaso fa che il vino stia nella damigiana.	test
+9712	D-Agostino_1992	1	Gli americani danno una fornitura di armi ai ribelli.	test
+9713	D-Agostino_1992	1	La stanza profuma di aromi di pino.	test
+9714	D-Agostino_1992	1	Durante l'azione di Aurora la scala sta contro il muro.	test
+9715	D-Agostino_1992	1	Il radar ha localizzato l'aereo sulla perpendicolare di Roma.	test
+9716	D-Agostino_1992	1	La ditta ha disinfestato il palazzo dai topi.	test
+9717	D-Agostino_1992	1	Edoardo abbina male i calzini con la cravatta.	test
+9718	D-Agostino_1992	1	Edoardo coordina il lavoro di Sofia con quello di Emma.	test
+9719	D-Agostino_1992	1	Ha luogo una confusione in Sofia tra l'amore e la dipendenza.	test
+9720	D-Agostino_1992	1	Beatrice confonde l'amore con la dipendenza.	test
+9721	D-Agostino_1992	0	Leonardo associa la linguistica dalla psicologia.	test
+9722	D-Agostino_1992	1	Un portachiavi passa da Sofia ad Edoardo.	test

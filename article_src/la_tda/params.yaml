@@ -1,0 +1,23 @@
+# debug flags
+pretrain_bert: True
+compute_topological_features: True
+compute_barcodes: True
+clean_seed_directory: True
+
+wandb_project: "la-tda-reproduce"
+python_executable_path: "~/anaconda3/envs/la-tda/bin/python"
+
+seeds: [ 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 ]
+model_save_dir: "./"
+root: "."
+
+# Finetuning parameters
+## The default parameters as per Annex B of the article https://arxiv.org/pdf/2205.09630v2.pdf are not the more
+## efficient in terms of performance.
+## We either use those presented in https://arxiv.org/pdf/2304.01680.pdf Annex A (i.e. lower LR and use of
+## Weights Decay) and in the codebase of this article
+## https://github.com/upunaprosk/la-tda/blob/master/1_Fine_tuning_example.ipynb.
+epoch: 4
+lr: 3e-5
+decay: 1e-2
+batch: 32

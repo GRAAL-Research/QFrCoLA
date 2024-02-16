@@ -1,0 +1,27 @@
+# Python >= 3.11 depending of your CUDA driver.
+
+# If you have recent CUDA drivers use 3.12.1 otherwise take 3.11.x
+# Python >= 3.12.1
+# Since it need the fix for the deadlock problem in futures
+# https://github.com/python/cpython/issues/105829
+colorama
+datasets
+networkx
+ripserplusplus
+scikit-learn
+scipy
+shap
+tokenizers
+transformers
+urllib3
+torch
+accelerate
+wandb
+pandas
+supar
+evaluate
+hydra-core
+numpy
+fugashi
+ipadic
+# pip install torch==1.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116

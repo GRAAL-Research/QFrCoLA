@@ -1,0 +1,282 @@
+{
+  "en": {
+    "train": {
+      "mean_sentences_len": 7.79,
+      "mean_lexical_words_len": 3.6577008537013214,
+      "global_vocabulary_set_len": 5778,
+      "global_vocabulary_lexical_words_set_len": 5383,
+      "size": 8551,
+      "global_vocabulary_set_len_normalize": 0.6757104432230149,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.6295170155537364,
+      "split_ratio": 70.44
+    },
+    "dev": {
+      "mean_sentences_len": 7.64,
+      "mean_lexical_words_len": 3.667931688804554,
+      "global_vocabulary_set_len": 1375,
+      "global_vocabulary_lexical_words_set_len": 1147,
+      "size": 527,
+      "global_vocabulary_set_len_normalize": 2.609108159392789,
+      "global_vocabulary_lexical_words_set_len_normalize": 2.176470588235294,
+      "split_ratio": 69.26
+    },
+    "test": {
+      "mean_sentences_len": 8.54,
+      "mean_lexical_words_len": 3.8275193798449614,
+      "global_vocabulary_set_len": 988,
+      "global_vocabulary_lexical_words_set_len": 773,
+      "size": 516,
+      "global_vocabulary_set_len_normalize": 1.9147286821705427,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.498062015503876,
+      "split_ratio": 68.6
+    },
+    "ratio": 70.27,
+    "mean_sentences_len": 7.99,
+    "global_vocabulary_set_len": 6097
+  },
+  "it": {
+    "train": {
+      "mean_sentences_len": 6.15,
+      "mean_lexical_words_len": 3.342648378413024,
+      "global_vocabulary_set_len": 5825,
+      "global_vocabulary_lexical_words_set_len": 5320,
+      "size": 7801,
+      "global_vocabulary_set_len_normalize": 0.7466991411357519,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.6819638507883604,
+      "split_ratio": 84.39
+    },
+    "dev": {
+      "mean_sentences_len": 6.14,
+      "mean_lexical_words_len": 3.3298097251585626,
+      "global_vocabulary_set_len": 1844,
+      "global_vocabulary_lexical_words_set_len": 1554,
+      "size": 946,
+      "global_vocabulary_set_len_normalize": 1.9492600422832982,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.642706131078224,
+      "split_ratio": 85.41
+    },
+    "test": {
+      "mean_sentences_len": 6.27,
+      "mean_lexical_words_len": 3.390769230769231,
+      "global_vocabulary_set_len": 1888,
+      "global_vocabulary_lexical_words_set_len": 1590,
+      "size": 975,
+      "global_vocabulary_set_len_normalize": 1.9364102564102563,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.6307692307692307,
+      "split_ratio": 84.21
+    },
+    "ratio": 84.47,
+    "mean_sentences_len": 6.19,
+    "global_vocabulary_set_len": 6402
+  },
+  "ru": {
+    "train": {
+      "mean_sentences_len": 8.6,
+      "mean_lexical_words_len": 4.784470707840895,
+      "global_vocabulary_set_len": 19057,
+      "global_vocabulary_lexical_words_set_len": 18221,
+      "size": 7869,
+      "global_vocabulary_set_len_normalize": 2.4217816749269283,
+      "global_vocabulary_lexical_words_set_len_normalize": 2.315542000254162,
+      "split_ratio": 74.52
+    },
+    "dev": {
+      "mean_sentences_len": 8.46,
+      "mean_lexical_words_len": 4.687690742624619,
+      "global_vocabulary_set_len": 4140,
+      "global_vocabulary_lexical_words_set_len": 3628,
+      "size": 983,
+      "global_vocabulary_set_len_normalize": 4.211597151576806,
+      "global_vocabulary_lexical_words_set_len_normalize": 3.690742624618515,
+      "split_ratio": 74.57
+    },
+    "test": {
+      "mean_sentences_len": 10.98,
+      "mean_lexical_words_len": 7.096452328159645,
+      "global_vocabulary_set_len": 9353,
+      "global_vocabulary_lexical_words_set_len": 8799,
+      "size": 1804,
+      "global_vocabulary_set_len_normalize": 5.184589800443459,
+      "global_vocabulary_lexical_words_set_len_normalize": 4.87749445676275,
+      "split_ratio": 63.69
+    },
+    "ratio": 72.69,
+    "mean_sentences_len": 9.35,
+    "global_vocabulary_set_len": 26382
+  },
+  "sv": {
+    "train": {
+      "mean_sentences_len": 21.1,
+      "mean_lexical_words_len": 8.771804217651653,
+      "global_vocabulary_set_len": 6841,
+      "global_vocabulary_lexical_words_set_len": 6429,
+      "size": 7682,
+      "global_vocabulary_set_len_normalize": 0.8905233012236397,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.8368914345222598,
+      "split_ratio": 50.0
+    },
+    "dev": {
+      "mean_sentences_len": 20.63,
+      "mean_lexical_words_len": 8.915730337078651,
+      "global_vocabulary_set_len": 1799,
+      "global_vocabulary_lexical_words_set_len": 1521,
+      "size": 890,
+      "global_vocabulary_set_len_normalize": 2.0213483146067417,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.708988764044944,
+      "split_ratio": 50.0
+    },
+    "test": {
+      "mean_sentences_len": 21.31,
+      "mean_lexical_words_len": 8.591216216216216,
+      "global_vocabulary_set_len": 1661,
+      "global_vocabulary_lexical_words_set_len": 1391,
+      "size": 888,
+      "global_vocabulary_set_len_normalize": 1.8704954954954955,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.5664414414414414,
+      "split_ratio": 50.0
+    },
+    "ratio": 50.0,
+    "mean_sentences_len": 21.01,
+    "global_vocabulary_set_len": 7884
+  },
+  "zh": {
+    "train": {
+      "mean_sentences_len": 7.14,
+      "mean_lexical_words_len": 3.2636671504596033,
+      "global_vocabulary_set_len": 3835,
+      "global_vocabulary_lexical_words_set_len": 3360,
+      "size": 4134,
+      "global_vocabulary_set_len_normalize": 0.9276729559748428,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.8127721335268505,
+      "split_ratio": 66.09
+    },
+    "dev": {
+      "mean_sentences_len": 7.16,
+      "mean_lexical_words_len": 3.0521739130434784,
+      "global_vocabulary_set_len": 1024,
+      "global_vocabulary_lexical_words_set_len": 779,
+      "size": 460,
+      "global_vocabulary_set_len_normalize": 2.226086956521739,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.6934782608695653,
+      "split_ratio": 66.96
+    },
+    "test": {
+      "mean_sentences_len": 7.11,
+      "mean_lexical_words_len": 3.2756345177664974,
+      "global_vocabulary_set_len": 2636,
+      "global_vocabulary_lexical_words_set_len": 2231,
+      "size": 1970,
+      "global_vocabulary_set_len_normalize": 1.3380710659898478,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.1324873096446701,
+      "split_ratio": 67.82
+    },
+    "ratio": 66.67,
+    "mean_sentences_len": 7.14,
+    "global_vocabulary_set_len": 4759
+  },
+  "no": {
+    "train": {
+      "mean_sentences_len": 18.03,
+      "mean_lexical_words_len": 7.020164378845905,
+      "global_vocabulary_set_len": 32561,
+      "global_vocabulary_lexical_words_set_len": 32138,
+      "size": 116195,
+      "global_vocabulary_set_len_normalize": 0.28022720426868625,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.2765867722363269,
+      "split_ratio": 31.46
+    },
+    "dev": {
+      "mean_sentences_len": 18.07,
+      "mean_lexical_words_len": 7.064245223598572,
+      "global_vocabulary_set_len": 8865,
+      "global_vocabulary_lexical_words_set_len": 8537,
+      "size": 14289,
+      "global_vocabulary_set_len_normalize": 0.6204073063195465,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.5974525859052418,
+      "split_ratio": 32.59
+    },
+    "test": {
+      "mean_sentences_len": 17.46,
+      "mean_lexical_words_len": 6.722519641243134,
+      "global_vocabulary_set_len": 8600,
+      "global_vocabulary_lexical_words_set_len": 8272,
+      "size": 14383,
+      "global_vocabulary_set_len_normalize": 0.5979281095738024,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.575123409580755,
+      "split_ratio": 31.58
+    },
+    "ratio": 31.58,
+    "mean_sentences_len": 17.85,
+    "global_vocabulary_set_len": 37319
+  },
+  "ja": {
+    "train": {
+      "mean_sentences_len": 10.11,
+      "mean_lexical_words_len": 4.48764272293684,
+      "global_vocabulary_set_len": 3730,
+      "global_vocabulary_lexical_words_set_len": 3605,
+      "size": 6919,
+      "global_vocabulary_set_len_normalize": 0.5390952449775979,
+      "global_vocabulary_lexical_words_set_len_normalize": 0.5210290504408152,
+      "split_ratio": 83.38
+    },
+    "dev": {
+      "mean_sentences_len": 10.09,
+      "mean_lexical_words_len": 4.458959537572254,
+      "global_vocabulary_set_len": 1483,
+      "global_vocabulary_lexical_words_set_len": 1381,
+      "size": 865,
+      "global_vocabulary_set_len_normalize": 1.714450867052023,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.5965317919075144,
+      "split_ratio": 83.93
+    },
+    "test": {
+      "mean_sentences_len": 10.1,
+      "mean_lexical_words_len": 4.588321167883212,
+      "global_vocabulary_set_len": 896,
+      "global_vocabulary_lexical_words_set_len": 808,
+      "size": 685,
+      "global_vocabulary_set_len_normalize": 1.308029197080292,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.1795620437956205,
+      "split_ratio": 73.28
+    },
+    "ratio": 82.62,
+    "mean_sentences_len": 10.1,
+    "global_vocabulary_set_len": 4146
+  },
+  "fr": {
+    "train": {
+      "mean_sentences_len": 11.35,
+      "mean_lexical_words_len": 5.045184904707813,
+      "global_vocabulary_set_len": 18350,
+      "global_vocabulary_lexical_words_set_len": 17725,
+      "size": 15846,
+      "global_vocabulary_set_len_normalize": 1.1580209516597249,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.1185788211536034,
+      "split_ratio": 69.49
+    },
+    "dev": {
+      "mean_sentences_len": 11.41,
+      "mean_lexical_words_len": 5.076093128904032,
+      "global_vocabulary_set_len": 5369,
+      "global_vocabulary_lexical_words_set_len": 4928,
+      "size": 1761,
+      "global_vocabulary_set_len_normalize": 3.0488358886996023,
+      "global_vocabulary_lexical_words_set_len_normalize": 2.7984099943214082,
+      "split_ratio": 69.51
+    },
+    "test": {
+      "mean_sentences_len": 11.34,
+      "mean_lexical_words_len": 5.05605618870925,
+      "global_vocabulary_set_len": 12690,
+      "global_vocabulary_lexical_words_set_len": 12130,
+      "size": 7546,
+      "global_vocabulary_set_len_normalize": 1.681685661277498,
+      "global_vocabulary_lexical_words_set_len_normalize": 1.6074741584945667,
+      "split_ratio": 69.49
+    },
+    "ratio": 69.49,
+    "mean_sentences_len": 11.37,
+    "global_vocabulary_set_len": 22131
+  }
+}

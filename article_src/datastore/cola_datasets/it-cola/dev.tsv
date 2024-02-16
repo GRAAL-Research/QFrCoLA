@@ -1,0 +1,947 @@
+UniqueIndexID	Source	label	sentence	Split
+7802	Graffi_1994	0	Voglio di salutare Giulia.	dev
+7803	Graffi_1994	1	Ho voglia di salutare Sofia.	dev
+7804	Graffi_1994	0	Il mio lo preferito è la Divina Commedia.	dev
+7805	Graffi_1994	0	Il mio treno preferito è la Divina Commedia.	dev
+7806	Graffi_1994	1	Lorenzo ha detto che Andrea ha parlato con Riccardo.	dev
+7807	Graffi_1994	1	Andrea sta elaborando la risposta.	dev
+7808	Graffi_1994	1	Alessandro ha incontrato Giulia.	dev
+7809	Graffi_1994	1	È ricomparso il padre del ragazzo.	dev
+7810	Graffi_1994	1	I prezzi sono aumentati.	dev
+7811	Graffi_1994	1	Salvato Andrea, ci siamo dati alla pazza gioia.	dev
+7812	Graffi_1994	1	Il palazzo delle assicurazioni è crollato.	dev
+7813	Graffi_1994	1	Quella costruzione offende il buon gusto.	dev
+7814	Graffi_1994	1	Newton ha spiegato la forza di gravità.	dev
+7815	Graffi_1994	1	Mi hanno dato il premio.	dev
+7816	Graffi_1994	1	Tommaso si è danneggiato.	dev
+7817	Graffi_1994	1	Quegli uomini hanno denunciato se stessi.	dev
+7818	Graffi_1994	1	Compro e leggo quel libro.	dev
+7819	Graffi_1994	1	Ho incontrato Lorenzo, non Emma.	dev
+7820	Graffi_1994	1	Non guardarlo.	dev
+7821	Graffi_1994	1	Ho incontrato molti amici di Riccardo.	dev
+7822	Graffi_1994	1	Non ho trovato il tuo libro in quella biblioteca.	dev
+7823	Graffi_1994	1	Non ce ne ho trovati molti.	dev
+7824	Graffi_1994	1	Riccardo ha promesso a Maria che metterà in vendita la propria casa.	dev
+7825	Graffi_1994	1	Maria ha salutato i suoi genitori.	dev
+7826	Graffi_1994	1	Riccardo non è molto intelligente.	dev
+7827	Graffi_1994	0	Riccardo non è molto, credo, intelligente.	dev
+7828	Graffi_1994	1	Hanno chiamato molte persone quel numero.	dev
+7829	Graffi_1994	1	Che cosa ha comprato Riccardo?	dev
+7830	Graffi_1994	1	Andrea è stato incontrato da Leonardo.	dev
+7831	Graffi_1994	1	Riccardo ha domandato da chi non era stato visto Leonardo.	dev
+7832	Graffi_1994	1	Leonardo, mi hanno detto che parlerà domani.	dev
+7833	Graffi_1994	1	Gabriele, quando l'hai visto?	dev
+7834	Graffi_1994	1	In quale cassetto Leonardo ha messo i fogli?	dev
+7835	Graffi_1994	0	Quale politco hanno parlato?	dev
+7836	Graffi_1994	1	Quale politico ha detto la radio che il giudice ha dichiarato che ha parlato?	dev
+7837	Graffi_1994	1	Lorenzo ha detto che partirà domani.	dev
+7838	Graffi_1994	1	Quando è arrivato Francesco, abbiamo potuto cenare.	dev
+7839	Graffi_1994	1	La tempesta ha abbattuto la quercia sotto cui il figliol prodigo pascolava i porci.	dev
+7840	Graffi_1994	1	Chi tocca i fili muore.	dev
+7841	Graffi_1994	1	Alessandro, che è venuto a trovarmi ieri, mi ha detto di salutarti.	dev
+7842	Graffi_1994	0	La commissione ritiene dunque il candidato aver fornito sufficienti prove della sua maturità scientifica.	dev
+7843	Graffi_1994	1	Il timore della guerra è ingiustificato.	dev
+7844	Graffi_1994	1	Riccardo ha perso le chiavi.	dev
+7845	Graffi_1994	1	Alessandro è bramoso di potere.	dev
+7846	Graffi_1994	1	Penso che Francesco domandi l'ora a Lorenzo.	dev
+7847	Graffi_1994	1	Tommaso ha affermato che Edoardo parla.	dev
+7848	Graffi_1994	1	Avendo io sempre sostenuto una posizione diversa, dovrò votare contro questa proposta.	dev
+7849	Graffi_1994	1	Tommaso ha ordinato ad Andrea di difenderlo.	dev
+7850	Graffi_1994	0	Il fatto di essere stato scoperto un delitto ci ha sconvolti.	dev
+7851	Graffi_1994	1	Chi pensi che Alessandro incontrerà?	dev
+7852	Graffi_1994	1	La sedia su cui ti sei seduto è rotta.	dev
+7853	Graffi_1994	0	Questa è la persona con cui Edoardo ha fatto l'affermazione che Tommaso ha parlato.	dev
+7854	Graffi_1994	0	Edoardo crede chi Sofia abbia baciato.	dev
+7855	Graffi_1994	1	Che problema non sai come potremo risolvere?	dev
+7856	Graffi_1994	1	Abbia visto lui.	dev
+7857	Graffi_1994	0	Abbiamo visto lo.	dev
+7858	Graffi_1994	1	Sofia dice che Alessandro parlerà domani.	dev
+7859	Graffi_1994	0	Beatrice ha dichiarato che se stessa non ha mi avuto niente a che fare con Gabriele.	dev
+7860	Graffi_2008	1	Riccardo ha detto che Andrea si è guardato.	dev
+7861	Graffi_2008	1	Il padre di Andrea mi è sembrato molto contento quando gli ho parlato.	dev
+7862	Graffi_2008	1	Penso che Edoardo creda che Maria voglia che Gabriele veda Riccardo.	dev
+7863	Graffi_2008	1	Edoardo crede che Emma voglia che Tommaso veda Gabriele.	dev
+7864	Graffi_2008	1	Il coniglio mangia.	dev
+7865	Graffi_2008	1	Che libro dice che il professore ha raccomandato di leggere?	dev
+7866	Graffi_2008	0	Per primo sono arrivato me, non tu.	dev
+7867	Graffi_2008	1	Arriva un uomo.	dev
+7868	Graffi_2008	1	Leonardo uccise Andrea.	dev
+7869	Graffi_2008	1	Andrea ha detti che Tommaso lo guarda.	dev
+7870	Graffi-Scalise_2002	1	Gabriele ha voglia di andare al mare.	dev
+7871	Graffi-Scalise_2002	1	È questo libro che non avevo mai letto.	dev
+7872	Graffi-Scalise_2002	1	Da quel professore, Tommaso non è stato ancora interrogato?	dev
+7873	Graffi-Scalise_2002	1	Alessandro crede che invaderemo quel paese.	dev
+7874	Graffi-Scalise_2002	1	A proposito di questi paesi, quale crede Andrea che invaderanno?	dev
+7875	Graffi-Scalise_2002	1	L'anno scorso Alessandro scriveva un libro, ma tutt'oggi non l'ha ancora finito.	dev
+7876	Graffi-Scalise_2002	0	L'anno scorso, Edoardo scrisse un libro, ma a tutt'oggi non l'ha ancora finito.	dev
+7877	Graffi-Scalise_2002	1	Gabriele è scapolo ed è sposato.	dev
+7878	Graffi-Scalise_2002	1	L'attuale re di Francia è calvo.	dev
+7879	Graffi-Scalise_2002	1	Qualche studente ha superato l'esame.	dev
+7880	Graffi-Scalise_2002	1	Se qualche studente non ha superato l'esame, allora ogni studente non ha superato l'esame.	dev
+7881	Graffi-Scalise_2002	1	Ieri ho promesso a Lorenzo di partire.	dev
+7882	Graffi-Scalise_2002	1	Nel processo di primo grado, la corte dichiarò l'imputato innocente.	dev
+7883	Simone-Masini_2013	1	Continua così e combinerai guai.	dev
+7884	Simone-Masini_2013	1	Ho preso le chiavi.	dev
+7885	Simone-Masini_2013	1	"Andrea, trasmettendoci le commissioni della marchesa: ""Ha detto: ""Darete loro il buongiorno"""""	dev
+7886	Simone-Masini_2013	1	Una bella casa fa comodo.	dev
+7887	Simone-Masini_2013	1	Prendiamo questo.	dev
+7888	Simone-Masini_2013	1	Uso il gladio.	dev
+7889	Simone-Masini_2013	1	Il calcolatore funziona bene.	dev
+7890	Simone-Masini_2013	1	Scusa!	dev
+7891	Simone-Masini_2013	1	Le ragazze sono arrivate.	dev
+7892	Simone-Masini_2013	1	Il libro che mi ha prestato Lorenzo non mi piace.	dev
+7893	Simone-Masini_2013	1	Dicono che hai raccontato che non ci vediamo mai.	dev
+7894	Simone-Masini_2013	1	Legge velocemente.	dev
+7895	Simone-Masini_2013	1	Andando a casa, ho incontrato tuo fratello.	dev
+7896	Simone-Masini_2013	1	Sto andando a prendere la macchina.	dev
+7897	Simone-Masini_2013	1	Non è vero che l'aspetto dei luoghi cambia come il volto degli uomini.	dev
+7898	Simone-Masini_2013	1	Va' a casa!	dev
+7899	Simone-Masini_2013	1	Io sono affamato.	dev
+7900	Simone-Masini_2013	1	Bravo, questo ragazzo.	dev
+7901	Simone-Masini_2013	1	Paola è una donna che apprezziamo molto.	dev
+7902	Simone-Masini_2013	1	Cosa fai domani?	dev
+7903	Simone-Masini_2013	1	Ho visto il libro che mi hai regalato.	dev
+7904	Simone-Masini_2013	1	Gli amici il cui maestro è Andrea.	dev
+7905	Simone-Masini_2013	1	Credo che tu abbia ragione.	dev
+7906	Simone-Masini_2013	1	Siccome è caduto, si è fatto male.	dev
+7907	Simone-Masini_2013	1	Volevano distruggerla e l'hanno distrutta.	dev
+7908	Simone-Masini_2013	1	Ognuno prenda il suo cappotto.	dev
+7909	Simone-Masini_2013	1	Prendimi quell'aggeggio.	dev
+7910	Simone-Masini_2013	1	Ho dato al bambino il latte, ma lui non l'ha bevuto.	dev
+7911	Simone-Masini_2013	1	Maria usa il computer, io non lo so fare.	dev
+7912	Simone-Masini_2013	1	Ho visto una casa.	dev
+7913	Simone-Masini_2013	1	Ho visto tua madre.	dev
+7914	Simone-Masini_2013	1	La persona che mi ha parlato.	dev
+7915	Simone-Masini_2013	1	Se uno va in treno, vuole stare comodo.	dev
+7916	Simone-Masini_2013	0	Fa male la mia testa.	dev
+7917	Simone-Masini_2013	1	Ho due case.	dev
+7918	Simone-Masini_2013	1	Ho delle case.	dev
+7919	Simone-Masini_2013	1	Il cavallo è arrivato primo.	dev
+7920	Simone-Masini_2013	1	I cavalli sono animali resistenti.	dev
+7921	Simone-Masini_2013	1	È venuto qualcuno.	dev
+7922	Simone-Masini_2013	1	È arrivato.	dev
+7923	Simone-Masini_2013	1	Posso venire.	dev
+7924	Simone-Masini_2013	1	Magari domani piove.	dev
+7925	Simone-Masini_2013	1	Lui è stato colto dalla pioggia.	dev
+7926	Simone-Masini_2013	1	Scrive una lettera a sua zia.	dev
+7927	Simone-Masini_2013	1	Egli lo vide.	dev
+7928	Simone-Masini_2013	1	Alessandro promette ad Edoardo di restare a casa.	dev
+7929	Simone-Masini_2013	1	Riccardo non ha tempo.	dev
+7930	Simone-Masini_2013	1	Ho riparato il tavolo.	dev
+7931	Simone-Masini_2013	1	Hanno aperto il libro.	dev
+7932	Simone-Masini_2013	1	Le è stato dato il cappello da me.	dev
+7933	Simone-Masini_2013	1	Quel ragazzo apre la porta.	dev
+7934	Simone-Masini_2013	1	Ho sentito cantare i ragazzi.	dev
+7935	Simone-Masini_2013	1	La macchina vuole lavarla lui.	dev
+7936	Simone-Masini_2013	1	È il meccanico che è venuto.	dev
+7937	Simone-Masini_2013	1	È venire fino a Napoli che non voglio.	dev
+7938	Simone-Masini_2013	1	Quanto al bagno, mi fa piacere.	dev
+7939	Simone-Masini_2013	1	Hai presente Lorenzo?	dev
+7940	Simone-Masini_2013	1	E da quando vive in America?	dev
+7941	Simone-Masini_2013	1	Credi che sia possibile una cosa del genere?	dev
+7942	Simone-Masini_2013	1	Appena detto ciò, mi lasciò che piangevo e volevo dire molte cose.	dev
+7943	Simone-Masini_2013	1	Sei sempre lo stesso: un amico fidato, paziente e onesto.	dev
+7944	Simone-Masini_2013	1	Il vento forte sul mare può provocare mareggiate.	dev
+7945	Simone-Masini_2013	1	Piangere forte.	dev
+7946	Simone-Masini_2013	1	Ho preso in casa una specie di gatto.	dev
+7947	Simone-Masini_2013	1	Ho preso dello zucchero.	dev
+7948	Simone-Masini_2013	1	Non mi piace il vino.	dev
+7949	Simone-Masini_2013	1	Quel che vendo è merce cinese.	dev
+7950	Simone-Masini_2013	1	Mettere fretta.	dev
+7951	Simone-Masini_2013	1	È stato bandito un concorso.	dev
+7952	Simone-Masini_2013	1	Tutte le balene devono essere protette.	dev
+7953	Simone-Masini_2013	0	Mettitelo bene in capo.	dev
+7954	Simone-Masini_2013	1	Questa macchina è vecchia ma nuova.	dev
+7955	Jezek_2003	1	Leonardo non conosce Maria.	dev
+7956	Jezek_2003	1	Il governo ha abolito la legge.	dev
+7957	Jezek_2003	1	Ho spazzolato le scarpe.	dev
+7958	Jezek_2003	0	Tommaso abita da dieci anni.	dev
+7959	Jezek_2003	1	Riccardo ha dato un libro a Sofia.	dev
+7960	Jezek_2003	1	Maria ha corso per ore.	dev
+7961	Jezek_2003	1	Francesco ha bevuto un caffè.	dev
+7962	Jezek_2003	1	Andrea ha trovato un biglietto per l'opera.	dev
+7963	Jezek_2003	0	Edoardo sta compilando.	dev
+7964	Jezek_2003	1	Emanare profumo.	dev
+7965	Jezek_2003	1	Aprire un nuovo negozio.	dev
+7966	Jezek_2003	1	Iniziare un'attività.	dev
+7967	Jezek_2003	1	La porta si è chiusa.	dev
+7968	Jezek_2003	1	Gabriele non ammette di essere preso in giro.	dev
+7969	Jezek_2003	1	Paola ha restituito il libro.	dev
+7970	Jezek_2003	1	Che cosa ha preso?	dev
+7971	Jezek_2003	1	Le scarpe si sono macchiate.	dev
+7972	Jezek_2003	1	Le giornate si sono accorciate.	dev
+7973	Jezek_2003	0	Qualcosa ha accorciato le giornate.	dev
+7974	Jezek_2003	0	Qualcuno ha accorciato le giornate.	dev
+7975	Jezek_2003	1	Aggrapparsi a un ramo.	dev
+7976	Jezek_2003	1	Arenatesi le navi, gli equipaggi sono scesi a terra.	dev
+7977	Jezek_2003	1	La nebbia è svanita.	dev
+7978	Jezek_2003	0	Alessandro si piange sempre.	dev
+7979	Jezek_2003	1	Riccardo si lagna sempre.	dev
+7980	Jezek_2003	1	Alle sue parole, Maria ha annuito.	dev
+7981	Jezek_2003	1	L'acqua è sgorgata all'improvviso.	dev
+7982	Jezek_2003	1	Andrea ha sbadigliato?	dev
+7983	Jezek_2003	1	Riccardo pedala	dev
+7984	Jezek_2003	0	È approfittato dell'esperienza.	dev
+7985	Jezek_2003	1	Il figlio di Francesco si siede in prima fila alle 8 in punto.	dev
+7986	Jezek_2003	1	Quando iniziò il concerto, il figlio di Leonardo sedeva in prima fila.	dev
+7987	Jezek_2003	0	Il muro ammuffisce in una giornata.	dev
+7988	Jezek_2003	1	Paola sta suonando un pezzo di Bach.	dev
+7989	Jezek_2003	1	Il coro canta molto bene.	dev
+7990	Jezek_2003	1	Riccardo aspirava sempre il fumo del sigaro.	dev
+7991	Jezek_2003	1	Andrea aspira a diventare medico.	dev
+7992	Jezek_2003	1	Lorenzo non ha cucinato.	dev
+7993	Jezek_2003	0	La lettera scrive.	dev
+7994	Jezek_2003	1	Disturbo?	dev
+7995	Jezek_2003	0	Leonardo sta compilando.	dev
+7996	Jezek_2003	1	Riccardo non scrive più da un pezzo.	dev
+7997	Jezek_2003	1	Il macchinista si è fermato.	dev
+7998	Jezek_2003	0	I negozianti hanno aumentato.	dev
+7999	Jezek_2003	1	I bicchieri si sono rotti.	dev
+8000	Jezek_2003	1	Paola ha acceso il fuoco.	dev
+8001	Jezek_2003	1	Il soggiorno in Canada ha migliorato il suo inglese.	dev
+8002	Jezek_2003	0	La lezione ha continuato.	dev
+8003	Jezek_2003	1	Saltare un ostacolo.	dev
+8004	Jezek_2003	1	Tutti si sono commossi.	dev
+8005	Jezek_2003	1	Si è macchiata la tovaglia.	dev
+8006	Jezek_2003	0	Macchia il vino.	dev
+8007	Jezek_2003	1	L'acqua è gelata in due ore.	dev
+8008	Jezek_2003	0	Le tappe hanno bruciato per un'ora.	dev
+8009	Jezek_2003	1	Il vetro si rompe.	dev
+8010	Jezek_2003	1	Ha verificato l'autenticità della firma.	dev
+8011	Jezek_2003	1	Riccardo lava la macchina.	dev
+8012	Jezek_2003	1	Paola ha visto la partita con gli amici.	dev
+8013	Jezek_2003	1	Gabriele si è tagliato le basette.	dev
+8014	Jezek_2003	1	Riccardo si è tagliato il mento con il rasoio.	dev
+8015	Jezek_2003	1	Francesco si è calmato, irrigidito.	dev
+8016	Jezek_2003	1	Si è rotto il vetro.	dev
+8017	Jezek_2003	1	Venite alla festa mangiati e bevuti.	dev
+8018	Jezek_2003	1	Il dibattito è continuato.	dev
+8019	Jezek_2003	0	Il dibattito ha continuato.	dev
+8020	Jezek_2003	1	Riccardo ha cancellato la scritta.	dev
+8021	Jezek_2003	0	Leonardo suona il telefono.	dev
+8022	Jezek_2003	1	Il livello si è alzato.	dev
+8023	Jezek_2003	1	Francesco ha bruciato la torta.	dev
+8024	Jezek_2003	1	Edoardo è pentito.	dev
+8025	Jezek_2003	0	Il bosco si è bruciato per tre ore.	dev
+8026	Jezek_2003	0	La biancheria si è asciugata per un'ora.	dev
+8027	Jezek_2003	1	Il libro è sparito per tre giorni, poi è improvvisamente ricomparso sul mio tavolo.	dev
+8028	Jezek_2003	1	Riccardo si è ingrassato.	dev
+8029	Jezek_2003	1	Tommaso è ingrassato molto dall'ultima volta che l'ho vista.	dev
+8030	Jezek_2003	0	Si è rotta la televisione in un'ora.	dev
+8031	Jezek_2003	1	Alle 8 in punto la sala si è svuotata.	dev
+8032	Jezek_2003	0	Il treno si è un po' fermato.	dev
+8033	Jezek_2003	1	La camicia è sporca.	dev
+8034	Jezek_2003	0	Ho notato un libro caduto.	dev
+8035	D-Agostino_1983	1	Alessandro conosce le strade.	dev
+8036	D-Agostino_1983	1	Andrea approfitta di Maria.	dev
+8037	D-Agostino_1983	1	Chi Leonardo ama?	dev
+8038	D-Agostino_1983	1	Francesco è il capo.	dev
+8039	D-Agostino_1983	0	Trenta chili sono pesati da Alessandro.	dev
+8040	D-Agostino_1983	1	Mio nonno ha venduto il suo podere.	dev
+8041	D-Agostino_1983	1	Due lingue sono parlate da tutti i miei studenti.	dev
+8042	D-Agostino_1983	0	Otto ore al giorno sono studiate da Tommaso.	dev
+8043	D-Agostino_1983	1	Alessandro trivella questa cosa.	dev
+8044	D-Agostino_1983	1	Tommaso torna da Roma.	dev
+8045	D-Agostino_1983	1	Francesco macina il caffè in un vecchio macinino.	dev
+8046	D-Agostino_1983	1	Tommaso rubò il portafoglio a Maria in un autobus.	dev
+8047	D-Agostino_1983	1	Dove Riccardo mise la cassa nel mobile?	dev
+8048	D-Agostino_1983	1	Lo scoglio affiora.	dev
+8049	D-Agostino_1983	0	Andrea si comporta.	dev
+8050	D-Agostino_1983	1	Leonardo sottrae la penna.	dev
+8051	D-Agostino_1983	1	Lorenzo toglie dalla cassaforte il giornale.	dev
+8052	D-Agostino_1983	1	Alessandro legge un libro a letto.	dev
+8053	D-Agostino_1983	1	Riccardo beve il the in una tazzina di porcellana.	dev
+8054	D-Agostino_1983	1	Dove Andrea ha preso una sigaretta?	dev
+8055	D-Agostino_1983	1	Tommaso estrasse la pistola nel bar.	dev
+8056	D-Agostino_1983	1	Riccardo ci mangia il riso.	dev
+8057	D-Agostino_1983	1	Tommaso vi sostiene la lastra.	dev
+8058	D-Agostino_1983	1	Edoardo prese il libro di storia dalla libreria.	dev
+8059	D-Agostino_1983	1	Leonardo prende il libro dalla sala della biblioteca.	dev
+8060	D-Agostino_1983	1	Gabriele mette le casse sul ripiano del montacarichi.	dev
+8061	D-Agostino_1983	1	Dove hai messo le foto di Francesco?	dev
+8062	D-Agostino_1983	1	Tommaso toglie i soldi dal cassetto.	dev
+8063	D-Agostino_1983	1	La chiave sta nella toppa.	dev
+8064	D-Agostino_1983	1	Dal giardino alla strada Lorenzo vi ha piantato i fiori.	dev
+8065	D-Agostino_1983	1	Francesco ha lanciato il pallone dal balcone al giardino.	dev
+8066	D-Agostino_1983	0	Dal giardino Leonardo ha piantato fiori al garage.	dev
+8067	D-Agostino_1983	1	Edoardo carica le casse sulla nave.	dev
+8068	D-Agostino_1983	1	La scala poggia contro il muro.	dev
+8069	D-Agostino_1983	1	I rivoltosi incarcerarono Gabriele nelle segrete della fortezza.	dev
+8070	D-Agostino_1983	1	Francesco chiuse Giulia nella stanza.	dev
+8071	D-Agostino_1983	0	Gabriele chiuse il denaro.	dev
+8072	D-Agostino_1983	1	Gabriele dette appoggio al libro.	dev
+8073	D-Agostino_1983	1	Alessandro dette appoggio alla diffusione del libro.	dev
+8074	D-Agostino_1983	1	Lorenzo caricò il camion.	dev
+8075	D-Agostino_1983	1	Questo latte deterge le impurità dal volto.	dev
+8076	D-Agostino_1983	1	Riccardo stipò l'armadio con i vestiti.	dev
+8077	D-Agostino_1983	1	La fotografia di Giulia e quella di Lorenzo stanno attaccate.	dev
+8078	D-Agostino_1983	0	Riccardo allontanò Paola e la finestra l'una all'altra.	dev
+8079	D-Agostino_1983	1	Francesco avvolge la statua in una tela di lino.	dev
+8080	D-Agostino_1983	1	Alessandro accompagna Sofia al cinema.	dev
+8081	D-Agostino_1983	1	Andrea accompagnò Paola a scuola.	dev
+8082	D-Agostino_1983	1	I libri non stanno nell'armadio.	dev
+8083	D-Agostino_1983	1	Andrea attraversò la parte meno pericolosa del fiume.	dev
+8084	D-Agostino_1983	0	Ho l'intenzione che mi vestirò da sposa.	dev
+8085	Elia-et-al_1981	1	Francesco mangiava il pane con soddisfazione.	dev
+8086	Elia-et-al_1981	1	Quella mattina pioveva a dirotto.	dev
+8087	Elia-et-al_1981	0	Il vino beve Alessandro.	dev
+8088	Elia-et-al_1981	1	Francesco ha telefonato e Maria è venuta.	dev
+8089	Elia-et-al_1981	1	Quel libro è stato dato a Paola da Gabriele.	dev
+8090	Elia-et-al_1981	1	Paola riceve quel libro da Riccardo.	dev
+8091	Elia-et-al_1981	1	Andrea mangia un polpo.	dev
+8092	Elia-et-al_1981	1	Tommaso mangia questo.	dev
+8093	Elia-et-al_1981	1	Sofia lo adora.	dev
+8094	Elia-et-al_1981	1	L'artrosi ha paralizzato le ossa.	dev
+8095	Elia-et-al_1981	0	Maria vuole lo mangiare.	dev
+8096	Elia-et-al_1981	1	Lorenzo ammira Alice.	dev
+8097	Elia-et-al_1981	1	Riccardo la ammira.	dev
+8098	Elia-et-al_1981	1	Edoardo mira alla presidenza.	dev
+8099	Elia-et-al_1981	1	È sul letto che Maria salta.	dev
+8100	Elia-et-al_1981	1	È subito che Edoardo vuole il caffè.	dev
+8101	Elia-et-al_1981	0	È al successo ciò che Tommaso tiene.	dev
+8102	Elia-et-al_1981	1	È alla presidenza che mira Leonardo.	dev
+8103	Elia-et-al_1981	1	Riccardo adora il cinema.	dev
+8104	Elia-et-al_1981	1	È il cinema che Francesco adora.	dev
+8105	Elia-et-al_1981	1	È il cinema e non la musica che Alessandro adora.	dev
+8106	Elia-et-al_1981	1	I denti di Emma battono dal freddo.	dev
+8107	Elia-et-al_1981	1	Alessandro le adora che hanno gambe lunghe le donne.	dev
+8108	Elia-et-al_1981	0	Andrea ne adora le amiche di Emma.	dev
+8109	Elia-et-al_1981	1	Gabriele mangia un gelato.	dev
+8110	Elia-et-al_1981	1	Riccardo promette a Riccardo che verrà.	dev
+8111	Elia-et-al_1981	1	Il polpo è divorato da Sofia.	dev
+8112	Elia-et-al_1981	1	La tolleranza ne esula dai suoi doveri.	dev
+8113	Elia-et-al_1981	0	Riccardo ci viene da Roma.	dev
+8114	Elia-et-al_1981	1	Andrea pensa a Paola.	dev
+8115	Elia-et-al_1981	1	Sofia accompagna Maria in Cina.	dev
+8116	Elia-et-al_1981	0	Emma e il film si sono visti.	dev
+8117	Elia-et-al_1981	1	Alessandro ammira la casa che è di Paola.	dev
+8118	Elia-et-al_1981	1	Beatrice involontariamente assorbe Francesco.	dev
+8119	Elia-et-al_1981	0	Lorenzo distribuisce mattone.	dev
+8120	Elia-et-al_1981	1	Che Riccardo dipinga è bello.	dev
+8121	Elia-et-al_1981	1	Sofia passeggia per Venezia.	dev
+8122	Elia-et-al_1981	1	Maria raccoglie sassolini.	dev
+8123	Elia-et-al_1981	1	Giulia legge.	dev
+8124	Elia-et-al_1981	1	Beatrice schermisce con abilità.	dev
+8125	Elia-et-al_1981	1	Maria traveste Alice.	dev
+8126	Elia-et-al_1981	1	Emma umilia Edoardo.	dev
+8127	Elia-et-al_1981	1	Il fulmine cadde sulla testa di Andrea.	dev
+8128	Elia-et-al_1981	1	Fa neve.	dev
+8129	Elia-et-al_1981	1	Alessandro dormicchia nell'inazione più totale.	dev
+8130	Elia-et-al_1981	1	La maionese non ha preso bene.	dev
+8131	Elia-et-al_1981	1	Maria sorride a Giulia.	dev
+8132	Elia-et-al_1981	1	Quel vestito non va ad Alice.	dev
+8133	Elia-et-al_1981	1	Il capitale dell'azienda ammonta a molti miliardi.	dev
+8134	Elia-et-al_1981	1	Una stella splende nel cielo.	dev
+8135	Elia-et-al_1981	1	Una stella brilla nel cielo.	dev
+8136	Elia-et-al_1981	1	Una stella scintilla nel cielo.	dev
+8137	Elia-et-al_1981	1	Il vestito di Maria scintilla di uno stupendo diamante.	dev
+8138	Elia-et-al_1981	1	Beatrice arde dalla passione.	dev
+8139	Elia-et-al_1981	1	Paola luccicava dall'emozione.	dev
+8140	Elia-et-al_1981	0	Quell'idea si fa chiara nel suo animo.	dev
+8141	Elia-et-al_1981	1	Gabriele vi ritorna.	dev
+8142	Elia-et-al_1981	1	Riccardo giunge in casa.	dev
+8143	Elia-et-al_1981	1	La scala scende in cantina.	dev
+8144	Elia-et-al_1981	1	Il sentiero ci arriva.	dev
+8145	Elia-et-al_1981	1	La Maggioranza patteggia con l'Opposizione.	dev
+8146	Elia-et-al_1981	1	Emma lotta su questo punto.	dev
+8147	Elia-et-al_1981	0	Riccardo taglia il pane a fetta.	dev
+8148	Elia-et-al_1981	1	Riccardo gli vide il volto.	dev
+8149	Elia-et-al_1981	1	Il sarto ha confezionato un vestito di lino.	dev
+8150	Elia-et-al_1981	1	Tommaso ha edificato una palazzina nel centro di Roma.	dev
+8151	Elia-et-al_1981	1	Andrea è brutale con Alice.	dev
+8152	Elia-et-al_1981	1	Il Giappone colonizzò la Manciuria.	dev
+8153	Elia-et-al_1981	1	Leonardo aveva ammassato pacchetti alla basse della libreria.	dev
+8154	Elia-et-al_1981	1	Leonardo aveva ammassato contro il muro.	dev
+8155	Elia-et-al_1981	1	Lorenzo ci aveva ammassato pacchetti.	dev
+8156	Elia-et-al_1981	1	L'avaro accumula ricchezze.	dev
+8157	Elia-et-al_1981	1	Leonardo è importante per noi.	dev
+8158	Elia-et-al_1981	1	Il Sergente distribuisce i soldati.	dev
+8159	Elia-et-al_1981	1	Sofia separò il lavoro in due parti distinte.	dev
+8160	Elia-et-al_1981	1	Paola gli carezzò il volto.	dev
+8161	Elia-et-al_1981	1	Questa situazione gli complica la vita.	dev
+8162	Elia-et-al_1981	1	Maria afferrò la mano di Lorenzo.	dev
+8163	Elia-et-al_1981	1	Questa medicina coagula il sangue.	dev
+8164	Elia-et-al_1981	1	Riccardo forgia l'acciaio.	dev
+8165	Elia-et-al_1981	1	Sofia cucina il pollo al limone.	dev
+8166	Elia-et-al_1981	1	Le donne partoriscono i bambini.	dev
+8167	Elia-et-al_1981	1	Paola converte lo zucchero in caramelle.	dev
+8168	Elia-et-al_1981	1	Il governo converte gli oppositori in criminali.	dev
+8169	Elia-et-al_1981	0	Alice ne travestì Francesco.	dev
+8170	Elia-et-al_1981	1	Riccardo ne liberò il cane.	dev
+8171	Elia-et-al_1981	1	Lo Stato accorda troppa fiducia all'amministrazione pubblica.	dev
+8172	Elia-et-al_1981	1	Tommaso attribuì la decisione di andare in Cina a Leonardo.	dev
+8173	Elia-et-al_1981	1	Leonardo addebitava il suo insuccesso alla decisione del padre di andare in Francia.	dev
+8174	Elia-et-al_1981	1	Francesco abbandona la moglie sulla strada.	dev
+8175	Elia-et-al_1981	1	I ladri rubano le auto ai legittimi proprietari.	dev
+8176	Elia-et-al_1981	1	Maria spalmò il pane con il coltello.	dev
+8177	Elia-et-al_1981	0	Riccardo mise il tavolo di cappello.	dev
+8178	Elia-et-al_1981	1	L'aviazione nemica bombardò napalm sulla città.	dev
+8179	Elia-et-al_1981	1	Andrea imbeve il pane di vino.	dev
+8180	Elia-et-al_1981	1	Raso rosso foderava i cuscini.	dev
+8181	Elia-et-al_1981	1	Lorenzo dissemina aneddoti divertenti nei suoi racconti.	dev
+8182	Elia-et-al_1981	1	I turisti disseminano il prato di cartacce.	dev
+8183	Elia-et-al_1981	1	Gabriele nutrì il figlio dell'idea di essere il più bravo ed intelligente di tutti.	dev
+8184	Elia-et-al_1981	1	Riccardo liberò il cane dalle catene.	dev
+8185	Elia-et-al_1981	1	Alessandro scarica Giulia dalle proprie responsabilità.	dev
+8186	Elia-et-al_1981	1	Tommaso ne ottiene la libertà.	dev
+8187	Elia-et-al_1981	1	Gabriele difende Giulia contro i pericoli.	dev
+8188	Elia-et-al_1981	1	L'alchimista fa che l'oro derivi dal piombo.	dev
+8189	Elia-et-al_1981	1	Riccardo spostò il cappello dall'armadio al tavolo.	dev
+8190	Elia-et-al_1981	1	Leonardo pone il libro sulla scrivania.	dev
+8191	Elia-et-al_1981	1	Alessandro prese il cappotto dall'armadio.	dev
+8192	Elia-et-al_1981	1	Gabriele spedì la ricevuta all'ufficio delle imposte.	dev
+8193	Elia-et-al_1981	1	Paola spinse le gambe di Francesco verso la parete.	dev
+8194	Elia-et-al_1981	1	La foresteria ospita gli intervenuti alla manifestazione.	dev
+8195	Elia-et-al_1981	1	Il dottore spennella le tonsille di Gabriele di iodio.	dev
+8196	Elia-et-al_1981	1	Leonardo archiviò la documentazione nell'archivio centrale.	dev
+8197	Elia-et-al_1981	1	I gomiti poggiano sul davanzale.	dev
+8198	Elia-et-al_1981	1	Riccardo affoga i dispiaceri nel vino.	dev
+8199	Elia-et-al_1981	1	Un buon timoniere attracca rapidamente la sua nave al molo.	dev
+8200	Elia-et-al_1981	1	Andrea spostò il bicchiere dal tavolo sul mobile.	dev
+8201	Elia-et-al_1981	1	Tommaso pompava l'acqua dal lago alla piscina.	dev
+8202	Elia-et-al_1981	1	Alessandro e Leonardo negoziano la libertà di Maria.	dev
+8203	Elia-et-al_1981	1	Una donna aveva separato Andrea e Tommaso.	dev
+8204	Elia-et-al_1981	1	Alessandro ricava danaro dalle sue applicazioni.	dev
+8205	Elia-et-al_1981	1	Riccardo allontana Maria dalla stanza.	dev
+8206	Elia-et-al_1981	1	Leonardo conta su Francesco.	dev
+8207	Elia-et-al_1981	1	Sofia confonde il piacere con la possibilità di essere corteggiata.	dev
+8208	Elia-et-al_1981	1	Tommaso fondeva l'argento con l'oro.	dev
+8209	Elia-et-al_1981	1	Gabriele ci sostituisce il tubo catodico.	dev
+8210	Elia-et-al_1981	1	Riccardo le sostituisce il tubo catodico.	dev
+8211	Elia-et-al_1981	1	Tommaso alterna Beatrice con Paola.	dev
+8212	Elia-et-al_1981	1	L'amore lega.	dev
+8213	Elia-et-al_1981	1	Gabriele dorme.	dev
+8214	Elia-et-al_1981	1	Maria desidera un libro.	dev
+8215	Elia-et-al_1981	0	Maria desidera il fatto che tu venga.	dev
+8216	Elia-et-al_1981	1	Leonardo tiene alla possibilità che lo promuovano.	dev
+8217	Elia-et-al_1981	1	Giulia abbandona l'idea che vedrà Edoardo.	dev
+8218	Elia-et-al_1981	1	Maria ha fatto l'affermazione che Francesco è bello.	dev
+8219	Elia-et-al_1981	1	Maria bada che tutto funzioni alla perfezione.	dev
+8220	Elia-et-al_1981	1	Edoardo approva che Maria parta.	dev
+8221	Elia-et-al_1981	0	Emma dubita di che Alice parta.	dev
+8222	Elia-et-al_1981	1	Che Lorenzo viaggi angoscia Tommaso.	dev
+8223	Elia-et-al_1981	0	Riccardo lo approva l'idea ciò.	dev
+8224	Elia-et-al_1981	1	Edoardo lo approva il fatto che Maria canti.	dev
+8225	Elia-et-al_1981	0	Tu desideri Sofia venire.	dev
+8226	Elia-et-al_1981	0	Riccardo va al fumo.	dev
+8227	Elia-et-al_1981	1	Alice brama di tornare.	dev
+8228	Elia-et-al_1981	1	Andrea incoraggia Maria a che si sposi.	dev
+8229	Elia-et-al_1981	1	Il fatto che Emma parli allieta suo padre.	dev
+8230	Elia-et-al_1981	1	Andare al cinema infiamma Sofia.	dev
+8231	Elia-et-al_1981	1	La colpisce che Riccardo rida.	dev
+8232	Elia-et-al_1981	1	Mi meraviglia il fatto che Beatrice sia svestita.	dev
+8233	Elia-et-al_1981	1	Leonardo allieta Leonardo perché Maria ride.	dev
+8234	Elia-et-al_1981	1	La tristezza e la noia deprimono Gabriele.	dev
+8235	Elia-et-al_1981	1	Mi acquieta che Giulia parli in questo modo.	dev
+8236	Elia-et-al_1981	1	La sola presenza di Alice mi acquieta.	dev
+8237	Elia-et-al_1981	1	Parlare con le ballerine è divertente.	dev
+8238	Elia-et-al_1981	1	Io vengo affascinato dal fatto che Edoardo parli di poesia.	dev
+8239	Elia-et-al_1981	0	Di vedere i marziani accadde a Paola.	dev
+8240	Elia-et-al_1981	0	Aver vinto al lotto splendeva nel suo sguardo.	dev
+8241	Elia-et-al_1981	0	Di aver vinto al lotto splendeva nel suo sguardo.	dev
+8242	Elia-et-al_1981	0	Si tratta che dobbiamo fuggire.	dev
+8243	Elia-et-al_1981	1	Si tratta di fuggire.	dev
+8244	Elia-et-al_1981	1	Il fatto che Emma sia uscita così presto denota che in questo momento non va d'accordo con te.	dev
+8245	Elia-et-al_1981	1	Io condanno il fatto che Erode uccise i bambini	dev
+8246	Elia-et-al_1981	1	Gabriele adora carezzare Andrea	dev
+8247	Elia-et-al_1981	1	Andrea intende sposare Alice	dev
+8248	Elia-et-al_1981	0	Riccardo evita guardare la televisione	dev
+8249	Elia-et-al_1981	0	Paola ritiene che si parta è carino.	dev
+8250	Elia-et-al_1981	0	Lorenzo riteneva Alice fosse Paola	dev
+8251	Elia-et-al_1981	0	Beatrice lo giudica che Maria ha troppi amanti.	dev
+8252	Elia-et-al_1981	0	Sofia lo giudica che Maria abbia troppi amanti.	dev
+8253	Elia-et-al_1981	1	Giulia lo giudica evidente che Maria sia bella.	dev
+8254	Elia-et-al_1981	1	Leonardo lo suppone che il padre beva troppo.	dev
+8255	Elia-et-al_1981	1	Io penso qualcosa di te.	dev
+8256	Elia-et-al_1981	1	Io, di te, penso che ami il tartufo.	dev
+8257	Elia-et-al_1981	1	Emma ottiene qualcosa da te.	dev
+8258	Elia-et-al_1981	1	Alice lavora a cacciare Maria.	dev
+8259	Elia-et-al_1981	1	Riccardo plaude al fatto che Tommaso ha vinto.	dev
+8260	Elia-et-al_1981	1	Maria ci aspira.	dev
+8261	Elia-et-al_1981	1	Maria ci si aggrappa.	dev
+8262	Elia-et-al_1981	1	Paola mira a che il futuro sia felice.	dev
+8263	Elia-et-al_1981	1	Giulia guardava il muro.	dev
+8264	Elia-et-al_1981	1	Riccardo lo pensa Tommaso.	dev
+8265	Elia-et-al_1981	1	Paola acconsente a che la leghino.	dev
+8266	Elia-et-al_1981	1	Alice sorride del fatto di aver pianto.	dev
+8267	Elia-et-al_1981	1	La condizione di disagio nasce dalla mancanza d'acqua.	dev
+8268	Elia-et-al_1981	0	Da quest'analisi risulta il nostro partire.	dev
+8269	Elia-et-al_1981	1	La tosse dipende dal fatto di aver fumato troppo.	dev
+8270	Elia-et-al_1981	1	Leonardo chiarisce che non è colpa sua a Paola.	dev
+8271	Elia-et-al_1981	1	Andrea fischia a Maria che ha fame.	dev
+8272	Elia-et-al_1981	1	Andrea accennerà ad Edoardo se partirà o no.	dev
+8273	Elia-et-al_1981	1	Paola addebita a Leonardo il fatto che ora ha fame.	dev
+8274	Elia-et-al_1981	1	Riccardo lo aggiunge nel suo discorso.	dev
+8275	Elia-et-al_1981	0	Maria ce lo ha scommesso.	dev
+8276	Elia-et-al_1981	1	Il giornalisti attaccano sui quotidiani il fatto che molti politici sono corrotti.	dev
+8277	Elia-et-al_1981	1	Paola incoraggia il fatto che i ragazzi vadano al mare.	dev
+8278	Elia-et-al_1981	0	Emma ne avvisa Alessandro.	dev
+8279	Elia-et-al_1981	1	Gabriele lo convince che lo sciopero è giusto.	dev
+8280	Elia-et-al_1981	1	Riccardo esime Riccardo dal viaggio.	dev
+8281	Elia-et-al_1981	1	Il sindaco esenta i poveri dal pagare il bus.	dev
+8282	Elia-et-al_1981	1	Maria si accorda con Leonardo affinchè il programma sia realizzato.	dev
+8283	Elia-et-al_1981	0	Alice discorre di partire con Giulia.	dev
+8284	Elia-et-al_1981	1	Maria si accorge di essere innamorata dal fatto di arrossire.	dev
+8285	Elia-et-al_1981	1	Edoardo continua a mangiarlo.	dev
+8286	Elia-et-al_1981	0	Leonardo lo indugia a mangiare.	dev
+8287	Elia-et-al_1981	1	Edoardo osa mangiare.	dev
+8288	Elia-et-al_1981	1	Paola è capace di cavalcare.	dev
+8289	Elia-et-al_1981	1	Maria ha l'intenzione di cavalcare.	dev
+8290	Elia-et-al_1981	0	Tommaso suole il pasto.	dev
+8291	Elia-et-al_1981	1	Riccardo deve mangiarlo.	dev
+8292	Elia-et-al_1981	1	Gabriele usa mangiarlo.	dev
+8293	Elia-et-al_1981	1	Riccardo va in camera.	dev
+8294	Elia-et-al_1981	1	Andrea sale in camera.	dev
+8295	Elia-et-al_1981	1	Riccardo sparisce da Parigi.	dev
+8296	Elia-et-al_1981	0	Edoardo parte a Parigi.	dev
+8297	Elia-et-al_1981	1	Paola sgambetta verso il ponte.	dev
+8298	Elia-et-al_1981	1	La folla lo corre a salutare.	dev
+8299	Elia-et-al_1981	1	Tommaso invia Emma in piazza.	dev
+8300	Vietri_2004	1	Beatrice assembla un computer.	dev
+8301	Vietri_2004	1	Il film è di Scorsese.	dev
+8302	Vietri_2004	1	Paola lavora.	dev
+8303	Vietri_2004	0	È l'amica che di Emma angoscia quel quadro di Picasso.	dev
+8304	Vietri_2004	0	Molte loro leggono il giornale.	dev
+8305	Vietri_2004	0	Quell'alcuni musei sono stati progettati da architetto.	dev
+8306	Vietri_2004	1	Paola mangia la pizza.	dev
+8307	Vietri_2004	0	Quell'architetto ha alcuni progettato musei.	dev
+8308	Vietri_2004	0	Hanno letto, molte ragazze, il giornale l'anno scorso.	dev
+8309	Vietri_2004	1	Le spalle di Riccardo toccano la parete.	dev
+8310	Vietri_2004	1	Maria sarà toccata da quel film.	dev
+8311	Vietri_2004	1	Che tu sia partita rallegra Beatrice.	dev
+8312	Vietri_2004	1	Gabriele è il marito di Paola.	dev
+8313	Vietri_2004	1	Beatrice è con Lorenzo.	dev
+8314	Vietri_2004	1	Paola ha messo la macchina che è del fratello nel garage.	dev
+8315	Vietri_2004	0	Tommaso obbedisce di Maria.	dev
+8316	Vietri_2004	1	Andrea confronta Leonardo con Andrea.	dev
+8317	Vietri_2004	1	Maria fotografa Paola.	dev
+8318	Vietri_2004	1	Lorenzo è stato smanioso.	dev
+8319	Vietri_2004	1	Tua sorella guarda il gelato.	dev
+8320	Vietri_2004	1	Tua sorella guarda il CD.	dev
+8321	Vietri_2004	0	Sofia ha tagliato la testa al bisonte.	dev
+8322	Vietri_2004	0	Sofia ha tagliato le teste ai tori.	dev
+8323	Vietri_2004	1	I ragazzi taglierebbero la corda.	dev
+8324	Vietri_2004	0	È il toro che Maria ha preso per le corna e non il bufalo.	dev
+8325	Vietri_2004	1	Maria stende il bucato.	dev
+8326	Vietri_2004	0	Il mio amico abbaia.	dev
+8327	Vietri_2004	0	Riccardo ulula.	dev
+8328	Vietri_2004	1	Gabriele dormì.	dev
+8329	Vietri_2004	1	Il cane si è fermato in un batter d'occhio.	dev
+8330	Vietri_2004	1	Edoardo ci ha messo due ore per tagliare il filo elettrico.	dev
+8331	Vietri_2004	1	Leonardo ha sezionato il vecchio tiglio.	dev
+8332	Vietri_2004	1	Le sei bombe sono esplose il 6 maggio 1999.	dev
+8333	Vietri_2004	1	Lorenzo non ha più l'abitudine di fumare.	dev
+8334	Vietri_2004	1	Andrea è diventato in gamba.	dev
+8335	Vietri_2004	1	Tommaso ha fatto gli auguri a Giulia.	dev
+8336	Vietri_2004	1	Sofia chiede che tu torni immediatamente.	dev
+8337	Vietri_2004	1	Che tu vada via dispiace a Beatrice.	dev
+8338	Vietri_2004	1	I bambini hanno calpestato le aiuole.	dev
+8339	Vietri_2004	0	I bambini eruttarono lava.	dev
+8340	Vietri_2004	1	Quell'uomo ha fotografato l'unico testimone e ciò è avvenuto un mese fa.	dev
+8341	Vietri_2004	0	Quell'uomo ne ha fotografato.	dev
+8342	Vietri_2004	1	Andrea ha carezzato il volto a Beatrice.	dev
+8343	Vietri_2004	0	Il volto di Paola è carezzato.	dev
+8344	Vietri_2004	1	Edoardo ha fratturato il braccio di Maria.	dev
+8345	Vietri_2004	1	Leonardo ha paralizzato il braccio a Maria.	dev
+8346	Vietri_2004	1	Il bambino pesava nove chili a pochi mesi.	dev
+8347	Vietri_2004	1	Gli operai asfaltarono la strada.	dev
+8348	Vietri_2004	0	Paola elencò l'invitato.	dev
+8349	Vietri_2004	0	Alice ha messo e ciò è accaduto i vestiti nell'armadio.	dev
+8350	Vietri_2004	0	Maria ha tolto i vestiti e ciò è accaduto nell'armadio.	dev
+8351	Vietri_2004	1	Beatrice riempie il frigo con frutta.	dev
+8352	Vietri_2004	1	Maria difende Andrea dai pericoli.	dev
+8353	Vietri_2004	1	Il libro passa da Maria a Maria.	dev
+8354	Vietri_2004	1	Maria dà un libro a Paola.	dev
+8355	Vietri_2004	1	Francesco delega Gabriele suo rappresentante.	dev
+8356	Vietri_2004	1	Sofia delega Maria come sua rappresentante.	dev
+8357	Vietri_2004	0	Lorenzo abita e ciò succede a Roma.	dev
+8358	Vietri_2004	1	Riccardo ha mangiato la pizza e ciò è successo al ristorante.	dev
+8359	Vietri_2004	1	Sofia fuma una bionda.	dev
+8360	Vietri_2004	1	Edoardo ha spalmato il paté sul pane.	dev
+8361	Vietri_2004	1	Andrea ha spalmato il pane di paté.	dev
+8362	Vietri_2004	1	Le bombe piovevano su di noi.	dev
+8363	Vietri_2004	1	I matrimoni misti funzionano in modo perfetto.	dev
+8364	Vietri_2004	1	La tua idea equivale alla mia.	dev
+8365	Vietri_2004	1	La tua idea e la mia si equivalgono.	dev
+8366	Vietri_2004	1	Edoardo gira per la città.	dev
+8367	Vietri_2004	1	Giulia torna da Milano a Napoli.	dev
+8368	Vietri_2004	1	Lorenzo controlla Paola.	dev
+8369	Vietri_2004	1	Maria acconsente a che la figlia esca con quel ragazzo.	dev
+8370	Vietri_2004	0	Alice bada Maria.	dev
+8371	Vietri_2004	1	Paola dubita di te.	dev
+8372	Vietri_2004	1	Maria desidera che tu parta.	dev
+8373	Vietri_2004	1	Che Giulia sia sempre in viaggio piace ad Andrea.	dev
+8374	Vietri_2004	1	Emma volontariamente affascina Francesco.	dev
+8375	Vietri_2004	1	Francesco desidera che lui venga.	dev
+8376	Vietri_2004	1	Leonardo annota sul taccuino che il presidente scriverà la sua autobiografia.	dev
+8377	Vietri_2004	1	Alessandro invita Paola a che si parta.	dev
+8378	Vietri_2004	1	Alice ha accompagnato Tommaso al cinema.	dev
+8379	Vietri_2004	1	La partenza apporta un beneficio a tutti.	dev
+8380	Vietri_2004	1	Alessandro si lamenta del mare sporco con Paola.	dev
+8381	Vietri_2004	1	Alice mette in agitazione Tommaso.	dev
+8382	Vietri_2004	1	Andrea lascia a Leonardo pieni poteri.	dev
+8383	Vietri_2004	1	Il piatto piange.	dev
+8384	Vietri_2004	1	Mi girano le scatole.	dev
+8385	Vietri_2004	1	Alice si è attaccata a un capello.	dev
+8386	Vietri_2004	1	Maria ha piantato Riccardo in asso.	dev
+8387	Vietri_2004	1	Sofia e Riccardo parlano la stessa lingua.	dev
+8388	Vietri_2004	1	Avere fegato.	dev
+8389	Vietri_2004	1	Avere le paturnie.	dev
+8390	Vietri_2004	1	Avere sulle scatole.	dev
+8391	Vietri_2004	1	Essere in un ventre di vacca.	dev
+8392	Vietri_2004	1	Questa situazione ti ha messo nell'occhio del ciclone.	dev
+8393	Vietri_2004	1	Riccardo spera che possa partire presto.	dev
+8394	Vietri_2004	1	Beatrice ha un'attenzione per Giulia.	dev
+8395	Vietri_2004	1	Alice è in ansia.	dev
+8396	Vietri_2004	1	Siamo cariche di viveri.	dev
+8397	Vietri_2004	1	La ragazza mangerà la pizza.	dev
+8398	Vietri_2004	1	Lei ha presentato la donna a dei suoi amici.	dev
+8399	Vietri_2004	1	Edoardo obbedisce a Sofia.	dev
+8400	Vietri_2004	1	Edoardo ci va.	dev
+8401	Vietri_2004	1	Una volta comprato il costume, Edoardo andrà a nuotare.	dev
+8402	Vietri_2004	1	Edoardo va a invitare Giulia a cena.	dev
+8403	Vietri_2004	0	Beatrice le scappa a comprare.	dev
+8404	Vietri_2004	1	Sono i libri che Leonardo mette sugli scaffali ora.	dev
+8405	Vietri_2004	1	Edoardo mette i libri sugli scaffali.	dev
+8406	Vietri_2004	1	Sono i libri ciò che Leonardo mette sugli scaffali ora.	dev
+8407	Vietri_2004	1	Andrea mangia.	dev
+8408	Vietri_2004	1	Questo lavoro è di competenza di Leonardo.	dev
+8409	Vietri_2004	1	Questo lavoro rientra nelle competenze di Riccardo.	dev
+8410	Vietri_2004	1	A Francesco piace Maria per le sue gambe.	dev
+8411	Vietri_2004	1	Andrea accarezza le gambe di Maria.	dev
+8412	Vietri_2004	1	Riccardo non gradì quell'allusione.	dev
+8413	Vietri_2004	1	Francesco ricorda qualcosa.	dev
+8414	Vietri_2004	1	Era la conversazione che fecero i due ragazzi che Paola criticò.	dev
+8415	Vietri_2004	1	Leggeva i nomi degli artisti alla ragazza.	dev
+8416	Vietri_2004	1	Ha tradito la fiducia di Gabriele.	dev
+8417	Vietri_2004	1	Era felice di ciò.	dev
+8418	Vietri_2004	1	Era contento di giocare a carte.	dev
+8419	Vietri_2004	1	Alessandro disgusta Giulia.	dev
+8420	Vietri_2004	1	Ne vediamo di tutti i tipi.	dev
+8421	Vietri_2004	1	Ha abboccato all'amo.	dev
+8422	Vietri_2004	1	Ho riso due ore.	dev
+8423	Vietri_2004	1	Ha preso una cotta per Sofia.	dev
+8424	Vietri_2004	1	Maria è in crisi.	dev
+8425	Vietri_2004	1	Conservava il controllo della società.	dev
+8426	Vietri_2004	1	Maria ha venduto i suoi vestiti al mercato delle pulci.	dev
+8427	Vietri_2004	1	Paola ha confrontato i due libri in biblioteca.	dev
+8428	Vietri_2004	1	Maria ha immerso il figlio nell'acqua fredda.	dev
+8429	Vietri_2004	1	Leonardo leggeva sul divano.	dev
+8430	Vietri_2004	1	Il consenso della gente è nato dal suo talento.	dev
+8431	Vietri_2004	1	Francesco guarda che tutto proceda per il meglio.	dev
+8432	Vietri_2004	1	Francesco si vergogna che sia successo.	dev
+8433	Vietri_2004	1	Giulia deve lavorare domani.	dev
+8434	Vietri_2004	1	Francesco stabilì la partenza di Tommaso con Maria.	dev
+8435	Vietri_2004	1	Maria ha lasciato il marito.	dev
+8436	Vietri_2004	1	L'affitto di quella casa gli rende 500 euro.	dev
+8437	Vietri_2004	1	Hanno messo tutti in allarme?	dev
+8438	Vietri_2004	1	Gli monta il sangue alla testa molto facilmente.	dev
+8439	Vietri_2004	1	Per tutta la vita ha costruito castelli in aria.	dev
+8440	Vietri_2004	1	Quel terreno frutta molti soldi.	dev
+8441	Vietri_2017	1	Gabriele ha fatto scrivere una lettera a Lorenzo da Riccardo.	dev
+8442	Vietri_2017	0	Il vento ha fatto rompere il vetro da Andrea.	dev
+8443	Vietri_2017	0	Il colonello ha fatto la nave.	dev
+8444	Vietri_2017	1	Lorenzo si è fatto rompere la vetrata.	dev
+8445	Vietri_2017	1	Il sasso ha rotto il vetro.	dev
+8446	Vietri_2017	0	L'auto ha schiacciato l'acceleratore.	dev
+8447	Vietri_2017	0	Il colpo ha schiacciato l'acceleratore.	dev
+8448	Vietri_2017	1	Lorenzo ha rotto il fidanzamento.	dev
+8449	Vietri_2017	1	Il caldo ha avariato il cibo.	dev
+8450	Vietri_2017	1	L'umidità ha ossidato il ferro.	dev
+8451	Vietri_2017	1	Gabriele ha fatto ossidare il ferro.	dev
+8452	Vietri_2017	1	Il vetro fu rotto dall'esplosione di un colpo.	dev
+8453	Vietri_2017	1	Maria si è lavata.	dev
+8454	Vietri_2017	1	Paola ha trascurato se stessa.	dev
+8455	Vietri_2017	0	L'uomo lavatosi ieri è mio nonno.	dev
+8456	Vietri_2017	1	Andrea ha graffiato lo sportello dell'auto.	dev
+8457	Vietri_2017	1	Lo sportello dell'auto si è graffiato.	dev
+8458	Vietri_2017	1	Il viso di Tommaso si è graffiato.	dev
+8459	Vietri_2017	1	I prati si sono rivestiti con i fiori.	dev
+8460	Vietri_2017	1	I prezzi sono aumentati del 10 %.	dev
+8461	Vietri_2017	1	Il fatturato si è incrementato del 15 % nell'ultimo anno.	dev
+8462	Vietri_2017	1	La Fiat si è fusa con la Chrysler.	dev
+8463	Vietri_2017	0	Il disegno si è confrontato con la foto.	dev
+8464	Vietri_2017	1	Il contagio è in diffusione.	dev
+8465	Vietri_2017	1	Il gatto ha impelato di peli il divano.	dev
+8466	Vietri_2017	1	L'inverno ha privato delle foglie gli alberi.	dev
+8467	Vietri_2017	0	L'esplosione ha spaccato la vetrata per un secondo.	dev
+8468	Vietri_2017	1	La vetrata si è spaccata in un millisecondo.	dev
+8469	Vietri_2017	1	L'intonaco si è sgretolato in poche settimane.	dev
+8470	Vietri_2017	1	La pioggia ha reidratato il terreno per giorni.	dev
+8471	Vietri_2017	0	Francesco ha riempito il serbatoio per un'ora.	dev
+8472	Vietri_2017	1	Il prezzo di quei prodotti si è abbassato del 20 % per sei mesi.	dev
+8473	Vietri_2017	1	Ha protratto l'interrogatorio per tutta la mattinata.	dev
+8474	Vietri_2017	1	Gabriele ha proseguito la lezione per ore.	dev
+8475	Vietri_2017	1	Le vittorie hanno carburato il calciatore in una settimana.	dev
+8476	Vietri_2017	1	Il lievito ha fermentato la pasta in due ore.	dev
+8477	Vietri_2017	0	Il temporale ha ritardato il treno in due ore.	dev
+8478	Vietri_2017	1	L'incidente ha ritardato il treno di due ore.	dev
+8479	Vietri_2017	0	Il treno ha ritardato per due ore.	dev
+8480	Vietri_2017	0	Il vino è diventato aceto per ore.	dev
+8481	Vietri_2017	0	I commercianti hanno incrementato le vendite del 10 % per anni.	dev
+8482	Vietri_2017	1	Le vendite sono incrementate del 10 % in due anni.	dev
+8483	Vietri_2017	1	L'umidità ha ridotto in polvere l'intonaco per giorni.	dev
+8484	Vietri_2017	1	Il cioccolato si è fuso in 5 minuti.	dev
+8485	Vietri_2017	1	La carne si è cotta in 5 minuti.	dev
+8486	Vietri_2017	1	La finestra si è chiusa, ma non è chiusa.	dev
+8487	Vietri_2017	1	La valigia è diventata leggera.	dev
+8488	Vietri_2017	1	I prezzi sono rincarati del 10 %.	dev
+8489	Vietri_2017	1	Hanno reso la stanza grande.	dev
+8490	Vietri_2017	1	Il mare si è fatto agitato.	dev
+8491	Vietri_2017	1	La carne è saporita.	dev
+8492	Vietri_2017	1	Il vino è aceto.	dev
+8493	Vietri_2017	1	Il pullover di lana si è infeltrito.	dev
+8494	Vietri_2017	1	Edoardo si è fatto simile a uno scheletro.	dev
+8495	Vietri_2017	0	La carne è diventata gustosa.	dev
+8496	Vietri_2017	1	La situazione è diventata ingarbugliata.	dev
+8497	Vietri_2017	1	L'aria si è fatta puzzolente.	dev
+8498	Vietri_2017	1	La situazione diventa ingarbugliatissima.	dev
+8499	Vietri_2017	1	A Riccardo, questi argomenti non l'hanno convinto.	dev
+8500	Vietri_2017	1	La follia spaventa Francesco.	dev
+8501	Vietri_2017	1	Le ragazze hanno innervosito Andrea.	dev
+8502	Vietri_2017	1	Le ragazze hanno preoccupato Francesco.	dev
+8503	Vietri_2017	1	Quei fuochi hanno innervosito Edoardo.	dev
+8504	Vietri_2017	0	Alice ha fatto calmare Andrea a quell'uomo.	dev
+8505	Vietri_2017	0	Maria ha fatto preoccupare Gabriele dalla fidanzata.	dev
+8506	Vietri_2017	1	Maria ha fatto irretire Leonardo.	dev
+8507	Vietri_2017	0	Riccardo si seduce.	dev
+8508	Vietri_2017	1	Lorenzo si è piaciuto per ciò.	dev
+8509	Vietri_2017	1	Edoardo si è spaventato a quella notizia.	dev
+8510	Vietri_2017	1	Riccardo si è agitato a quella notizia.	dev
+8511	Vietri_2017	1	Tommaso si è agitato per quella notizia.	dev
+8512	Vietri_2017	1	Riccardo è irritato di quella notizia.	dev
+8513	Vietri_2017	1	Il fatto che le tasse si abbasseranno illude i cittadini.	dev
+8514	Vietri_2017	1	Maria ha timore di ciò.	dev
+8515	Vietri_2017	1	Ciò fa terrore a Maria.	dev
+8516	Vietri_2017	1	Emma si sente nervosa.	dev
+8517	Vietri_2017	1	Sofia è in ansia per l'accaduto.	dev
+8518	Vietri_2017	1	Sofia ha i nervi a fior di pelle.	dev
+8519	Vietri_2017	0	Emma è in stupore.	dev
+8520	Vietri_2017	1	Paola è in uno stato di spavento.	dev
+8521	Vietri_2017	1	Quelle parole hanno offeso Francesco.	dev
+8522	Vietri_2017	1	I film horror appassionano Andrea.	dev
+8523	Vietri_2017	1	L'esplosione ha frantumato il vetro.	dev
+8524	Vietri_2017	1	Quella pietanza ha nauseato Francesco.	dev
+8525	Vietri_2017	1	Lo stato di salute di mia madre mi ha preoccupato subito.	dev
+8526	Vietri_2017	1	Lo stato di salute di mia madre mi ha addolorato in pochi minuti.	dev
+8527	Vietri_2017	1	Il fumo ha irritato la gola di Paola.	dev
+8528	Vietri_2017	1	Beatrice ha irritato Francesco.	dev
+8529	Vietri_2017	1	Il tuo arrivo improvviso ha agitato Gabriele.	dev
+8530	Vietri_2017	1	La reputazione di Emma si è distrutta con quello scandalo.	dev
+8531	Vietri_2017	1	L'intonaco si è sgretolato.	dev
+8532	Vietri_2017	1	La politica dell'Unione Europea ha schiacciato la Grecia.	dev
+8533	Vietri_2017	1	Giulia ha spento le polemiche.	dev
+8534	Vietri_2017	1	La schiena si è scottata.	dev
+8535	Vietri_2017	1	Gabriele si è rotto di Maria.	dev
+8536	Elia_1982	1	Riccardo è desideroso di partire.	dev
+8537	Elia_1982	1	Giulia sposta il cadavere dall'armadio al tavolo.	dev
+8538	Elia_1982	1	Francesco va a scuola.	dev
+8539	Elia_1982	1	Gabriele è alla scuola svizzera.	dev
+8540	Elia_1982	0	Gabriele è alla tavola.	dev
+8541	Elia_1982	1	Beatrice porta un piatto in tavola.	dev
+8542	Elia_1982	0	Giulia accompagna Gabriele in tavola.	dev
+8543	Elia_1982	1	Maria cade per terra.	dev
+8544	Elia_1982	1	Andrea ha iscritto il figlio a scuola di danza.	dev
+8545	Elia_1982	1	Emma ha portato il pacco a scuola.	dev
+8546	Elia_1982	1	Francesco sta in poltrona.	dev
+8547	Elia_1982	1	La palla è finita didietro.	dev
+8548	Elia_1982	1	La palla è finita in acqua.	dev
+8549	Elia_1982	1	Maria abita giù in basso.	dev
+8550	Elia_1982	1	Mi raccomando, tieni acqua in bocca.	dev
+8551	Vietri_1985	1	Il bambino piange.	dev
+8552	Vietri_1985	1	Lorenzo perde il cappello.	dev
+8553	Vietri_1985	1	Riccardo avrebbe bruciato le tappe.	dev
+8554	Vietri_1985	1	Maria ha rubato improvvisamente il cuore a Gabriele.	dev
+8555	Vietri_1985	1	Emma se la passava bene.	dev
+8556	Vietri_1985	1	Giulia mise gli occhi addosso a Lorenzo.	dev
+8557	Vietri_1985	1	Riccardo abbandonò l'abito sul divano.	dev
+8558	Vietri_1985	1	Maria inchinò la testa.	dev
+8559	Vietri_1985	1	Alice piegò la testa.	dev
+8560	Vietri_1985	1	Maria levò il capo.	dev
+8561	Vietri_1985	1	Maria rizzò il capo.	dev
+8562	Vietri_1985	1	Gabriele prese l'auto.	dev
+8563	Vietri_1985	0	Alessandro prese la trombosi.	dev
+8564	Vietri_1985	1	La trombosi venne ad Edoardo.	dev
+8565	Vietri_1985	1	Il tifo venne a Riccardo.	dev
+8566	Vietri_1985	1	Leonardo si scaldò.	dev
+8567	Vietri_1985	1	Maria si riposò.	dev
+8568	Vietri_1985	1	Alice si rinforzò.	dev
+8569	Vietri_1985	1	Paola e Francesco presero l'avvio.	dev
+8570	Vietri_1985	1	Riccardo ebbe una sbornia.	dev
+8571	Vietri_1985	1	Il formaggio fece la muffa.	dev
+8572	Vietri_1985	1	Sofia ebbe un bagno.	dev
+8573	Vietri_1985	1	Beatrice si maritò con Gabriele.	dev
+8574	Vietri_1985	1	Riccardo respirò aria fresca.	dev
+8575	Vietri_1985	1	Giulia prese una dritta.	dev
+8576	Vietri_1985	1	Giulia si sbagliò.	dev
+8577	Vietri_1985	0	L'aereo approdarono.	dev
+8578	Vietri_1985	1	Alessandro si bagnò.	dev
+8579	Vietri_1985	1	Tommaso arieggiò la sua stanza.	dev
+8580	Vietri_1985	0	La nave ammarò.	dev
+8581	Vietri_1985	1	Tommaso prese la terra dal secchio.	dev
+8582	Vietri_1985	1	I marinai vogavano.	dev
+8583	Vietri_1985	1	Il dollaro è salito.	dev
+8584	Vietri_1985	1	Il progetto ebbe successo.	dev
+8585	Vietri_1985	1	Lorenzo prese un cappellaccio.	dev
+8586	Vietri_1985	1	Riccardo si imbronciò.	dev
+8587	Vietri_1985	1	Andrea prese cappello.	dev
+8588	Vietri_1985	0	Paola prese corpo.	dev
+8589	Vietri_1985	1	Alessandro prese parte alla festa.	dev
+8590	Vietri_1985	1	Francesco annotò la lezione.	dev
+8591	Vietri_1985	1	Leonardo prese imbarco sulla nave.	dev
+8592	Vietri_1985	1	Paola prese informazioni su Alessandro.	dev
+8593	Vietri_1985	1	Edoardo si innamorò di Sofia.	dev
+8594	Vietri_1985	1	Paola prese un odio per Tommaso.	dev
+8595	Vietri_1985	0	Gli uccelli si imbeccarono dalla madre.	dev
+8596	Vietri_1985	1	Maria prese una cotta per Francesco.	dev
+8597	Vietri_1985	1	Maria si prese il gioco di Lorenzo.	dev
+8598	Vietri_1985	1	Lorenzo è il primo nella gara.	dev
+8599	Vietri_1985	1	Francesco prese il coltello per la lama.	dev
+8600	Vietri_1985	1	Leonardo fece il proprio danno.	dev
+8601	Vietri_1985	1	Lorenzo ha preso fischi per fiaschi.	dev
+8602	Vietri_1985	1	Maria fece una seduta di elioterapia.	dev
+8603	Vietri_1985	1	Andrea prese il treno.	dev
+8604	Vietri_1985	1	Ѐ stato perso troppe volte il treno, in questa redazione.	dev
+8605	Vietri_1985	0	La bussola fu persa da Gabriele.	dev
+8606	Vietri_1985	1	Andrea non si controllò più.	dev
+8607	Vietri_1985	1	Edoardo è un chimico.	dev
+8608	Vietri_1985	1	Tommaso mise giudizio.	dev
+8609	Vietri_1985	1	Lorenzo ne disse due a Maria.	dev
+8610	Vietri_1985	1	Beatrice prese fischi per fiaschi.	dev
+8611	Vietri_1985	1	Tommaso butta olio sul fuoco.	dev
+8612	Vietri_1985	1	Riccardo tirò l'acqua al proprio mulino.	dev
+8613	Vietri_1985	1	Alessandro si diede la zappa sui piedi.	dev
+8614	D-Agostino_1992	1	Emma ascolta un disco.	dev
+8615	D-Agostino_1992	1	Riccardo ha toccato Emma.	dev
+8616	D-Agostino_1992	1	Riccardo fa le traduzioni dei bollettini di guerra.	dev
+8617	D-Agostino_1992	1	Di te ride in maniera beffarda.	dev
+8618	D-Agostino_1992	1	Tommaso legge.	dev
+8619	D-Agostino_1992	1	Gabriele fa una telefonata a Maria.	dev
+8620	D-Agostino_1992	1	Tommaso dà un libro a Maria.	dev
+8621	D-Agostino_1992	1	Che Andrea abbia telefonato ha causato il fatto che Giulia sia ritornata.	dev
+8622	D-Agostino_1992	1	Riccardo telefona ad Emma.	dev
+8623	D-Agostino_1992	1	Emma è in angoscia.	dev
+8624	D-Agostino_1992	1	Leonardo odia Maria.	dev
+8625	D-Agostino_1992	1	Leonardo odia Paola?	dev
+8626	D-Agostino_1992	1	Alessandro andò a salutare il padre.	dev
+8627	D-Agostino_1992	1	Alessandro girò, con l'auto, a raccoglierla.	dev
+8628	D-Agostino_1992	1	Il battello virò a salvarli.	dev
+8629	D-Agostino_1992	1	Andrea obbedisce a lui sempre.	dev
+8630	D-Agostino_1992	1	I soldati hanno passato le armi ai prigionieri.	dev
+8631	D-Agostino_1992	1	Alessandro ama i bignè.	dev
+8632	D-Agostino_1992	0	Il cedro ama la libertà.	dev
+8633	D-Agostino_1992	0	Il giardiniere ha potato il barboncino di Edoardo.	dev
+8634	D-Agostino_1992	1	A Lorenzo, Alessandro gli ha lasciato una ricca eredità.	dev
+8635	D-Agostino_1992	1	Alessandro beve il suo caffè.	dev
+8636	D-Agostino_1992	1	Alessandro desidera rivedere Beatrice.	dev
+8637	D-Agostino_1992	1	Un gatto con gli occhi gialli sta sotto l'arco della porta.	dev
+8638	D-Agostino_1992	1	Paola ha coraggio.	dev
+8639	D-Agostino_1992	1	Gabriele segue una rigida condotta morale.	dev
+8640	D-Agostino_1992	0	La zanzara pratica una rigida condotta morale.	dev
+8641	D-Agostino_1992	0	Il frigorifero ha una forte cotta per Francesco.	dev
+8642	D-Agostino_1992	1	Tommaso dette degli schiaffi a Maria.	dev
+8643	D-Agostino_1992	1	Riccardo allungò uno schiaffo a Giulia.	dev
+8644	D-Agostino_1992	1	Riccardo resta in silenzio.	dev
+8645	D-Agostino_1992	1	Riccardo non ha più sospetti su Emma.	dev
+8646	D-Agostino_1992	1	Lorenzo riceve aiuto da Edoardo.	dev
+8647	D-Agostino_1992	1	Alessandro agita Beatrice.	dev
+8648	D-Agostino_1992	1	Edoardo fa friggere l'uovo nella padella.	dev
+8649	D-Agostino_1992	0	Riccardo procede al caricamento del camion di casse.	dev
+8650	D-Agostino_1992	1	L'inchiostro rosso è la carica della stilografica.	dev
+8651	D-Agostino_1992	1	La stilografica è caricata.	dev
+8652	D-Agostino_1992	1	Tommaso fruga nei cassetti della scrivania di Giulia.	dev
+8653	D-Agostino_1992	1	Andrea carica l'orologio.	dev
+8654	D-Agostino_1992	1	Riccardo dà molte botte al cane.	dev
+8655	D-Agostino_1992	1	Lorenzo sale, per una seconda volta, le scale di corsa.	dev
+8656	D-Agostino_1992	1	Beatrice ha l'incarico di rapire Emma.	dev
+8657	D-Agostino_1992	0	Alessandro corre l'asina.	dev
+8658	D-Agostino_1992	1	Francesco prende il cervo per la corna e lo atterra.	dev
+8659	D-Agostino_1992	0	Il frigo ha sedotto un gatto.	dev
+8660	D-Agostino_1992	0	Il frigo ha sedotto un tavolo.	dev
+8661	D-Agostino_1992	1	Riccardo ha sedotto una minorenne.	dev
+8662	D-Agostino_1992	1	Tutta la sala applaudì all'affermazione dell'oratore.	dev
+8663	D-Agostino_1992	1	Paola ha letto un libro.	dev
+8664	D-Agostino_1992	0	Maria colleziona biglietto d'amore.	dev
+8665	D-Agostino_1992	0	Riccardo ha tosato lo zio.	dev
+8666	D-Agostino_1992	1	Paola fa una corsa in giardino.	dev
+8667	D-Agostino_1992	1	Riccardo scambia libri con Maria.	dev
+8668	D-Agostino_1992	1	Alice ha curvato la fronte.	dev
+8669	D-Agostino_1992	0	Maria ha curvato la faccia.	dev
+8670	D-Agostino_1992	0	Sofia mantiene testa al nemico.	dev
+8671	D-Agostino_1992	1	Alessandro si gonfia la testa.	dev
+8672	D-Agostino_1992	1	Beatrice ha piantato in asso Giulia.	dev
+8673	D-Agostino_1992	1	Capire le intenzioni segrete di una persona.	dev
+8674	D-Agostino_1992	1	Maria cambia le carte.	dev
+8675	D-Agostino_1992	0	Riccardo fa a cattivo gioco.	dev
+8676	D-Agostino_1992	1	Andrea ha rotto il collo a Beatrice.	dev
+8677	D-Agostino_1992	1	La musica rock rompe le orecchie.	dev
+8678	D-Agostino_1992	1	Riccardo ha dato quel che è di Tommaso a Tommaso.	dev
+8679	D-Agostino_1992	1	La mosca salta al naso di Riccardo.	dev
+8680	D-Agostino_1992	1	Andare a monte.	dev
+8681	D-Agostino_1992	1	Essere all'indice.	dev
+8682	D-Agostino_1992	1	Mettere all'indice.	dev
+8683	D-Agostino_1992	1	Alzare il gomito.	dev
+8684	D-Agostino_1992	1	Perdere il lume della ragione.	dev
+8685	D-Agostino_1992	1	Cavare la castagne dal fuoco a qualcuno.	dev
+8686	D-Agostino_1992	1	Essere povero in canna.	dev
+8687	D-Agostino_1992	1	L'angelo custode accompagna la fantasia di ogni bambino.	dev
+8688	D-Agostino_1992	1	Ogni bambino ha un angelo custode che lo protegge.	dev
+8689	D-Agostino_1992	1	A quella festa è di rigore lo smoking.	dev
+8690	D-Agostino_1992	1	La moto di Leonardo è nuota di zecca.	dev
+8691	D-Agostino_1992	1	Ho visto un'unità in marcia.	dev
+8692	D-Agostino_1992	1	Che Leonardo ritorni piace a Maria.	dev
+8693	D-Agostino_1992	1	Sofia corre a mangiare.	dev
+8694	D-Agostino_1992	1	Andrea sorride a Sofia.	dev
+8695	D-Agostino_1992	1	Beatrice bada a che l'articolo sia chiaro.	dev
+8696	D-Agostino_1992	1	Alessandro divorzia da Paola.	dev
+8697	D-Agostino_1992	1	Riccardo abita in una casa piccola.	dev
+8698	D-Agostino_1992	1	Maria non sta a Roma.	dev
+8699	D-Agostino_1992	1	Mille stelle brillano nel cielo.	dev
+8700	D-Agostino_1992	0	Ciò guarda questa cosa.	dev
+8701	D-Agostino_1992	0	Tutti i giorni, Leonardo intensamente li studia tre ore al giorno.	dev
+8702	D-Agostino_1992	0	La parete è toccata dalle spalle di Riccardo.	dev
+8703	D-Agostino_1992	1	Lorenzo tocca la schiena di Paola.	dev
+8704	D-Agostino_1992	0	Una tale conclusione deriva.	dev
+8705	D-Agostino_1992	1	Gabriele mangia poca frutta.	dev
+8706	D-Agostino_1992	1	Andrea beve.	dev
+8707	D-Agostino_1992	1	Francesco pizzica con sadismo.	dev
+8708	D-Agostino_1992	1	Alessandro disegna sul muro.	dev
+8709	D-Agostino_1992	1	Lorenzo balla la rumba.	dev
+8710	D-Agostino_1992	1	La siesta è una dormita.	dev
+8711	D-Agostino_1992	1	Francesco nuota a rana.	dev
+8712	D-Agostino_1992	1	La spugna pulisce.	dev
+8713	D-Agostino_1992	1	Tutti bevono il the amaro.	dev
+8714	D-Agostino_1992	1	I lavori fatti hanno reso più larga la piazza.	dev
+8715	D-Agostino_1992	1	Tommaso afferra il gatto.	dev
+8716	D-Agostino_1992	1	Alessandro riflette sul gatto.	dev
+8717	D-Agostino_1992	1	Andrea discute la validità delle affermazioni di Maria.	dev
+8718	D-Agostino_1992	1	Riccardo fotografa Alice.	dev
+8719	D-Agostino_1992	1	Tommaso legge il giornale in salotto.	dev
+8720	D-Agostino_1992	1	Gabriele ha visto una casa di mattoni rossi.	dev
+8721	D-Agostino_1992	1	Tommaso ha visto una casa.	dev
+8722	D-Agostino_1992	1	I libri vecchi stanno nella cassa.	dev
+8723	D-Agostino_1992	1	Un libro passa da Beatrice a Francesco.	dev
+8724	D-Agostino_1992	1	Non c'è sempre una concordanza in Maria tra i fatti e le parole.	dev
+8725	D-Agostino_1992	1	Maria mette il libro nella borsa.	dev
+8726	D-Agostino_1992	1	Lorenzo stacca la foto dall'album.	dev
+8727	D-Agostino_1992	1	Emma ha ritrovato l'anello nel cassetto.	dev
+8728	D-Agostino_1992	0	Il meccanismo di funzionamento del rotore alloggia se stesso in quell'involucro.	dev
+8729	D-Agostino_1992	1	Quella scatola conserva le foto di Alessandro ed Edoardo.	dev
+8730	D-Agostino_1992	1	E ciò è avvenuto al bar.	dev
+8731	D-Agostino_1992	0	Paola ha estratto la pistola e ciò ha avuto luogo dalla borsa.	dev
+8732	D-Agostino_1992	1	Il libro non sta nella cartella.	dev
+8733	D-Agostino_1992	1	La commessa avvolge la carta da regalo intorno alla bottiglia.	dev
+8734	D-Agostino_1992	1	È dal marciapiedi alla porta di casa che Beatrice ha piantato dei paletti.	dev
+8735	D-Agostino_1992	1	Maria dà sepoltura al padre sotto un albero.	dev
+8736	D-Agostino_1992	1	La polizia sgombera la piazza dei dimostranti.	dev
+8737	D-Agostino_1992	1	L'architetto ha decorato la facciata di fregi in marmo.	dev
+8738	D-Agostino_1992	1	Andrea uccise Edoardo con un sol colpo di coltello.	dev
+8739	D-Agostino_1992	1	I bagagli non stanno nell'auto.	dev
+8740	D-Agostino_1992	1	I libri stanno nella stanza.	dev
+8741	D-Agostino_1992	1	I vestiti vecchi stanno nell'armadio.	dev
+8742	D-Agostino_1992	1	I vestiti vecchi non stanno nell'armadio.	dev
+8743	D-Agostino_1992	1	Andrea profuma la stanza di aromi di pino.	dev
+8744	D-Agostino_1992	1	Cicche intasano lo scarico della fontana.	dev
+8745	D-Agostino_1992	1	Maria fa l'innaffiatura delle piante con acqua con disinfestanti.	dev
+8746	D-Agostino_1992	1	Il radar ha localizzato l'aereo.	dev
+8747	D-Agostino_1992	1	Alessandro difende Beatrice dai pericoli.	dev
