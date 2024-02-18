@@ -802,8 +802,8 @@ def main():
     predict_metrics = {}
     if training_args.do_predict:
         logger.info("*** Predict ***")
-        predict_datasets = [eval_dataset, predict_dataset]
-        for predict_dataset in predict_datasets:
+        predict_datasets = [("dev", eval_dataset), ("test", predict_dataset)]
+        for split_name, predict_dataset in predict_datasets:
             # Removing the `label` columns because it contains -1 and Trainer won't like that.
             labels = predict_dataset["label"]
             labels = np.array(labels)
@@ -836,8 +836,10 @@ def main():
 
                 predict_metrics.update(
                     {
-                        f"test/test_accuracy_{category_name}": acc_result["accuracy"],
-                        f"test/test_mcc_{category_name}": mcc_result[
+                        f"{split_name}/accuracy_{category_name}": acc_result[
+                            "accuracy"
+                        ],
+                        f"{split_name}/mcc_{category_name}": mcc_result[
                             "matthews_correlation"
                         ],
                     }

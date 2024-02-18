@@ -19,6 +19,7 @@ import numpy as np
 import pandas as pd
 import wandb
 from datasets import Dataset
+from evaluate import load
 from sklearn.decomposition import PCA
 from sklearn.feature_selection import VarianceThreshold
 from sklearn.linear_model import LogisticRegression
@@ -51,6 +52,9 @@ from src.read_features import read_labels, load_features
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 warnings.filterwarnings("ignore")
+
+ACCURACY = load("accuracy")
+MCC = load("matthews_correlation")
 
 
 @hydra.main(version_base="1.2", config_path="./", config_name="params")
@@ -109,66 +113,64 @@ def train(config):
             run_name = f"{model_name}-{lang}-cola_{batch}_{lr}_balanced_{seed}"
             output_dir = model_save_dir + run_name
 
-            if pretrain_bert:
-                # Here we retrain the BERT model.
-                subprocess.run(
-                    f"{python_executable_path} src/train_fr.py \
-                      --model_name_or_path {model_name} \
-                      --train_file {train_data} \
-                      --validation_file {dev_data} \
-                      --test_file {test_data} \
-                      --hold_out_file {ood_data} \
-                      --do_train \
-                      --do_eval \
-                      --do_predict\
-                      --num_train_epochs {epoch}\
-                      --learning_rate {lr}\
-                      --weight_decay {decay}\
-                      --max_seq_length 64\
-                      --per_device_train_batch_size {batch}\
-                      --per_device_eval_batch_size {batch * 4}\
-                      --output_dir {output_dir}\
-                      --load_best_model_at_end True\
-                      --metric_for_best_model eval_loss\
-                      --evaluation_strategy epoch\
-                      --save_strategy epoch\
-                      --logging_strategy epoch\
-                      --balance_loss\
-                      --seed {seed}\
-                      --data_seed {seed}\
-                      --run_name {run_name}_transformer\
-                      --wandb_project {wandb_project}\
-                      --overwrite_output_dir",
-                    shell=True,
-                )
+            # Here we retrain the BERT model.
+            subprocess.run(
+                f"{python_executable_path} src/train_fr.py \
+                  --model_name_or_path {model_name} \
+                  --train_file {train_data} \
+                  --validation_file {dev_data} \
+                  --test_file {test_data} \
+                  --hold_out_file {ood_data} \
+                  --do_train \
+                  --do_eval \
+                  --do_predict\
+                  --num_train_epochs {epoch}\
+                  --learning_rate {lr}\
+                  --weight_decay {decay}\
+                  --max_seq_length 64\
+                  --per_device_train_batch_size {batch}\
+                  --per_device_eval_batch_size {batch * 4}\
+                  --output_dir {output_dir}\
+                  --load_best_model_at_end True\
+                  --metric_for_best_model eval_loss\
+                  --evaluation_strategy epoch\
+                  --save_strategy epoch\
+                  --logging_strategy epoch\
+                  --balance_loss\
+                  --seed {seed}\
+                  --data_seed {seed}\
+                  --run_name {run_name}_transformer\
+                  --wandb_project {wandb_project}\
+                  --overwrite_output_dir",
+                shell=True,
+            )
 
             # We compute the processing time from the point we generate the features.
             # Thus, we also include the grab of the attentions weights. We will later do an average over the 10 runs
             # and per sentence.
             tic = timeit.default_timer()
 
-            if pretrain_bert:
-                # Here we extract the attentions for the feature engineering pre-process (the next step).
-                subprocess.run(
-                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                    f"--data_file {train_data}",
-                    shell=True,
-                )
-                subprocess.run(
-                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                    f"--data_file {dev_data}",
-                    shell=True,
-                )
-                subprocess.run(
-                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                    f"--data_file {test_data}",
-                    shell=True,
-                )
-                subprocess.run(
-                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                    f"--data_file {ood_data}",
-                    shell=True,
-                )
+            # Here we extract the attentions for the feature engineering pre-process (the next step).
+            subprocess.run(
+                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                f"--data_file {train_data}",
+                shell=True,
+            )
+            subprocess.run(
+                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                f"--data_file {dev_data}",
+                shell=True,
+            )
+            subprocess.run(
+                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                f"--data_file {test_data}",
+                shell=True,
+            )
+            subprocess.run(
+                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                f"--data_file {ood_data}",
+                shell=True,
+            )
 
             if model_name != "xlm-roberta-base":
                 # Process the features pre-processing
@@ -243,185 +245,171 @@ def train(config):
                     stats_cap = 500
                     stats_tuple_lists_array = []
 
-                    if compute_topological_features:
-                        pool = Pool(num_of_workers)
+                    pool = Pool(num_of_workers)
 
-                        print("-- Start of the calculating of topological features --")
-                        for i, filename in enumerate(
-                            tqdm(adj_filenames, desc="Calculating topological features")
-                        ):
-                            if "gz" in filename:
-                                with gzip.GzipFile(filename, "rb") as f:
-                                    adj_matricies = np.load(f, allow_pickle=True)
-                            else:
-                                with open(filename, "rb") as f:
-                                    adj_matricies = np.load(f, allow_pickle=True)
-                            ntokens = ntokens_array[
-                                i
-                                * batch_size
-                                * DUMP_SIZE : (i + 1)
-                                * batch_size
-                                * DUMP_SIZE
-                            ]
-                            splitted = split_matricies_and_lengths(
-                                adj_matricies, ntokens, num_of_workers
-                            )
-                            args = [
-                                (
-                                    m,
-                                    thresholds_array,
-                                    ntokens,
-                                    stats_name.split("_"),
-                                    stats_cap,
-                                )
-                                for m, ntokens in splitted
-                            ]
-                            stats_tuple_lists_array_part = pool.starmap(
-                                count_top_stats, args
-                            )
-                            stats_tuple_lists_array.append(
-                                np.concatenate(
-                                    [_ for _ in stats_tuple_lists_array_part], axis=3
-                                )
-                            )
-
-                        # We close the pool after the execution
-                        pool.close()
-                        pool.terminate()
-                        pool.join()
-                        del pool
-                        gc.collect()
-
-                        print("-- Save of the stats tuple list array -- ")
-                        stats_tuple_lists_array = np.concatenate(
-                            stats_tuple_lists_array, axis=3
+                    print("-- Start of the calculating of topological features --")
+                    for i, filename in enumerate(
+                        tqdm(adj_filenames, desc="Calculating topological features")
+                    ):
+                        if "gz" in filename:
+                            with gzip.GzipFile(filename, "rb") as f:
+                                adj_matricies = np.load(f, allow_pickle=True)
+                        else:
+                            with open(filename, "rb") as f:
+                                adj_matricies = np.load(f, allow_pickle=True)
+                        ntokens = ntokens_array[
+                            i
+                            * batch_size
+                            * DUMP_SIZE : (i + 1)
+                            * batch_size
+                            * DUMP_SIZE
+                        ]
+                        splitted = split_matricies_and_lengths(
+                            adj_matricies, ntokens, num_of_workers
                         )
-                        np.save(stats_file, stats_tuple_lists_array)
-
-                        # Compute the template features
-                        print("-- Start of the template features process --")
-                        subprocess.run(
-                            f"{python_executable_path} -m src.template_features --model_dir {output_dir} "
-                            f"--data_file {subset_data_file_path} --num_of_workers {num_of_workers}",
-                            shell=True,
+                        args = [
+                            (
+                                m,
+                                thresholds_array,
+                                ntokens,
+                                stats_name.split("_"),
+                                stats_cap,
+                            )
+                            for m, ntokens in splitted
+                        ]
+                        stats_tuple_lists_array_part = pool.starmap(
+                            count_top_stats, args
+                        )
+                        stats_tuple_lists_array.append(
+                            np.concatenate(
+                                [_ for _ in stats_tuple_lists_array_part], axis=3
+                            )
                         )
 
-                    if compute_barcodes:
-                        # Compute the Barcode and Ripser features
-                        print(
-                            "-- Starting compute of the Barcode and Ripser++ features --"
-                        )
+                    # We close the pool after the execution
+                    pool.close()
+                    pool.terminate()
+                    pool.join()
+                    del pool
+                    gc.collect()
 
-                        r_file = attn_dir + subset
-                        barcodes_dir = model_path + "/features/barcodes/"
-                        os.makedirs(barcodes_dir, exist_ok=True)
-                        # we want tho have file as '`subset`_...' and not '/`subset`/...
-                        barcodes_file = barcodes_dir + subset
+                    print("-- Save of the stats tuple list array -- ")
+                    stats_tuple_lists_array = np.concatenate(
+                        stats_tuple_lists_array, axis=3
+                    )
+                    np.save(stats_file, stats_tuple_lists_array)
 
-                        adj_matricies = []
-                        assert number_of_batches == len(
-                            batched_sentences
-                        )  # sanity check
+                    # Compute the template features
+                    print("-- Start of the template features process --")
+                    subprocess.run(
+                        f"{python_executable_path} -m src.template_features --model_dir {output_dir} "
+                        f"--data_file {subset_data_file_path} --num_of_workers {num_of_workers}",
+                        shell=True,
+                    )
 
-                        dim = 1
-                        lower_bound = 1e-3
+                    # Compute the Barcode and Ripser features
+                    print("-- Starting compute of the Barcode and Ripser++ features --")
 
-                        # Processing of the features
+                    r_file = attn_dir + subset
+                    barcodes_dir = model_path + "/features/barcodes/"
+                    os.makedirs(barcodes_dir, exist_ok=True)
+                    # we want tho have file as '`subset`_...' and not '/`subset`/...
+                    barcodes_file = barcodes_dir + subset
 
-                        for i, filename in enumerate(
-                            tqdm(adj_filenames, desc="Barcodes calculation")
-                        ):
-                            part = filename.split("_")[-1].split(".")[0]
-                            if os.path.isfile(barcodes_file + "_" + part + ".json"):
-                                print("file already exists")
-                                print("passing", barcodes_file + "_" + part + ".json")
-                                continue
+                    adj_matricies = []
+                    assert number_of_batches == len(batched_sentences)  # sanity check
 
-                            if "gz" in filename:
-                                with gzip.GzipFile(filename, "rb") as f:
-                                    adj_matricies = np.load(f, allow_pickle=True)
-                            else:
-                                with open(filename, "rb") as f:
-                                    adj_matricies = np.load(f, allow_pickle=True)
-                            ntokens = ntokens_array[
-                                i
-                                * batch_size
-                                * DUMP_SIZE : (i + 1)
-                                * batch_size
-                                * DUMP_SIZE
-                            ]
+                    dim = 1
+                    lower_bound = 1e-3
 
-                            # We use a PoolExecutor to properly handle Risper++ process memory release as suggested by
-                            # this issue https://github.com/simonzhang00/ripser-plusplus/issues/5.
-                            with ProcessPoolExecutor(max_workers=1) as executor:
-                                barcodes = executor.submit(
-                                    get_only_barcodes,
-                                    adj_matricies=adj_matricies,
-                                    ntokens_array=ntokens,
-                                    dim=dim,
-                                    lower_bound=lower_bound,
-                                    verbose=True,
-                                ).result()
+                    # Processing of the features
 
-                            save_barcodes(
-                                barcodes, barcodes_file + "_" + part + ".json"
-                            )
+                    for i, filename in enumerate(
+                        tqdm(adj_filenames, desc="Barcodes calculation")
+                    ):
+                        part = filename.split("_")[-1].split(".")[0]
+                        if os.path.isfile(barcodes_file + "_" + part + ".json"):
+                            print("file already exists")
+                            print("passing", barcodes_file + "_" + part + ".json")
+                            continue
 
-                        print("-- Processing of Ripser++ features --")
-                        # Barcodes' Ripser Features
-                        ripser_features = [
-                            "h0_s",
-                            "h0_e",
-                            "h0_t_d",
-                            "h0_n_d_m_t0.75",
-                            "h0_n_d_m_t0.5",
-                            "h0_n_d_l_t0.25",
-                            "h1_t_b",
-                            "h1_n_b_m_t0.25",
-                            "h1_n_b_l_t0.95",
-                            "h1_n_b_l_t0.70",
-                            "h1_s",
-                            "h1_e",
-                            "h1_v",
-                            "h1_nb",
+                        if "gz" in filename:
+                            with gzip.GzipFile(filename, "rb") as f:
+                                adj_matricies = np.load(f, allow_pickle=True)
+                        else:
+                            with open(filename, "rb") as f:
+                                adj_matricies = np.load(f, allow_pickle=True)
+                        ntokens = ntokens_array[
+                            i
+                            * batch_size
+                            * DUMP_SIZE : (i + 1)
+                            * batch_size
+                            * DUMP_SIZE
                         ]
 
-                        json_filenames = [
-                            output_dir + "/features/barcodes/" + filename
-                            for filename in os.listdir(
-                                model_path + "/features/barcodes/"
-                            )
-                            if r_file.split("/")[-1] in filename.split("_part")[0]
-                        ]
-                        json_filenames = sorted(
-                            json_filenames,
-                            key=lambda x: int(
-                                x.split("_")[-1].split("of")[0][4:].strip()
-                            ),
-                        )
+                        # We use a PoolExecutor to properly handle Risper++ process memory release as suggested by
+                        # this issue https://github.com/simonzhang00/ripser-plusplus/issues/5.
+                        with ProcessPoolExecutor(max_workers=1) as executor:
+                            barcodes = executor.submit(
+                                get_only_barcodes,
+                                adj_matricies=adj_matricies,
+                                ntokens_array=ntokens,
+                                dim=dim,
+                                lower_bound=lower_bound,
+                                verbose=True,
+                            ).result()
 
-                        features_array = []
+                        save_barcodes(barcodes, barcodes_file + "_" + part + ".json")
 
-                        for filename in tqdm(json_filenames, desc="Computing Ripser++"):
-                            barcodes = json.load(open(filename))
-                            print(f"Barcodes loaded from: {filename}", flush=True)
-                            features_part = []
-                            for layer in barcodes:
-                                features_layer = []
-                                for head in barcodes[layer]:
-                                    ref_barcodes = reformat_barcodes(
-                                        barcodes[layer][head]
-                                    )
-                                    features = count_ripser_features(
-                                        ref_barcodes, ripser_features
-                                    )
-                                    features_layer.append(features)
-                                features_part.append(features_layer)
-                            features_array.append(np.asarray(features_part))
+                    print("-- Processing of Ripser++ features --")
+                    # Barcodes' Ripser Features
+                    ripser_features = [
+                        "h0_s",
+                        "h0_e",
+                        "h0_t_d",
+                        "h0_n_d_m_t0.75",
+                        "h0_n_d_m_t0.5",
+                        "h0_n_d_l_t0.25",
+                        "h1_t_b",
+                        "h1_n_b_m_t0.25",
+                        "h1_n_b_l_t0.95",
+                        "h1_n_b_l_t0.70",
+                        "h1_s",
+                        "h1_e",
+                        "h1_v",
+                        "h1_nb",
+                    ]
 
-                        features = np.concatenate(features_array, axis=2)
-                        ripser_file = f"{model_path}/features/{subset}_ripser.npy"
-                        np.save(ripser_file, features)
+                    json_filenames = [
+                        output_dir + "/features/barcodes/" + filename
+                        for filename in os.listdir(model_path + "/features/barcodes/")
+                        if r_file.split("/")[-1] in filename.split("_part")[0]
+                    ]
+                    json_filenames = sorted(
+                        json_filenames,
+                        key=lambda x: int(x.split("_")[-1].split("of")[0][4:].strip()),
+                    )
+
+                    features_array = []
+
+                    for filename in tqdm(json_filenames, desc="Computing Ripser++"):
+                        barcodes = json.load(open(filename))
+                        print(f"Barcodes loaded from: {filename}", flush=True)
+                        features_part = []
+                        for layer in barcodes:
+                            features_layer = []
+                            for head in barcodes[layer]:
+                                ref_barcodes = reformat_barcodes(barcodes[layer][head])
+                                features = count_ripser_features(
+                                    ref_barcodes, ripser_features
+                                )
+                                features_layer.append(features)
+                            features_part.append(features_layer)
+                        features_array.append(np.asarray(features_part))
+
+                    features = np.concatenate(features_array, axis=2)
+                    ripser_file = f"{model_path}/features/{subset}_ripser.npy"
+                    np.save(ripser_file, features)
 
                 toc = timeit.default_timer()
 
@@ -481,6 +469,8 @@ def train(config):
                         ],
                     )
                 )
+                valid_categories = X_valid["category"]
+                test_categories = X_test["category"]
 
                 X_train = X_train.iloc[:, ~X_train.columns.str.startswith("w")]
                 X_valid = X_valid.loc[:, X_train.columns]
@@ -522,14 +512,6 @@ def train(config):
                     ]
                 )
                 kfold = StratifiedKFold(n_splits=3, shuffle=True, random_state=seed)
-
-                if lang == "no":
-                    # since "no" dataset is larger than the other, when we create the jobs,
-                    # we can get an OOM since all the process require mode virtual RAM than the physical RAM available,
-                    # thus, the process is killed.
-                    # In that case, we recommend using few multiprocessing here, and anyway the gridsearch is
-                    # relatively small.
-                    num_of_workers = 2
 
                 clf_ = GridSearchCV(
                     pipeline,
@@ -578,6 +560,48 @@ def train(config):
                 wandb.log({"test/lda-acc": test_res_metrics[0]})
                 wandb.log({"test/lda-mcc": test_res_metrics[1]})
 
+                valid_predict = clf_.best_estimator_.predict(X_valid)
+                test_predict = clf_.best_estimator_.predict(X_test)
+
+                predict_datasets = [
+                    ("dev", valid_categories, valid_predict, y_valid),
+                    ("test", test_categories, test_predict, y_test),
+                ]
+
+                for split_name, categories, predictions, labels in predict_datasets:
+                    labels = np.array(labels)
+                    for category_name in [
+                        "semantic",
+                        "syntax",
+                        "morphology",
+                        "anglicism",
+                    ]:
+                        cat_idxs = [
+                            idx
+                            for idx, category in enumerate(categories)
+                            if category == category_name
+                        ]
+                        cat_labels = labels[cat_idxs]
+                        cat_pred = predictions[cat_idxs]
+
+                        acc_result = ACCURACY.compute(
+                            predictions=cat_pred, references=cat_labels
+                        )
+                        mcc_result = MCC.compute(
+                            predictions=cat_pred, references=cat_labels
+                        )
+
+                        wandb.log(
+                            {
+                                f"{split_name}/accuracy_{category_name}": acc_result[
+                                    "accuracy"
+                                ],
+                                f"{split_name}/mcc_{category_name}": mcc_result[
+                                    "matthews_correlation"
+                                ],
+                            }
+                        )
+
                 ood_res_metrics = print_scores(
                     clf_.best_estimator_.predict(X_ood), y_ood
                 )
@@ -588,23 +612,23 @@ def train(config):
 
                 wandb.finish(exit_code=0)
 
-            print(
-                f"Average time taken to process the features over the 10 runs for all three splits is: "
-                f"{mean(processing_time)}"
-            )
-
-            with open(
-                os.path.join(".", f"reproduce_results_time_{lang}.txt"), "w"
-            ) as file:
                 print(
                     f"Average time taken to process the features over the 10 runs for all three splits is: "
-                    f"{mean(processing_time)}",
-                    file=file,
+                    f"{mean(processing_time)}"
                 )
-            with open(
-                os.path.join(".", f"reproduce_results_time_{lang}.pickle"), "wb"
-            ) as file:
-                pickle.dump(processing_time, file)
+
+                with open(
+                    os.path.join(".", f"reproduce_results_time_{lang}.txt"), "w"
+                ) as file:
+                    print(
+                        f"Average time taken to process the features over the 10 runs for all three splits is: "
+                        f"{mean(processing_time)}",
+                        file=file,
+                    )
+                with open(
+                    os.path.join(".", f"reproduce_results_time_{lang}.pickle"), "wb"
+                ) as file:
+                    pickle.dump(processing_time, file)
 
         if config.clean_seed_directory:
             # We deleted the directory since everything is logged in Wandb and it takes space.
