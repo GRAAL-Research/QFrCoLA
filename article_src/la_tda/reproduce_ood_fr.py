@@ -31,6 +31,8 @@ from sklearn.preprocessing import (
 from tqdm import tqdm
 from transformers import AutoTokenizer
 
+from article_src.la_tda.src.load_dataset_wrapper import load_dataset_tsv
+
 # from concurrent.futures import ProcessPoolExecutor # Until fixed in Python 3.12.1
 from process_fix import ProcessPoolExecutor  # Temporary local fix
 from src.barcode_feature import (
@@ -145,34 +147,34 @@ def train(config):
                 shell=True,
             )
 
-            # We compute the processing time from the point we generate the features.
-            # Thus, we also include the grab of the attentions weights. We will later do an average over the 10 runs
-            # and per sentence.
-            tic = timeit.default_timer()
-
-            # Here we extract the attentions for the feature engineering pre-process (the next step).
-            subprocess.run(
-                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                f"--data_file {train_data}",
-                shell=True,
-            )
-            subprocess.run(
-                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                f"--data_file {dev_data}",
-                shell=True,
-            )
-            subprocess.run(
-                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                f"--data_file {test_data}",
-                shell=True,
-            )
-            subprocess.run(
-                f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
-                f"--data_file {ood_data}",
-                shell=True,
-            )
-
             if model_name != "xlm-roberta-base":
+                # We compute the processing time from the point we generate the features.
+                # Thus, we also include the grab of the attentions weights. We will later do an average over the 10 runs
+                # and per sentence.
+                tic = timeit.default_timer()
+
+                # Here we extract the attentions for the feature engineering pre-process (the next step).
+                subprocess.run(
+                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                    f"--data_file {train_data}",
+                    shell=True,
+                )
+                subprocess.run(
+                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                    f"--data_file {dev_data}",
+                    shell=True,
+                )
+                subprocess.run(
+                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                    f"--data_file {test_data}",
+                    shell=True,
+                )
+                subprocess.run(
+                    f"{python_executable_path} -m src.grab_attentions --model_dir {output_dir} "
+                    f"--data_file {ood_data}",
+                    shell=True,
+                )
+
                 # Process the features pre-processing
                 stats_name = "s_w_e_v_c_b0b1_m_k"
                 thresholds_array = [0.025, 0.05, 0.1, 0.25, 0.5, 0.75]
@@ -469,8 +471,17 @@ def train(config):
                         ],
                     )
                 )
-                valid_categories = X_valid["category"]
-                test_categories = X_test["category"]
+
+                data_files = {
+                    "train": train_data,
+                    "dev": dev_data,
+                    "test": test_data,
+                }
+
+                cola = load_dataset_tsv(data_files=data_files)
+
+                valid_categories = cola["dev"]["category"]
+                test_categories = cola["test"]["category"]
 
                 X_train = X_train.iloc[:, ~X_train.columns.str.startswith("w")]
                 X_valid = X_valid.loc[:, X_train.columns]
