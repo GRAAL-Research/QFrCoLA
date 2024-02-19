@@ -31,7 +31,7 @@ from sklearn.preprocessing import (
 from tqdm import tqdm
 from transformers import AutoTokenizer
 
-from article_src.la_tda.src.load_dataset_wrapper import load_dataset_tsv
+from src.load_dataset_wrapper import load_dataset_tsv
 
 # from concurrent.futures import ProcessPoolExecutor # Until fixed in Python 3.12.1
 from process_fix import ProcessPoolExecutor  # Temporary local fix
