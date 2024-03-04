@@ -772,11 +772,14 @@ def main():
                 combined = {}
 
             for hold_out_dataset, task in zip(hold_out_datasets, tasks):
+                labels = hold_out_dataset["label"]
+                labels = np.array(labels)
+
+                # We need to remove labels otherwise it will compute a loss
+                hold_out_dataset = hold_out_dataset.remove_columns("label")
                 predict = trainer.predict(
                     hold_out_dataset, metric_key_prefix="hold_out"
                 )
-                labels = predict_dataset["label"]
-                labels = np.array(labels)
 
                 metrics = trainer.compute_metrics(
                     EvalPrediction(predictions=predict.predictions, label_ids=labels)
