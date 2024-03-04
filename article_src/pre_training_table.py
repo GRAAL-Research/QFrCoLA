@@ -149,7 +149,7 @@ for run in runs:
         keys_to_keep = [
             key
             for key in clean_summary.keys()
-            if "test" in key and ("_mcc" in key or "_acc" in key)
+            if "test" in key and ("mcc_" in key or "accuracy_" in key)
         ]
 
         run_data = {
@@ -172,7 +172,7 @@ for run in runs:
         keys_to_keep = [
             key
             for key in clean_summary.keys()
-            if "test" in key and ("_mcc" in key or "_acc" in key)
+            if "test" in key and ("mcc_" in key or "accuracy_" in key)
         ]
 
         run_data = {
