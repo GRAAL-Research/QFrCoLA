@@ -55,6 +55,7 @@ logger = logging.getLogger(__name__)
 
 ACCURACY = load("accuracy")
 MCC = load("matthews_correlation")
+Pearson = load("pearsonr")
 
 
 @dataclass
@@ -596,10 +597,14 @@ def main():
 
         acc_result = ACCURACY.compute(predictions=preds, references=p.label_ids)
         mcc_result = MCC.compute(predictions=preds, references=p.label_ids)
+        pearson_restults = Pearson.compute(
+            predictions=preds, references=p.label_ids, return_pvalue=True
+        )
 
         result = {
             "accuracy": acc_result["accuracy"],
             "mcc": mcc_result["matthews_correlation"],
+            "pearson": pearson_restults["pearsonr"],
         }
 
         return result
