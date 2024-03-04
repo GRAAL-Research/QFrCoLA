@@ -762,6 +762,7 @@ def main():
             )
 
         if raw_datasets.get("hold_out") is not None:
+            print("Doing hould out here!")
             # Hold-out Loop to handle MNLI double evaluation (matched, mis-matched)
             tasks = [data_args.task_name]
             hold_out_datasets = [hold_out_dataset]
