@@ -55,6 +55,7 @@ logger = logging.getLogger(__name__)
 
 ACCURACY = load("accuracy")
 MCC = load("matthews_correlation")
+Pearson = load("pearsonr")
 
 
 @dataclass
@@ -585,10 +586,14 @@ def main():
 
         acc_result = ACCURACY.compute(predictions=preds, references=p.label_ids)
         mcc_result = MCC.compute(predictions=preds, references=p.label_ids)
+        pearson_restults = Pearson.compute(
+            predictions=preds, references=p.label_ids, return_pvalue=True
+        )
 
         result = {
             "accuracy": acc_result["accuracy"],
             "mcc": mcc_result["matthews_correlation"],
+            "pearson": pearson_restults["pearsonr"],
         }
 
         return result
@@ -766,21 +771,15 @@ def main():
                 combined = {}
 
             for hold_out_dataset, task in zip(hold_out_datasets, tasks):
-                metrics = trainer.evaluate(
-                    eval_dataset=hold_out_dataset, metric_key_prefix="hold_out/"
+                predict = trainer.predict(
+                    hold_out_dataset, metric_key_prefix="hold_out"
                 )
+                labels = predict_dataset["label"]
+                labels = np.array(labels)
 
-                max_test_samples = (
-                    data_args.max_predict_samples
-                    if data_args.max_predict_samples is not None
-                    else len(eval_dataset)
+                metrics = trainer.compute_metrics(
+                    EvalPrediction(predictions=predict.predictions, label_ids=labels)
                 )
-                metrics["hold_out_samples"] = min(max_test_samples, len(eval_dataset))
-
-                if task == "mnli-mm":
-                    metrics = {k + "_mm": v for k, v in metrics.items()}
-                if task is not None and "mnli" in task:
-                    combined.update(metrics)
 
                 trainer.log_metrics("hold_out", metrics)
                 trainer.save_metrics(
