@@ -580,6 +580,9 @@ def train(config):
                 if config.clean_seed_directory:
                     # We deleted the directory since everything is logged in Wandb and it takes space.
                     shutil.rmtree(output_dir)
+                else:
+                    with open(os.path.join(output_dir, "la_tda.pkl"), "wb") as file:
+                        pickle.dump(clf_.best_estimator_, file)
 
                 wandb.finish(exit_code=0)
 
