@@ -799,7 +799,7 @@ def main():
             # Removing the `label` columns because it contains -1 and Trainer won't like that.
             labels = predict_dataset["label"]
             labels = np.array(labels)
-            categories = predict_dataset["category"]
+            # categories = predict_dataset["category"]
 
             predict_dataset = predict_dataset.remove_columns("label")
             predict = trainer.predict(predict_dataset, metric_key_prefix="predict")
@@ -811,31 +811,31 @@ def main():
                 else np.argmax(predictions, axis=1)
             )
 
-            # Category computes stats
-            for category_name in ["semantic", "syntax", "morphology", "anglicism"]:
-                cat_idxs = [
-                    idx
-                    for idx, category in enumerate(categories)
-                    if category == category_name
-                ]
-                cat_labels = labels[cat_idxs]
-                cat_pred = predictions[cat_idxs]
-
-                acc_result = ACCURACY.compute(
-                    predictions=cat_pred, references=cat_labels
-                )
-                mcc_result = MCC.compute(predictions=cat_pred, references=cat_labels)
-
-                predict_metrics.update(
-                    {
-                        f"{split_name}/accuracy_{category_name}": acc_result[
-                            "accuracy"
-                        ],
-                        f"{split_name}/mcc_{category_name}": mcc_result[
-                            "matthews_correlation"
-                        ],
-                    }
-                )
+            # # Category computes stats
+            # for category_name in ["semantic", "syntax", "morphology", "anglicism"]:
+            #     cat_idxs = [
+            #         idx
+            #         for idx, category in enumerate(categories)
+            #         if category == category_name
+            #     ]
+            #     cat_labels = labels[cat_idxs]
+            #     cat_pred = predictions[cat_idxs]
+            #
+            #     acc_result = ACCURACY.compute(
+            #         predictions=cat_pred, references=cat_labels
+            #     )
+            #     mcc_result = MCC.compute(predictions=cat_pred, references=cat_labels)
+            #
+            #     predict_metrics.update(
+            #         {
+            #             f"{split_name}/accuracy_{category_name}": acc_result[
+            #                 "accuracy"
+            #             ],
+            #             f"{split_name}/mcc_{category_name}": mcc_result[
+            #                 "matthews_correlation"
+            #             ],
+            #         }
+            #     )
 
     kwargs = {
         "finetuned_from": model_args.model_name_or_path,
