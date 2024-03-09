@@ -117,7 +117,7 @@ def train(config):
 
             # Here we retrain the BERT model.
             subprocess.run(
-                f"{python_executable_path} src/train_fr.py \
+                f"{python_executable_path} src/train_fluency.py \
                   --model_name_or_path {model_name} \
                   --train_file {train_data} \
                   --validation_file {dev_data} \
