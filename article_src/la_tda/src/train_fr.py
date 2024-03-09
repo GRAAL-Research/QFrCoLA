@@ -790,7 +790,8 @@ def main():
                 st_dev_score_pred = probs_preds.numpy().std()
                 mean_score_label = labels.mean()
                 st_dev_score_label = labels.std()
-                return {
+
+                results = {
                     "fluency_rmse": float(rmse),
                     "fluency_R2": float(r_squared),
                     "fluency_mcc": float(mcc_result["matthews_correlation"]),
@@ -800,6 +801,7 @@ def main():
                     "fluency_mean_score_label": float(mean_score_label),
                     "fluency_st_dev_score_label": float(st_dev_score_label),
                 }
+                return results
 
             print("Doing hould out here!")
             # Hold-out Loop to handle MNLI double evaluation (matched, mis-matched)
@@ -813,7 +815,10 @@ def main():
                 hold_out_dataset = hold_out_dataset.remove_columns("label")
                 predict = trainer.predict(hold_out_dataset)
 
-                metrics = compute_metrics_probs(
+                # We change the compute metrics for the one for probs
+                trainer.compute_metrics = compute_metrics_probs
+
+                metrics = trainer.compute_metrics(
                     EvalPrediction(predictions=predict.predictions, label_ids=labels)
                 )
 
