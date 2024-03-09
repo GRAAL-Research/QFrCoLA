@@ -506,11 +506,15 @@ def main():
             result["label"] = examples["acceptable"]
         if "fluency" in examples:
             result["label"] = examples["fluency"]
-        elif label_to_id is not None and "label" in examples:
-            # Map labels to IDs (not necessary for GLUE tasks)
-            result["label"] = [
-                (label_to_id[l] if l != -1 else -1) for l in examples["label"]
-            ]
+        elif "label" in examples:
+            if isinstance(examples["label"][0], float):
+                # Otherwise it will fail due to the mapping.
+                result["label"] = examples["label"]
+            elif label_to_id is not None:
+                # Map labels to IDs (not necessary for GLUE tasks)
+                result["label"] = [
+                    (label_to_id[l] if l != -1 else -1) for l in examples["label"]
+                ]
         return result
 
     with training_args.main_process_first(desc="dataset map pre-processing"):
