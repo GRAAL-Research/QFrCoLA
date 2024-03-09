@@ -5,10 +5,12 @@ from dataclasses import dataclass, field
 import datasets
 import numpy as np
 import torch
+import torch.nn.functional as F
 import transformers
 import wandb
 from datasets import load_dataset
 from evaluate import load
+from sklearn.metrics import mean_squared_error
 from sklearn.utils import class_weight
 from transformers import (
     AutoConfig,
@@ -56,6 +58,7 @@ logger = logging.getLogger(__name__)
 ACCURACY = load("accuracy")
 MCC = load("matthews_correlation")
 Pearson = load("pearsonr")
+r2_metric = load("r_squared")
 
 
 @dataclass
@@ -762,16 +765,47 @@ def main():
             )
 
         if raw_datasets.get("hold_out") is not None:
+
+            def compute_metrics_probs(p: EvalPrediction):
+                # We get the highest probability amongst the two predicted by the model.
+                # We also multiply it by 100 since fluency score are in [0, 100].
+                probs_preds = (
+                    F.softmax(torch.tensor(p.predictions), dim=-1).max(-1).values * 100
+                )
+
+                labels = p.label_ids
+                rmse = mean_squared_error(
+                    y_true=labels, y_pred=probs_preds, squared=False
+                )
+                r_squared = r2_metric.compute(
+                    predictions=probs_preds, references=labels
+                )
+
+                mcc_result = MCC.compute(predictions=probs_preds, references=labels)
+                pearson_restults = Pearson.compute(
+                    predictions=probs_preds, references=labels, return_pvalue=True
+                )
+
+                mean_score_pred = probs_preds.numpy().mean()
+                st_dev_score_pred = probs_preds.numpy().std()
+                mean_score_label = labels.mean()
+                st_dev_score_label = labels.std()
+                return {
+                    "rmse": rmse,
+                    "R2": r_squared,
+                    "mcc": mcc_result["matthews_correlation"],
+                    "pearson_corr": pearson_restults["pearsonr"],
+                    "mean_score_pred": mean_score_pred,
+                    "st_dev_score_pred": st_dev_score_pred,
+                    "mean_score_label": mean_score_label,
+                    "st_dev_score_label": st_dev_score_label,
+                }
+
             print("Doing hould out here!")
             # Hold-out Loop to handle MNLI double evaluation (matched, mis-matched)
             tasks = [data_args.task_name]
-            hold_out_datasets = [hold_out_dataset]
-            if data_args.task_name == "mnli":
-                tasks.append("mnli-mm")
-                hold_out_datasets.append(raw_datasets["hold_out_mismatched"])
-                combined = {}
 
-            for hold_out_dataset, task in zip(hold_out_datasets, tasks):
+            for hold_out_dataset, task in zip([hold_out_dataset], tasks):
                 labels = hold_out_dataset["label"]
                 labels = np.array(labels)
 
@@ -781,61 +815,15 @@ def main():
                     hold_out_dataset, metric_key_prefix="hold_out"
                 )
 
-                metrics = trainer.compute_metrics(
+                metrics = compute_metrics_probs(
                     EvalPrediction(predictions=predict.predictions, label_ids=labels)
                 )
 
                 trainer.log_metrics("hold_out", metrics)
                 trainer.save_metrics(
                     "hold_out_dataset",
-                    combined if task is not None and "mnli" in task else metrics,
+                    metrics,
                 )
-
-    predict_metrics = {}
-    if training_args.do_predict:
-        logger.info("*** Predict ***")
-        predict_datasets = [("dev", eval_dataset), ("test", predict_dataset)]
-        for split_name, predict_dataset in predict_datasets:
-            # Removing the `label` columns because it contains -1 and Trainer won't like that.
-            labels = predict_dataset["label"]
-            labels = np.array(labels)
-            # categories = predict_dataset["category"]
-
-            predict_dataset = predict_dataset.remove_columns("label")
-            predict = trainer.predict(predict_dataset, metric_key_prefix="predict")
-            predictions = predict.predictions
-
-            predictions = (
-                np.squeeze(predictions)
-                if is_regression
-                else np.argmax(predictions, axis=1)
-            )
-
-            # # Category computes stats
-            # for category_name in ["semantic", "syntax", "morphology", "anglicism"]:
-            #     cat_idxs = [
-            #         idx
-            #         for idx, category in enumerate(categories)
-            #         if category == category_name
-            #     ]
-            #     cat_labels = labels[cat_idxs]
-            #     cat_pred = predictions[cat_idxs]
-            #
-            #     acc_result = ACCURACY.compute(
-            #         predictions=cat_pred, references=cat_labels
-            #     )
-            #     mcc_result = MCC.compute(predictions=cat_pred, references=cat_labels)
-            #
-            #     predict_metrics.update(
-            #         {
-            #             f"{split_name}/accuracy_{category_name}": acc_result[
-            #                 "accuracy"
-            #             ],
-            #             f"{split_name}/mcc_{category_name}": mcc_result[
-            #                 "matthews_correlation"
-            #             ],
-            #         }
-            #     )
 
     kwargs = {
         "finetuned_from": model_args.model_name_or_path,
@@ -855,7 +843,6 @@ def main():
     cleanup_memory(trainer=trainer, model=model, tokenizer=tokenizer)
 
     wandb.config.update({"tag": model_args.model_name_or_path})
-    wandb.log(predict_metrics)
 
     wandb.finish(exit_code=0)
 
