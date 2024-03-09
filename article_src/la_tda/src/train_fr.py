@@ -791,14 +791,14 @@ def main():
                 mean_score_label = labels.mean()
                 st_dev_score_label = labels.std()
                 return {
-                    "rmse": rmse,
-                    "R2": r_squared,
-                    "mcc": mcc_result["matthews_correlation"],
-                    "pearson_corr": pearson_restults["pearsonr"],
-                    "mean_score_pred": mean_score_pred,
-                    "st_dev_score_pred": st_dev_score_pred,
-                    "mean_score_label": mean_score_label,
-                    "st_dev_score_label": st_dev_score_label,
+                    "rmse": float(rmse),
+                    "R2": float(r_squared),
+                    "mcc": float(mcc_result["matthews_correlation"]),
+                    "pearson_corr": float(pearson_restults["pearsonr"]),
+                    "mean_score_pred": float(mean_score_pred),
+                    "st_dev_score_pred": float(st_dev_score_pred),
+                    "mean_score_label": float(mean_score_label),
+                    "st_dev_score_label": float(st_dev_score_label),
                 }
 
             print("Doing hould out here!")
