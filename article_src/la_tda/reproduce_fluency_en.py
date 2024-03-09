@@ -31,7 +31,7 @@ from sklearn.preprocessing import (
 from tqdm import tqdm
 from transformers import AutoTokenizer, EvalPrediction
 
-from article_src.la_tda.src.compute_metrics import compute_metrics_probs
+from src.compute_metrics import compute_metrics_probs
 
 # from concurrent.futures import ProcessPoolExecutor # Until fixed in Python 3.12.1
 from process_fix import ProcessPoolExecutor  # Temporary local fix
