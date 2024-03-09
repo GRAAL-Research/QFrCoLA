@@ -791,14 +791,14 @@ def main():
                 mean_score_label = labels.mean()
                 st_dev_score_label = labels.std()
                 return {
-                    "rmse": float(rmse),
-                    "R2": float(r_squared),
-                    "mcc": float(mcc_result["matthews_correlation"]),
-                    "pearson_corr": float(pearson_restults["pearsonr"]),
-                    "mean_score_pred": float(mean_score_pred),
-                    "st_dev_score_pred": float(st_dev_score_pred),
-                    "mean_score_label": float(mean_score_label),
-                    "st_dev_score_label": float(st_dev_score_label),
+                    "fluency_rmse": float(rmse),
+                    "fluency_R2": float(r_squared),
+                    "fluency_mcc": float(mcc_result["matthews_correlation"]),
+                    "fluency_pearson_corr": float(pearson_restults["pearsonr"]),
+                    "fluency_mean_score_pred": float(mean_score_pred),
+                    "fluency_st_dev_score_pred": float(st_dev_score_pred),
+                    "fluency_mean_score_label": float(mean_score_label),
+                    "fluency_st_dev_score_label": float(st_dev_score_label),
                 }
 
             print("Doing hould out here!")
@@ -811,17 +811,15 @@ def main():
 
                 # We need to remove labels otherwise it will compute a loss
                 hold_out_dataset = hold_out_dataset.remove_columns("label")
-                predict = trainer.predict(
-                    hold_out_dataset, metric_key_prefix="hold_out"
-                )
+                predict = trainer.predict(hold_out_dataset)
 
                 metrics = compute_metrics_probs(
                     EvalPrediction(predictions=predict.predictions, label_ids=labels)
                 )
 
-                trainer.log_metrics("hold_out", metrics)
+                trainer.log_metrics("test", metrics)
                 trainer.save_metrics(
-                    "hold_out_dataset",
+                    "fluency_dataset",
                     metrics,
                 )
 
