@@ -29,9 +29,9 @@ from sklearn.preprocessing import (
     StandardScaler,
 )
 from tqdm import tqdm
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, EvalPrediction
 
-from src.load_dataset_wrapper import load_dataset_tsv
+from article_src.la_tda.src.compute_metrics import compute_metrics_probs
 
 # from concurrent.futures import ProcessPoolExecutor # Until fixed in Python 3.12.1
 from process_fix import ProcessPoolExecutor  # Temporary local fix
@@ -47,6 +47,7 @@ from src.features_pre_process import (
     split_matricies_and_lengths,
     count_top_stats,
 )
+from src.load_dataset_wrapper import load_dataset_tsv
 from src.metrics import report
 from src.opt_threshold_search import print_scores
 from src.read_features import read_labels, load_features
@@ -613,11 +614,13 @@ def train(config):
                             }
                         )
 
-                ood_res_metrics = print_scores(
-                    clf_.best_estimator_.predict(X_ood), y_ood
+                predicts = clf_.best_estimator_.predict(X_ood)
+                labels = y_ood
+
+                metrics = compute_metrics_probs(
+                    EvalPrediction(predictions=predicts, label_ids=labels)
                 )
-                wandb.log({"hold_out/lda-acc": ood_res_metrics[0]})
-                wandb.log({"hold_out/lda-mcc": ood_res_metrics[1]})
+                wandb.log(metrics)
 
                 wandb.config.update({"tag": model_name})
 
