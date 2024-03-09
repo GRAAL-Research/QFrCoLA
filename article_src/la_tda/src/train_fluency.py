@@ -828,6 +828,8 @@ def main():
                     metrics,
                 )
 
+                wandb.log(metrics)
+
     kwargs = {
         "finetuned_from": model_args.model_name_or_path,
         "tasks": "text-classification",
