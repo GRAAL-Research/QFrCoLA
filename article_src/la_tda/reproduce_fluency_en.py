@@ -46,7 +46,6 @@ from src.features_pre_process import (
     split_matricies_and_lengths,
     count_top_stats,
 )
-from src.load_dataset_wrapper import load_dataset_tsv
 from src.metrics import report
 from src.opt_threshold_search import print_scores
 from src.read_features import read_labels, load_features
@@ -477,11 +476,6 @@ def train(config):
                     "dev": dev_data,
                     "test": test_data,
                 }
-
-                cola = load_dataset_tsv(data_files=data_files)
-
-                valid_categories = cola["dev"]["category"]
-                test_categories = cola["test"]["category"]
 
                 X_train = X_train.iloc[:, ~X_train.columns.str.startswith("w")]
                 X_valid = X_valid.loc[:, X_train.columns]
