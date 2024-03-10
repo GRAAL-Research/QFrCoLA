@@ -585,7 +585,7 @@ def train(config):
                 )
 
                 mean_score_pred = probs_preds.mean()
-                st_dev_score_pred = probs_preds.numpy().std()
+                st_dev_score_pred = probs_preds.std()
                 mean_score_label = labels.mean()
                 st_dev_score_label = labels.std()
 
