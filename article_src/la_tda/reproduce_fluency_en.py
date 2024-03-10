@@ -31,8 +31,6 @@ from sklearn.preprocessing import (
 from tqdm import tqdm
 from transformers import AutoTokenizer, EvalPrediction
 
-from src.compute_metrics import compute_metrics_probs
-
 # from concurrent.futures import ProcessPoolExecutor # Until fixed in Python 3.12.1
 from process_fix import ProcessPoolExecutor  # Temporary local fix
 from src.barcode_feature import (
@@ -41,6 +39,7 @@ from src.barcode_feature import (
     reformat_barcodes,
     count_ripser_features,
 )
+from src.compute_metrics import compute_metrics_probs
 from src.features_pre_process import (
     order_files,
     get_token_length,
@@ -427,7 +426,7 @@ def train(config):
                     "train",
                     "dev",
                     "test",
-                    "ood",
+                    "fluency",
                 )
                 data_args = {"data_dir": data_dir, "file_type": file_type}
                 (_, y_train), (_, y_valid), (_, y_test), (_, y_ood) = list(
@@ -572,47 +571,7 @@ def train(config):
                 wandb.log({"test/lda-acc": test_res_metrics[0]})
                 wandb.log({"test/lda-mcc": test_res_metrics[1]})
 
-                valid_predict = clf_.best_estimator_.predict(X_valid)
-                test_predict = clf_.best_estimator_.predict(X_test)
-
-                predict_datasets = [
-                    ("dev", valid_categories, valid_predict, y_valid),
-                    ("test", test_categories, test_predict, y_test),
-                ]
-
-                for split_name, categories, predictions, labels in predict_datasets:
-                    labels = np.array(labels)
-                    for category_name in [
-                        "semantic",
-                        "syntax",
-                        "morphology",
-                        "anglicism",
-                    ]:
-                        cat_idxs = [
-                            idx
-                            for idx, category in enumerate(categories)
-                            if category == category_name
-                        ]
-                        cat_labels = labels[cat_idxs]
-                        cat_pred = predictions[cat_idxs]
-
-                        acc_result = ACCURACY.compute(
-                            predictions=cat_pred, references=cat_labels
-                        )
-                        mcc_result = MCC.compute(
-                            predictions=cat_pred, references=cat_labels
-                        )
-
-                        wandb.log(
-                            {
-                                f"{split_name}/accuracy_{category_name}": acc_result[
-                                    "accuracy"
-                                ],
-                                f"{split_name}/mcc_{category_name}": mcc_result[
-                                    "matthews_correlation"
-                                ],
-                            }
-                        )
+                # Eval on fluency dataset
 
                 predicts = clf_.best_estimator_.predict(X_ood)
                 labels = y_ood
