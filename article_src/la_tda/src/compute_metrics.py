@@ -35,10 +35,7 @@ def compute_metrics(p: EvalPrediction):
 def compute_metrics_probs(p: EvalPrediction):
     # We get the highest probability amongst the two predicted by the model.
     # We also multiply it by 100 since fluency score are in [0, 100].
-    probs_preds = (
-        F.softmax(torch.tensor(p.predictions, dtype=torch.long), dim=-1).max(-1).values
-        * 100
-    )
+    probs_preds = F.softmax(torch.tensor(p.predictions), dim=-1).max(-1).values * 100
 
     labels = p.label_ids
     rmse = mean_squared_error(y_true=labels, y_pred=probs_preds, squared=False)

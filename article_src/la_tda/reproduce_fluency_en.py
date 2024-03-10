@@ -23,13 +23,17 @@ from evaluate import load
 from sklearn.decomposition import PCA
 from sklearn.feature_selection import VarianceThreshold
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import StratifiedKFold, GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import (
     StandardScaler,
 )
 from tqdm import tqdm
-from transformers import AutoTokenizer, EvalPrediction
+from transformers import AutoTokenizer
+from transformers import (
+    EvalPrediction,
+)
 
 # from concurrent.futures import ProcessPoolExecutor # Until fixed in Python 3.12.1
 from process_fix import ProcessPoolExecutor  # Temporary local fix
@@ -50,22 +54,19 @@ from src.metrics import report
 from src.opt_threshold_search import print_scores
 from src.read_features import read_labels, load_features
 
+ACCURACY = load("accuracy")
+MCC = load("matthews_correlation")
+Pearson = load("pearsonr")
+r2_metric = load("r_squared")
+
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 warnings.filterwarnings("ignore")
-
-ACCURACY = load("accuracy")
-MCC = load("matthews_correlation")
 
 
 @hydra.main(version_base="1.2", config_path="./", config_name="params")
 def train(config):
     python_executable_path = config.python_executable_path
-
-    # Flag variable for debug
-    pretrain_bert = config.pretrain_bert
-    compute_topological_features = config.compute_topological_features
-    compute_barcodes = config.compute_barcodes
 
     wandb_project = config.wandb_project
     os.environ["WANDB_PROJECT"] = wandb_project
@@ -567,12 +568,38 @@ def train(config):
 
                 # Eval on fluency dataset
 
-                predicts = clf_.best_estimator_.predict(X_ood)
+                probs_preds = clf_.best_estimator_.predict_proba(X_ood)
+                probs_preds = probs_preds.max(-1)
                 labels = y_ood
 
-                metrics = compute_metrics_probs(
-                    EvalPrediction(predictions=predicts, label_ids=labels)
+                rmse = mean_squared_error(
+                    y_true=labels, y_pred=probs_preds, squared=False
                 )
+                r_squared = r2_metric.compute(
+                    predictions=probs_preds, references=labels
+                )
+
+                mcc_result = MCC.compute(predictions=probs_preds, references=labels)
+                pearson_restults = Pearson.compute(
+                    predictions=probs_preds, references=labels, return_pvalue=True
+                )
+
+                mean_score_pred = probs_preds.mean()
+                st_dev_score_pred = probs_preds.numpy().std()
+                mean_score_label = labels.mean()
+                st_dev_score_label = labels.std()
+
+                metrics = {
+                    "fluency_rmse": float(rmse),
+                    "fluency_R2": float(r_squared),
+                    "fluency_mcc": float(mcc_result["matthews_correlation"]),
+                    "fluency_pearson_corr": float(pearson_restults["pearsonr"]),
+                    "fluency_mean_score_pred": float(mean_score_pred),
+                    "fluency_st_dev_score_pred": float(st_dev_score_pred),
+                    "fluency_mean_score_label": float(mean_score_label),
+                    "fluency_st_dev_score_label": float(st_dev_score_label),
+                }
+
                 wandb.log(metrics)
 
                 wandb.config.update({"tag": model_name})
