@@ -763,7 +763,7 @@ def main():
                 )
 
                 with open(
-                    os.path.join(training_args.output_dir, "predict.pickle"), "rb"
+                    os.path.join(training_args.output_dir, "predict.pickle"), "wb"
                 ) as file:
                     pickle.dump(predict.predictions, file)
 

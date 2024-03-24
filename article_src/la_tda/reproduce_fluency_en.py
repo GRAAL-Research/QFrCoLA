@@ -601,7 +601,7 @@ def train(config):
                 wandb.config.update({"tag": model_name})
 
                 with open(
-                    os.path.join(output_dir, "predict_la_tda.pickle"), "rb"
+                    os.path.join(output_dir, "predict_la_tda.pickle"), "wb"
                 ) as file:
                     pickle.dump(probs_preds, file)
 
