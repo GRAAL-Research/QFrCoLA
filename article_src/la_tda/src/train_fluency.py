@@ -1,4 +1,5 @@
 import os
+import pickle
 import random
 from dataclasses import dataclass, field
 
@@ -760,6 +761,11 @@ def main():
                 metrics = trainer.compute_metrics(
                     EvalPrediction(predictions=predict.predictions, label_ids=labels)
                 )
+
+                with open(
+                    os.path.join(training_args.output_dir, "predict.pickle"), "rb"
+                ) as file:
+                    pickle.dump(predict.predictions, file)
 
                 trainer.log_metrics("test", metrics)
                 trainer.save_metrics(
