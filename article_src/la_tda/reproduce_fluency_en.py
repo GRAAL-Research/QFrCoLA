@@ -31,9 +31,6 @@ from sklearn.preprocessing import (
 )
 from tqdm import tqdm
 from transformers import AutoTokenizer
-from transformers import (
-    EvalPrediction,
-)
 
 # from concurrent.futures import ProcessPoolExecutor # Until fixed in Python 3.12.1
 from process_fix import ProcessPoolExecutor  # Temporary local fix
@@ -43,7 +40,6 @@ from src.barcode_feature import (
     reformat_barcodes,
     count_ripser_features,
 )
-from src.compute_metrics import compute_metrics_probs
 from src.features_pre_process import (
     order_files,
     get_token_length,
