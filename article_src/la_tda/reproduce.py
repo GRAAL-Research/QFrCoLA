@@ -587,23 +587,23 @@ def train(config):
 
                 wandb.finish(exit_code=0)
 
-            print(
-                f"Average time taken to process the features over the 10 runs for all three splits is: "
-                f"{mean(processing_time)}"
-            )
-
-            with open(
-                os.path.join(".", f"reproduce_results_time_{lang}.txt"), "w"
-            ) as file:
                 print(
                     f"Average time taken to process the features over the 10 runs for all three splits is: "
-                    f"{mean(processing_time)}",
-                    file=file,
+                    f"{mean(processing_time)}"
                 )
-            with open(
-                os.path.join(".", f"reproduce_results_time_{lang}.pickle"), "wb"
-            ) as file:
-                pickle.dump(processing_time, file)
+
+                with open(
+                    os.path.join(".", f"reproduce_results_time_{lang}.txt"), "w"
+                ) as file:
+                    print(
+                        f"Average time taken to process the features over the 10 runs for all three splits is: "
+                        f"{mean(processing_time)}",
+                        file=file,
+                    )
+                with open(
+                    os.path.join(".", f"reproduce_results_time_{lang}.pickle"), "wb"
+                ) as file:
+                    pickle.dump(processing_time, file)
 
 
 if __name__ == "__main__":
