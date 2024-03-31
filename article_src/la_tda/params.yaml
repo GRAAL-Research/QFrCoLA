@@ -1,5 +1,6 @@
 # debug flags
 pretrain_bert: True
+train_la_tda: False
 compute_topological_features: True
 compute_barcodes: True
 clean_seed_directory: True
