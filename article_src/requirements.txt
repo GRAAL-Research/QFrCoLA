@@ -6,3 +6,4 @@ torch
 accelerate
 tokenizers
 evaluate
+bitsandbytes

@@ -9,7 +9,6 @@ from tools import predict
 pipe = pipeline(
     task="zero-shot-classification",
     model="bigscience/bloom-7b1",
-    device=0,
     model_kwargs={
         "low_cpu_mem_usage": True,
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
