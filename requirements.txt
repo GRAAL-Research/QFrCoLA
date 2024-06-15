@@ -1,3 +1,0 @@
-# Python 3.11
-python-dotenv
-transformers
