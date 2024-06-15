@@ -2,11 +2,19 @@ import os
 from functools import partial
 
 from datasets import load_dataset
-from transformers import pipeline
+from transformers import pipeline, BitsAndBytesConfig
 
 from tools import predict
 
-pipe = pipeline(task="zero-shot-classification", model="bigscience/bloom-7b1", device=0)
+pipe = pipeline(
+    task="zero-shot-classification",
+    model="bigscience/bloom-7b1",
+    device=0,
+    model_kwargs={
+        "low_cpu_mem_usage": True,
+        "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
+    },
+)
 
 root = ".."
 datastore_dir = os.path.join(root, "datastore", "cola_datasets")
