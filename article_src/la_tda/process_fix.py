@@ -764,9 +764,9 @@ class ProcessPoolExecutor(_base.Executor):
                 self._launch_processes()
             self._executor_manager_thread = _ExecutorManagerThread(self)
             self._executor_manager_thread.start()
-            _threads_wakeups[
-                self._executor_manager_thread
-            ] = self._executor_manager_thread_wakeup
+            _threads_wakeups[self._executor_manager_thread] = (
+                self._executor_manager_thread_wakeup
+            )
 
     def _adjust_process_count(self):
         # if there's an idle process, we don't need to spawn a new one.

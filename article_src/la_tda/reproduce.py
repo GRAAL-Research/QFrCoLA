@@ -59,6 +59,7 @@ def train(config):
 
     # Flag variable for debug
     pretrain_bert = config.pretrain_bert
+    train_la_tda = config.train_la_tda
     compute_topological_features = config.compute_topological_features
     compute_barcodes = config.compute_barcodes
 
@@ -168,7 +169,7 @@ def train(config):
                     shell=True,
                 )
 
-            if model_name != "xlm-roberta-base":
+            if model_name != "xlm-roberta-base" and train_la_tda:
                 # We compute the processing time from the point we generate the features.
                 # Thus, we also include the grab of the attentions weights. We will later do an average over the 10 runs
                 # and per sentence.
@@ -586,23 +587,23 @@ def train(config):
 
                 wandb.finish(exit_code=0)
 
-            print(
-                f"Average time taken to process the features over the 10 runs for all three splits is: "
-                f"{mean(processing_time)}"
-            )
-
-            with open(
-                os.path.join(".", f"reproduce_results_time_{lang}.txt"), "w"
-            ) as file:
                 print(
                     f"Average time taken to process the features over the 10 runs for all three splits is: "
-                    f"{mean(processing_time)}",
-                    file=file,
+                    f"{mean(processing_time)}"
                 )
-            with open(
-                os.path.join(".", f"reproduce_results_time_{lang}.pickle"), "wb"
-            ) as file:
-                pickle.dump(processing_time, file)
+
+                with open(
+                    os.path.join(".", f"reproduce_results_time_{lang}.txt"), "w"
+                ) as file:
+                    print(
+                        f"Average time taken to process the features over the 10 runs for all three splits is: "
+                        f"{mean(processing_time)}",
+                        file=file,
+                    )
+                with open(
+                    os.path.join(".", f"reproduce_results_time_{lang}.pickle"), "wb"
+                ) as file:
+                    pickle.dump(processing_time, file)
 
 
 if __name__ == "__main__":
