@@ -31,7 +31,7 @@ for lang in [
     "ja",
 ]:
     with open(f"{lang}-llama.txt", "w") as file:
-        print(f"Language: {lang}", file=file)
+        print(f"Language: {lang}\n", file=file)
         data_dir = os.path.join(datastore_dir, f"{lang}-cola")
         dev_dataset = load_dataset(data_dir, data_files=["dev.tsv"])
         test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
@@ -50,5 +50,16 @@ for lang in [
             * 100
         )
 
-        print(f"Dev acc: {dev_accuracy}", file=file)
-        print(f"Test acc: {test_accuracy}", file=file)
+        print(f"Dev acc: {dev_accuracy}\n", file=file)
+        print(f"Test acc: {test_accuracy}\n", file=file)
+
+        if lang == "fr":
+            ood_dataset = load_dataset(data_dir, data_files=["ood.tsv"])
+            ood_dataset = ood_dataset.map(pipe_fn)
+
+            ood_accuracy = (
+                sum(ood_dataset["train"]["good_prediction"])
+                / len(ood_dataset["train"]["good_prediction"])
+                * 100
+            )
+            print(f"OOD acc: {ood_accuracy}\n", file=file)
