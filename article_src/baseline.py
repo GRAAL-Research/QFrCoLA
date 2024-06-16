@@ -12,7 +12,7 @@ datastore_dir = os.path.join(root, "datastore", "cola_datasets")
 
 
 def predict(row):
-    return {"prediction": 1}
+    return {"prediction": [1] * len(row)}
 
 
 for lang in [
