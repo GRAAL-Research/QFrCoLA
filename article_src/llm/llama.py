@@ -69,30 +69,9 @@ for lang in [
         print(f"Test MCC: {test_mcc}\n", file=file)
 
         if lang == "fr":
-            dev_categories = dev_dataset["train"]["category"]
             test_categories = test_dataset["train"]["category"]
 
             for category_name in ["semantic", "syntax", "morphology", "anglicism"]:
-                dev_cat_idxs = [
-                    idx
-                    for idx, category in enumerate(dev_categories)
-                    if category == category_name
-                ]
-                dev_cat_labels = np.array(dev_labels)[dev_cat_idxs]
-                dev_cat_pred = np.array(dev_predictions)[dev_cat_idxs]
-
-                dev_accuracy_cat = ACCURACY.compute(
-                    predictions=dev_cat_pred, references=dev_cat_labels
-                )
-                dev_mcc_cat = MCC.compute(
-                    predictions=dev_cat_pred, references=dev_cat_labels
-                )
-
-                print(
-                    f"Dev category {category_name} acc: {dev_accuracy_cat}\n", file=file
-                )
-                print(f"Dev category {category_name} MCC: {dev_mcc_cat}\n", file=file)
-
                 test_cat_idxs = [
                     idx
                     for idx, category in enumerate(test_categories)
