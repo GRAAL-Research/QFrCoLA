@@ -10,3 +10,5 @@ bitsandbytes
 evaluate
 scikit-learn
 python-dotenv
+sentencepiece
+protobuf
