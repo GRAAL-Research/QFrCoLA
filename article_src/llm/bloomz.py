@@ -65,7 +65,7 @@ for lang in [
         if lang == "fr":
             test_categories = test_dataset["train"]["category"]
 
-            for category_name in ["semantic", "syntax", "morphology", "anglicism"]:
+            for category_name in ["syntax", "morphology", "semantic", "anglicism"]:
                 test_cat_idxs = [
                     idx
                     for idx, category in enumerate(test_categories)
