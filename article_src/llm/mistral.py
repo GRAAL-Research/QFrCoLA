@@ -2,6 +2,7 @@ import os
 from functools import partial
 
 from datasets import load_dataset
+from evaluate import load
 from transformers import pipeline, BitsAndBytesConfig
 
 from tools import predict
@@ -14,6 +15,9 @@ pipe = pipeline(
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
     },
 )
+
+ACCURACY = load("accuracy")
+MCC = load("matthews_correlation")
 
 root = ".."
 datastore_dir = os.path.join(root, "datastore", "cola_datasets")
@@ -37,29 +41,33 @@ for lang in [
         test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
 
         dev_dataset = dev_dataset.map(pipe_fn)
-        test_dataset = test_dataset.map(pipe_fn)
 
-        dev_accuracy = (
-            sum(dev_dataset["train"]["good_prediction"])
-            / len(dev_dataset["train"]["good_prediction"])
-            * 100
-        )
-        test_accuracy = (
-            sum(test_dataset["train"]["good_prediction"])
-            / len(test_dataset["train"]["good_prediction"])
-            * 100
-        )
+        predictions = dev_dataset["train"]["prediction"]
+        labels = dev_dataset["train"]["label"]
+        dev_accuracy = ACCURACY.compute(predictions=predictions, references=labels)
+        dev_mcc = MCC.compute(predictions=predictions, references=labels)
 
         print(f"Dev acc: {dev_accuracy}\n", file=file)
+        print(f"Dev MCC: {dev_mcc}\n", file=file)
+
+        test_dataset = test_dataset.map(pipe_fn)
+
+        predictions = test_dataset["train"]["prediction"]
+        labels = test_dataset["train"]["label"]
+        test_accuracy = ACCURACY.compute(predictions=predictions, references=labels)
+        test_mcc = MCC.compute(predictions=predictions, references=labels)
+
         print(f"Test acc: {test_accuracy}\n", file=file)
+        print(f"Test MCC: {test_mcc}\n", file=file)
 
         if lang == "fr":
             ood_dataset = load_dataset(data_dir, data_files=["ood.tsv"])
             ood_dataset = ood_dataset.map(pipe_fn)
 
-            ood_accuracy = (
-                sum(ood_dataset["train"]["good_prediction"])
-                / len(ood_dataset["train"]["good_prediction"])
-                * 100
-            )
+            predictions = ood_dataset["train"]["prediction"]
+            labels = ood_dataset["train"]["label"]
+            ood_accuracy = ACCURACY.compute(predictions=predictions, references=labels)
+            ood_mcc = MCC.compute(predictions=predictions, references=labels)
+
             print(f"OOD acc: {ood_accuracy}\n", file=file)
+            print(f"OOD MCC: {ood_mcc}\n", file=file)
