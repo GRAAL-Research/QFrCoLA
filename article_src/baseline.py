@@ -11,7 +11,7 @@ root = "."
 datastore_dir = os.path.join(root, "datastore", "cola_datasets")
 
 
-def predict():
+def predict(row):
     return {"prediction": 1}
 
 
