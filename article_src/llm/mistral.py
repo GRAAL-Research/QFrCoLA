@@ -45,14 +45,14 @@ for lang in [
     dev_dataset = load_dataset(data_dir, data_files=["dev.tsv"])
     test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
 
-    dev_dataset = dev_dataset.map(pipe_fn, batched=True, batch_size=64, num_proc=3)
+    dev_dataset = dev_dataset.map(pipe_fn, batched=True, batch_size=64)
 
     dev_predictions = dev_dataset["train"]["prediction"]
     dev_labels = dev_dataset["train"]["label"]
     dev_accuracy = ACCURACY.compute(predictions=dev_predictions, references=dev_labels)
     dev_mcc = MCC.compute(predictions=dev_predictions, references=dev_labels)
 
-    test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=64, num_proc=3)
+    test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=64)
 
     test_predictions = test_dataset["train"]["prediction"]
     test_labels = test_dataset["train"]["label"]
