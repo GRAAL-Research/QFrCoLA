@@ -8,3 +8,4 @@ tokenizers
 evaluate
 bitsandbytes
 evaluate
+scikit-learn
