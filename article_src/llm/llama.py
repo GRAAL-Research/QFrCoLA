@@ -15,10 +15,10 @@ token = secrets["huggingface_token"]
 pipe = pipeline(
     task="zero-shot-classification",
     model="meta-llama/Llama-2-7b-hf",
+    token=token,
     model_kwargs={
         "low_cpu_mem_usage": True,
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
-        "token": token,
     },
 )
 
