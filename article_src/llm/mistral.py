@@ -115,7 +115,7 @@ for lang in [
                 print(f"Test category {category_name} MCC: {test_mcc_cat}\n", file=file)
 
             ood_dataset = load_dataset(data_dir, data_files=["ood.tsv"])
-            ood_dataset = ood_dataset.map(pipe_fn)
+            ood_dataset = ood_dataset.map(pipe_fn, batched=True, batch_size=64)
 
             predictions = ood_dataset["train"]["prediction"]
             labels = ood_dataset["train"]["label"]
