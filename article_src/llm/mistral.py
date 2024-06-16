@@ -2,10 +2,15 @@ import os
 from functools import partial
 
 from datasets import load_dataset
+from dotenv import dotenv_values
 from evaluate import load
 from transformers import pipeline, BitsAndBytesConfig
 
 from tools import predict
+
+secrets = dotenv_values(".env")
+
+token = secrets["huggingface_token"]
 
 pipe = pipeline(
     task="zero-shot-classification",
@@ -13,6 +18,7 @@ pipe = pipeline(
     model_kwargs={
         "low_cpu_mem_usage": True,
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
+        "token": token,
     },
 )
 

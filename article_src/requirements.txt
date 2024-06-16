@@ -9,3 +9,4 @@ evaluate
 bitsandbytes
 evaluate
 scikit-learn
+python-dotenv
