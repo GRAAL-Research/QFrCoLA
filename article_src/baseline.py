@@ -3,16 +3,6 @@ import os
 import numpy as np
 from datasets import load_dataset
 from evaluate import load
-from transformers import pipeline, BitsAndBytesConfig
-
-pipe = pipeline(
-    task="zero-shot-classification",
-    model="bigscience/bloom-7b1",
-    model_kwargs={
-        "low_cpu_mem_usage": True,
-        "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
-    },
-)
 
 ACCURACY = load("accuracy")
 MCC = load("matthews_correlation")
