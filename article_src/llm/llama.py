@@ -63,8 +63,10 @@ for lang in [
 
         test_predictions = test_dataset["train"]["prediction"]
         test_labels = test_dataset["train"]["label"]
-        test_accuracy = ACCURACY.compute(predictions=predictions, references=labels)
-        test_mcc = MCC.compute(predictions=predictions, references=labels)
+        test_accuracy = ACCURACY.compute(
+            predictions=test_predictions, references=test_labels
+        )
+        test_mcc = MCC.compute(predictions=test_predictions, references=test_labels)
 
         print(f"Test acc: {test_accuracy}\n", file=file)
         print(f"Test MCC: {test_mcc}\n", file=file)
