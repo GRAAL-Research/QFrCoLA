@@ -47,7 +47,7 @@ for lang in [
         dev_dataset = load_dataset(data_dir, data_files=["dev.tsv"])
         test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
 
-        dev_dataset = dev_dataset.map(pipe_fn)
+        dev_dataset = dev_dataset.map(pipe_fn, batched=True, batch_size=32)
 
         dev_predictions = dev_dataset["train"]["prediction"]
         dev_labels = dev_dataset["train"]["label"]
@@ -59,7 +59,7 @@ for lang in [
         print(f"Dev acc: {dev_accuracy}\n", file=file)
         print(f"Dev MCC: {dev_mcc}\n", file=file)
 
-        test_dataset = test_dataset.map(pipe_fn)
+        test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=32)
 
         test_predictions = test_dataset["train"]["prediction"]
         test_labels = test_dataset["train"]["label"]
