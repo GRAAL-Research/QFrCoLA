@@ -3,20 +3,16 @@ from functools import partial
 
 import numpy as np
 from datasets import load_dataset
-from dotenv import dotenv_values
 from evaluate import load
 from transformers import pipeline, BitsAndBytesConfig
 
 from tools import predict
 
-secrets = dotenv_values(".env")
-
-token = secrets["huggingface_token"]
+batch_size = 512
 
 pipe = pipeline(
     task="zero-shot-classification",
     model="mistralai/Mistral-7B-v0.3",
-    token=token,
     model_kwargs={
         "low_cpu_mem_usage": True,
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
@@ -45,14 +41,14 @@ for lang in [
     dev_dataset = load_dataset(data_dir, data_files=["dev.tsv"])
     test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
 
-    dev_dataset = dev_dataset.map(pipe_fn, batched=True, batch_size=64)
+    dev_dataset = dev_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
 
     dev_predictions = dev_dataset["train"]["prediction"]
     dev_labels = dev_dataset["train"]["label"]
     dev_accuracy = ACCURACY.compute(predictions=dev_predictions, references=dev_labels)
     dev_mcc = MCC.compute(predictions=dev_predictions, references=dev_labels)
 
-    test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=64)
+    test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
 
     test_predictions = test_dataset["train"]["prediction"]
     test_labels = test_dataset["train"]["label"]
@@ -94,7 +90,7 @@ for lang in [
                 print(f"Test category {category_name} MCC: {test_mcc_cat}\n", file=file)
 
             ood_dataset = load_dataset(data_dir, data_files=["ood.tsv"])
-            ood_dataset = ood_dataset.map(pipe_fn, batched=True, batch_size=64)
+            ood_dataset = ood_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
 
             predictions = ood_dataset["train"]["prediction"]
             labels = ood_dataset["train"]["label"]
