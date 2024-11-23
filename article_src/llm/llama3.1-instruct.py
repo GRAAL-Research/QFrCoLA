@@ -61,7 +61,7 @@ for lang in [
     )
     test_mcc = MCC.compute(predictions=test_predictions, references=test_labels)
 
-    with open(f"{lang}-llama.txt", "w") as file:
+    with open(f"{lang}-llama-instruct.txt", "w") as file:
         print(f"Dev acc: {dev_accuracy}\n", file=file)
         print(f"Dev MCC: {dev_mcc}\n", file=file)
 
