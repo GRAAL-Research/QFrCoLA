@@ -1,0 +1,1 @@
+python3 bloom.py && python3 bloomz.py && python3 llama2.py && python3 llama3.1.py && python3 llama3.1-instruct.py && python3 mistral.py && python3 mistral-instruct.py && python3 qwen2.5.py && python3 qwen2.5-instruct.py
