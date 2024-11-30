@@ -6,7 +6,7 @@ from datasets import load_dataset
 from dotenv import dotenv_values
 from transformers import pipeline, BitsAndBytesConfig
 
-from article_src.llm.metrics_wrapper import accuracy, mcc
+from metrics_wrapper import accuracy, mcc
 from tools import predict
 
 batch_size = 1024
