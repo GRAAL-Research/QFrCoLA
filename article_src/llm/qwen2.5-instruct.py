@@ -3,12 +3,12 @@ from functools import partial
 
 import numpy as np
 from datasets import load_dataset
-from evaluate import load
 from transformers import pipeline, BitsAndBytesConfig
 
+from article_src.llm.metrics_wrapper import accuracy, mcc
 from tools import predict
 
-batch_size = 512
+batch_size = 1024
 
 pipe = pipeline(
     task="zero-shot-classification",
@@ -18,9 +18,6 @@ pipe = pipeline(
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
     },
 )
-
-ACCURACY = load("accuracy")
-MCC = load("matthews_correlation")
 
 root = ".."
 datastore_dir = os.path.join(root, "datastore", "cola_datasets")
@@ -45,19 +42,15 @@ for lang in [
 
     dev_predictions = dev_dataset["train"]["prediction"]
     dev_labels = dev_dataset["train"]["label"]
-    dev_accuracy = round(
-        ACCURACY.compute(predictions=dev_predictions, references=dev_labels) * 100, 2
-    )
-    dev_mcc = MCC.compute(predictions=dev_predictions, references=dev_labels)
+    dev_accuracy = accuracy(predictions=dev_predictions, references=dev_labels)
+    dev_mcc = mcc(predictions=dev_predictions, references=dev_labels)
 
     test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
 
     test_predictions = test_dataset["train"]["prediction"]
     test_labels = test_dataset["train"]["label"]
-    test_accuracy = round(
-        ACCURACY.compute(predictions=test_predictions, references=test_labels) * 100, 2
-    )
-    test_mcc = MCC.compute(predictions=test_predictions, references=test_labels)
+    test_accuracy = accuracy(predictions=test_predictions, references=test_labels)
+    test_mcc = mcc(predictions=test_predictions, references=test_labels)
 
     with open(os.path.join(".", "results", f"{lang}-qwen-instruct.txt", "w")) as file:
         print(f"Dev acc: {dev_accuracy}\n", file=file)
@@ -78,14 +71,10 @@ for lang in [
                 test_cat_labels = np.array(test_labels)[test_cat_idxs]
                 test_cat_pred = np.array(test_predictions)[test_cat_idxs]
 
-                test_accuracy_cat = round(
-                    ACCURACY.compute(
-                        predictions=test_cat_pred, references=test_cat_labels
-                    )
-                    * 100,
-                    2,
+                test_accuracy_cat = accuracy(
+                    predictions=test_cat_pred, references=test_cat_labels
                 )
-                test_mcc_cat = MCC.compute(
+                test_mcc_cat = mcc(
                     predictions=test_cat_pred, references=test_cat_labels
                 )
 
@@ -100,10 +89,8 @@ for lang in [
 
             predictions = ood_dataset["train"]["prediction"]
             labels = ood_dataset["train"]["label"]
-            ood_accuracy = round(
-                ACCURACY.compute(predictions=predictions, references=labels) * 100, 2
-            )
-            ood_mcc = MCC.compute(predictions=predictions, references=labels)
+            ood_accuracy = accuracy(predictions=predictions, references=labels)
+            ood_mcc = mcc(predictions=predictions, references=labels)
 
             print(f"OOD acc: {ood_accuracy}\n", file=file)
             print(f"OOD MCC: {ood_mcc}\n", file=file)
