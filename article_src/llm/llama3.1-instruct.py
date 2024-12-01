@@ -45,7 +45,10 @@ for lang in [
     test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
 
     dev_dataset = dev_dataset.map(
-        pipe_fn, batched=True, batch_size=batch_size, desc="llama3.1-instruct-dev"
+        pipe_fn,
+        batched=True,
+        batch_size=batch_size,
+        desc=f"{lang}-llama3.1-instruct-dev",
     )
 
     dev_predictions = dev_dataset["train"]["prediction"]
@@ -54,7 +57,10 @@ for lang in [
     dev_mcc = mcc(predictions=dev_predictions, references=dev_labels)
 
     test_dataset = test_dataset.map(
-        pipe_fn, batched=True, batch_size=batch_size, desc="llama3.1-instruct-test"
+        pipe_fn,
+        batched=True,
+        batch_size=batch_size,
+        desc=f"{lang}-llama3.1-instruct-test",
     )
 
     test_predictions = test_dataset["train"]["prediction"]
@@ -101,7 +107,7 @@ for lang in [
                 pipe_fn,
                 batched=True,
                 batch_size=batch_size,
-                desc="llama3.1-instruct-ood",
+                desc=f"{lang}-llama3.1-instruct-ood",
             )
 
             predictions = ood_dataset["train"]["prediction"]

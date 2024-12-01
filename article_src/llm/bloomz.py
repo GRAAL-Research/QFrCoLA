@@ -39,7 +39,7 @@ for lang in [
     test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
 
     dev_dataset = dev_dataset.map(
-        pipe_fn, batched=True, batch_size=batch_size, desc="bloomz-dev"
+        pipe_fn, batched=True, batch_size=batch_size, desc=f"{lang}-bloomz-dev"
     )
 
     dev_predictions = dev_dataset["train"]["prediction"]
@@ -48,7 +48,7 @@ for lang in [
     dev_mcc = mcc(predictions=dev_predictions, references=dev_labels)
 
     test_dataset = test_dataset.map(
-        pipe_fn, batched=True, batch_size=batch_size, desc="bloomz-test"
+        pipe_fn, batched=True, batch_size=batch_size, desc=f"{lang}-bloomz-test"
     )
 
     test_predictions = test_dataset["train"]["prediction"]
@@ -92,7 +92,7 @@ for lang in [
 
             ood_dataset = load_dataset(data_dir, data_files=["ood.tsv"])
             ood_dataset = ood_dataset.map(
-                pipe_fn, batched=True, batch_size=batch_size, desc="bloomz-ood"
+                pipe_fn, batched=True, batch_size=batch_size, desc=f"{lang}-bloomz-ood"
             )
 
             predictions = ood_dataset["train"]["prediction"]
