@@ -44,6 +44,7 @@ for lang in [
     dev_labels = dev_dataset["train"]["label"]
     dev_accuracy = accuracy(predictions=dev_predictions, references=dev_labels)
     dev_mcc = mcc(predictions=dev_predictions, references=dev_labels)
+
     test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
 
     test_predictions = test_dataset["train"]["prediction"]

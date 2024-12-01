@@ -16,5 +16,7 @@ def accuracy(predictions, references):
 def mcc(predictions, references):
     return {
         key: round(value, 3)
-        for key, value in MCC.compute(predictions=predictions, references=references)
+        for key, value in MCC.compute(
+            predictions=predictions, references=references
+        ).items()
     }
