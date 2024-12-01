@@ -62,7 +62,9 @@ for lang in [
     test_accuracy = accuracy(predictions=test_predictions, references=test_labels)
     test_mcc = mcc(predictions=test_predictions, references=test_labels)
 
-    with open(os.path.join(".", "results", f"{lang}-llama-instruct.txt", "w")) as file:
+    root_dir = os.path.join(".", "results")
+    os.makedirs(root_dir, exist_ok=True)
+    with open(os.path.join(root_dir, f"{lang}-llama-instruct.txt"), "w") as file:
         print(f"Dev acc: {dev_accuracy}\n", file=file)
         print(f"Dev MCC: {dev_mcc}\n", file=file)
 
