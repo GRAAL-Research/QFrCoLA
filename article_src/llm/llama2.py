@@ -44,14 +44,18 @@ for lang in [
     dev_dataset = load_dataset(data_dir, data_files=["dev.tsv"])
     test_dataset = load_dataset(data_dir, data_files=["test.tsv"])
 
-    dev_dataset = dev_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
+    dev_dataset = dev_dataset.map(
+        pipe_fn, batched=True, batch_size=batch_size, desc="llama2-dev"
+    )
 
     dev_predictions = dev_dataset["train"]["prediction"]
     dev_labels = dev_dataset["train"]["label"]
     dev_accuracy = accuracy(predictions=dev_predictions, references=dev_labels)
     dev_mcc = mcc(predictions=dev_predictions, references=dev_labels)
 
-    test_dataset = test_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
+    test_dataset = test_dataset.map(
+        pipe_fn, batched=True, batch_size=batch_size, desc="llama2-test"
+    )
 
     test_predictions = test_dataset["train"]["prediction"]
     test_labels = test_dataset["train"]["label"]
@@ -91,7 +95,9 @@ for lang in [
                 print(f"Test category {category_name} MCC: {test_mcc_cat}\n", file=file)
 
             ood_dataset = load_dataset(data_dir, data_files=["ood.tsv"])
-            ood_dataset = ood_dataset.map(pipe_fn, batched=True, batch_size=batch_size)
+            ood_dataset = ood_dataset.map(
+                pipe_fn, batched=True, batch_size=batch_size, desc="llama2-ood"
+            )
 
             predictions = ood_dataset["train"]["prediction"]
             labels = ood_dataset["train"]["label"]
