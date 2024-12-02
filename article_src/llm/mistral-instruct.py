@@ -3,16 +3,23 @@ from functools import partial
 
 import numpy as np
 from datasets import load_dataset
+from dotenv import dotenv_values
 from transformers import pipeline, BitsAndBytesConfig
 
 from metrics_wrapper import accuracy, mcc
 from tools import predict
+
+secrets = dotenv_values(".env")
+
+token = secrets["huggingface_token"]
+
 
 batch_size = 1024
 
 pipe = pipeline(
     task="zero-shot-classification",
     model="mistralai/Mistral-7B-Instruct-v0.3",
+    token=token,
     model_kwargs={
         "low_cpu_mem_usage": True,
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
