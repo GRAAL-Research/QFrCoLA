@@ -18,7 +18,7 @@ token = secrets["huggingface_token"]
 
 pipe = pipeline(
     task="zero-shot-classification",
-    model="Qwen/Qwen2.5-7B",
+    model="OpenLLM-France/Lucie-7B",
     token=token,
     model_kwargs={
         "low_cpu_mem_usage": True,
@@ -34,13 +34,6 @@ pipe_fn = partial(predict, pipe=pipe)
 
 for lang in [
     "fr",
-    "en",
-    "it",
-    "ru",
-    "sv",
-    "zh",
-    "no",
-    "ja",
 ]:
     data_dir = os.path.join(datastore_dir, f"{lang}-cola")
     dev_dataset = load_dataset(data_dir, data_files=["dev.tsv"])

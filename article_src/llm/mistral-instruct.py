@@ -24,6 +24,7 @@ pipe = pipeline(
         "low_cpu_mem_usage": True,
         "quantization_config": BitsAndBytesConfig(load_in_8bit=True),
     },
+    num_workers=2,
 )
 
 root = ".."
