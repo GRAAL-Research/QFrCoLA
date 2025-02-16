@@ -1,0 +1,28 @@
+Dev acc: {'accuracy': 60.14}
+
+Dev MCC: {'matthews_correlation': 0.041}
+
+Test acc: {'accuracy': 58.18}
+
+Test MCC: {'matthews_correlation': -0.008}
+
+Test category syntax acc: {'accuracy': 59.78}
+
+Test category syntax MCC: {'matthews_correlation': -0.014}
+
+Test category morphology acc: {'accuracy': 59.27}
+
+Test category morphology MCC: {'matthews_correlation': 0.005}
+
+Test category semantic acc: {'accuracy': 58.06}
+
+Test category semantic MCC: {'matthews_correlation': -0.019}
+
+Test category anglicism acc: {'accuracy': 53.01}
+
+Test category anglicism MCC: {'matthews_correlation': -0.001}
+
+OOD acc: {'accuracy': 51.61}
+
+OOD MCC: {'matthews_correlation': -0.018}
+

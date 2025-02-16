@@ -1,0 +1,15 @@
+# Python >= 3.12
+colorama
+datasets
+scikit-learn
+scipy
+tokenizers
+transformers
+urllib3
+torch
+accelerate
+wandb
+pandas
+evaluate
+hydra-core
+numpy

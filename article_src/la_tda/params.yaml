@@ -18,7 +18,7 @@ root: "."
 ## We either use those presented in https://arxiv.org/pdf/2304.01680.pdf Annex A (i.e. lower LR and use of
 ## Weights Decay) and in the codebase of this article
 ## https://github.com/upunaprosk/la-tda/blob/master/1_Fine_tuning_example.ipynb.
-epoch: 4
+epoch: 5
 lr: 3e-5
 decay: 1e-2
-batch: 32
+batch: 128

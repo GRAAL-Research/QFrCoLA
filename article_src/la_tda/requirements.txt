@@ -18,7 +18,6 @@ torch
 accelerate
 wandb
 pandas
-supar
 evaluate
 hydra-core
 numpy
