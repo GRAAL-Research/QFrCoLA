@@ -630,7 +630,9 @@ def main():
             # You pass the class weights when instantiating the Trainer
             self.class_weights = class_weights
 
-        def compute_loss(self, model, inputs, return_outputs=False):
+        def compute_loss(
+            self, model, inputs, return_outputs=False, num_items_in_batch=None
+        ):
             """
             How the loss is computed by Trainer. By default, all models return the loss in the first element.
             Subclass and override for custom behavior.

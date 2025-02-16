@@ -14,7 +14,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "true"
 warnings.filterwarnings("ignore")
 
 # Change this for the path of your Python
-python_executable_path = "~/anaconda3/envs/la-tda/bin/python"
+python_executable_path = "~/projects/frcola/.la-tda/bin/python"
 
 
 @hydra.main(version_base="1.2", config_path="./", config_name="params")
@@ -41,8 +41,6 @@ def train(config):
     train_data = os.path.join(data_dir, "train.tsv")
     dev_data = os.path.join(data_dir, "dev.tsv")
     test_data = os.path.join(data_dir, "test.tsv")
-
-    # Fine-tuning pretrained model over lang 'lang'
 
     for seed in seeds:
         np.random.seed(seed)
