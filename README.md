@@ -1,6 +1,6 @@
 # FrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments
 
-This repository contains the official FrCoLA: a French Corpus of Linguistic Acceptability Judgments dataset (see
+This repository contains the official QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments dataset (see
 dataset directory) and the source code used to generate the tables and training of the model illustrated
 in [FrCoLA: a French Corpus of Linguistic Acceptability Judgments]().
 
