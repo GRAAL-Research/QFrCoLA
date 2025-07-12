@@ -1,8 +1,0 @@
-Dev acc: {'accuracy': 15.43}
-
-Dev MCC: {'matthews_correlation': -0.024}
-
-Test acc: {'accuracy': 16.62}
-
-Test MCC: {'matthews_correlation': 0.016}
-
