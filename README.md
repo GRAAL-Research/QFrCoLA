@@ -8,13 +8,13 @@ in [QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments]().
 
 ### Example of Sentences in the Dataset
 
-![img.png](img.png)
+![img.png](figs/img.png)
 
 
 ### Statistics About the Dataset Compared to Other Similar Datasets
 > Statistics are divided by splits.
 
-![img_1.png](img_1.png)
+![img_1.png](figs/img_1.png)
 
 ### Dataset Structure
 
