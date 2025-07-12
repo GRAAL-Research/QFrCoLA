@@ -10,9 +10,10 @@ in [QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments]().
 
 ![img.png](img.png)
 
-### Statistics About the Dataset Compared to Other Similar Datasets
 
-Statistics are divided by splits.
+### Statistics About the Dataset Compared to Other Similar Datasets
+> Statistics are divided by splits.
+
 ![img_1.png](img_1.png)
 
 ### Dataset Structure
