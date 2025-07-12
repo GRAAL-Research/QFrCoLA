@@ -1,16 +1,16 @@
-# FrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments
+# QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments
 
 This repository contains the official QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments dataset (see
 dataset directory) and the source code used to generate the tables and training of the model illustrated
-in [FrCoLA: a French Corpus of Linguistic Acceptability Judgments]().
+in [QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments]().
 
 ## About the Dataset
 
-### Example of sentences in the dataset
+### Example of Sentences in the Dataset
 
 ![img.png](img.png)
 
-### Statistic About the Dataset Compare to Other Similar Datasets
+### Statistics About the Dataset Compared to Other Similar Datasets
 
 Statistics are divided by splits.
 ![img_1.png](img_1.png)
@@ -24,7 +24,7 @@ Statistics are divided by splits.
 - `source`: the URL source of the sentence.
 - `category`: the aggregated BDL category of the sentence linguistic phenomena.
 
-### Download the dataset
+### Download the Dataset
 
 You can manually download our dataset splits available in `dataset`, or you can use the HuggingFace dataset class as
 follows:
@@ -32,12 +32,12 @@ follows:
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("davebulaval/frcola")
+dataset = load_dataset("davebulaval/qfrcola")
 ```
 
 ### License
 
-This dataset is under [MIT License](https://mit-license.org/).
+This dataset is under [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).
 
 ### To Cite
 
