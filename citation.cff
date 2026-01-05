@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments"
+authors:
+  - family-names: "Beauchemin"
+    given-names: "David"
+  - family-names: "Khoury"
+    given-names: "Richard"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Beauchemin"
+      given-names: "David"
+    - family-names: "Khoury"
+      given-names: "Richard"
+  title: "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments"
+  collection-title: "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing"
+  year: 2025
+  start: 119
+  end: 130
