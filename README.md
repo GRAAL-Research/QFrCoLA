@@ -43,7 +43,13 @@ This dataset is under [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-
 ### To Cite
 
 ```
-...
+@inproceedings{beauchemin2025qfrcola,
+  title={QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments},
+  author={Beauchemin, David and Khoury, Richard},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  pages={119--130},
+  year={2025}
+}
 ```
 
 ## About the Source Code
