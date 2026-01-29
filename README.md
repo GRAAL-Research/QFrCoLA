@@ -8,7 +8,7 @@ in [QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments]().
 
 <img width="254" height="59" alt="image" src="https://github.com/user-attachments/assets/838a7219-f0a6-4a6c-a649-4785a3d2de95" />
 
-Available on [HuggingFace](https://huggingface.co/datasets/davebulaval/qfrcola).
+Available on [HuggingFace](https://huggingface.co/datasets/graalul/qfrcola).
 
 ### Example of Sentences in the Dataset
 
