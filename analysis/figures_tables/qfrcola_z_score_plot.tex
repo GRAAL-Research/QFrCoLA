@@ -6,9 +6,8 @@
 \begin{tikzpicture}
 \begin{axis}[
     width=12cm, height=9cm,
-    % Title and Labels
-    title={Model Accuracy Comparison between FrCoE and QFrCoLA},
-    xlabel={FrCoE Accuracy (\%)},
+    % Labels
+    xlabel={Acad\\'emie fran\\c{c}aise Accuracy (\%)},
     ylabel={QFrCoLA Accuracy (\%)},
     % Limits
     xmin=0.00, xmax=100.00,
@@ -35,7 +34,7 @@
 
 % 4. Scatter Points
 \addplot [scatter, only marks, scatter src=explicit symbolic]
-    table [x=acc_frcoe, y=acc_qfrcola, meta=tex_class, col sep=comma] {figures_tables/data/qfrcola_pgf_scatter_data.csv};
+    table [x=acc_academie_francaise, y=acc_qfrcola, meta=tex_class, col sep=comma] {figures_tables/data/qfrcola_pgf_scatter_data.csv};
 
 \end{axis}
 \end{tikzpicture}

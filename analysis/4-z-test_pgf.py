@@ -17,7 +17,7 @@ def compute_and_generate_latex(file_path):
         print(f"Error reading CSV: {e}")
         return
 
-    col_left = "frcoe.accuracy"
+    col_left = "academie_francaise.accuracy"
     col_right = "qfrcola.accuracy"
     name_col = "name"
 
@@ -40,12 +40,12 @@ def compute_and_generate_latex(file_path):
         .str.contains("RandomBaseline", case=False, na=False)
     ]
 
-    baseline_frcoe = 0
+    baseline_acad_fr = 0
     baseline_qfrcola = 0
     has_baseline = False
 
     if not baseline_row.empty:
-        baseline_frcoe = baseline_row.iloc[0][col_left]
+        baseline_acad_fr = baseline_row.iloc[0][col_left]
         baseline_qfrcola = baseline_row.iloc[0][col_right]
         has_baseline = True
         print(f"Found Baseline: {baseline_row.iloc[0][name_col]}")
@@ -56,7 +56,7 @@ def compute_and_generate_latex(file_path):
         valid_data = all_data.copy()
 
     # --- CONFIGURATION ---
-    n_left = 4938  # FrCoE test set size
+    n_left = 2675  # Académie française OOD test set size
     n_right = 7546  # QFrCoLA test set size
     alpha = 0.001
     critical_z = stats.norm.ppf(1 - (alpha / 2))
@@ -75,7 +75,7 @@ def compute_and_generate_latex(file_path):
         # Classification Logic
         is_below_baseline = False
         if has_baseline:
-            if p1_pct < baseline_frcoe or p2_pct < baseline_qfrcola:
+            if p1_pct < baseline_acad_fr or p2_pct < baseline_qfrcola:
                 is_below_baseline = True
 
         if p1_pct > 65.0 and p2_pct > 65.0:
@@ -86,7 +86,7 @@ def compute_and_generate_latex(file_path):
             tex_class = "blue_dot"
 
         results.append(
-            {"acc_frcoe": p1_pct, "acc_qfrcola": p2_pct, "tex_class": tex_class}
+            {"acc_academie_francaise": p1_pct, "acc_qfrcola": p2_pct, "tex_class": tex_class}
         )
 
     results_df = pd.DataFrame(results)
@@ -107,8 +107,8 @@ def compute_and_generate_latex(file_path):
         return
 
     # 2. Save Significance Curve Data
-    min_val = min(results_df["acc_frcoe"].min(), results_df["acc_qfrcola"].min())
-    max_val = max(results_df["acc_frcoe"].max(), results_df["acc_qfrcola"].max())
+    min_val = min(results_df["acc_academie_francaise"].min(), results_df["acc_qfrcola"].min())
+    max_val = max(results_df["acc_academie_francaise"].max(), results_df["acc_qfrcola"].max())
     pad = (max_val - min_val) * 0.05
     limit_min = max(0, min_val - pad)
     limit_max = min(100, max_val + pad)
@@ -141,9 +141,8 @@ def compute_and_generate_latex(file_path):
 \begin{{tikzpicture}}
 \begin{{axis}}[
     width=12cm, height=9cm,
-    % Title and Labels
-    title={{Model Accuracy Comparison between FrCoE and QFrCoLA}},
-    xlabel={{FrCoE Accuracy (\%)}},
+    % Labels
+    xlabel={{Acad\\'emie fran\\c{{c}}aise Accuracy (\%)}},
     ylabel={{QFrCoLA Accuracy (\%)}},
     % Limits
     xmin={limit_min:.2f}, xmax={limit_max:.2f},
@@ -163,7 +162,7 @@ def compute_and_generate_latex(file_path):
 % 2. Baseline Lines (Dashed, Dark Gray)
 """
     if has_baseline:
-        tex_content += rf"""\draw [black!70, dashed, line width=1pt] (axis cs:{baseline_frcoe}, {limit_min}) -- (axis cs:{baseline_frcoe}, {limit_max});
+        tex_content += rf"""\draw [black!70, dashed, line width=1pt] (axis cs:{baseline_acad_fr}, {limit_min}) -- (axis cs:{baseline_acad_fr}, {limit_max});
 \draw [black!70, dashed, line width=1pt] (axis cs:{limit_min}, {baseline_qfrcola}) -- (axis cs:{limit_max}, {baseline_qfrcola});
 """
 
@@ -174,7 +173,7 @@ def compute_and_generate_latex(file_path):
 
 % 4. Scatter Points
 \addplot [scatter, only marks, scatter src=explicit symbolic]
-    table [x=acc_frcoe, y=acc_qfrcola, meta=tex_class, col sep=comma] {{{scatter_csv}}};
+    table [x=acc_academie_francaise, y=acc_qfrcola, meta=tex_class, col sep=comma] {{{scatter_csv}}};
 
 \end{{axis}}
 \end{{tikzpicture}}

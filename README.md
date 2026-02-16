@@ -75,19 +75,19 @@ engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
   </tr>
   <tr>
     <td>name</td>
-    <td><code itemprop="name">FrCoLA: a French Corpus of Linguistic Acceptability Judgments</code></td>
+    <td><code itemprop="name">QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments</code></td>
   </tr>
   <tr>
     <td>alternateName</td>
-    <td><code itemprop="alternateName">FrCoLA</code></td>
+    <td><code itemprop="alternateName">QFrCoLA</code></td>
   </tr>
   <tr>
     <td>url</td>
-    <td><code itemprop="url">https://github.com/GRAAL-Research/frcola</code></td>
+    <td><code itemprop="url">https://github.com/GRAAL-Research/qfrcola</code></td>
   </tr>
   <tr>
     <td>description</td>
-    <td><code itemprop="description">FrCoLA is dataset of binary linguistic acceptability judgments in French.
+    <td><code itemprop="description">QFrCoLA is a dataset of binary normative linguistic acceptability judgments in Quebec French, with in-domain sentences from the Banque de dépannage linguistique (BDL) and out-of-domain sentences from the Académie française.
     </code></td>
   </tr>
     <tr>

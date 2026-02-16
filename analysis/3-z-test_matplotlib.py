@@ -21,7 +21,7 @@ def compute_comprehensive_z_test(file_path):
         print(f"Error reading CSV: {e}")
         return
 
-    col_left = "frcoe.accuracy"
+    col_left = "academie_francaise.accuracy"
     col_right = "qfrcola.accuracy"
     name_col = "name"
 
@@ -44,17 +44,17 @@ def compute_comprehensive_z_test(file_path):
         .str.contains("RandomBaseline", case=False, na=False)
     ]
 
-    baseline_frcoe = 0
+    baseline_acad_fr = 0
     baseline_qfrcola = 0
     has_baseline = False
 
     if not baseline_row.empty:
-        baseline_frcoe = baseline_row.iloc[0][col_left]
+        baseline_acad_fr = baseline_row.iloc[0][col_left]
         baseline_qfrcola = baseline_row.iloc[0][col_right]
         has_baseline = True
         print(f"Found Baseline: {baseline_row.iloc[0][name_col]}")
         print(
-            f"Baseline Scores - FrCoE: {baseline_frcoe:.2f}%, QFrCoLA: {baseline_qfrcola:.2f}%"
+            f"Baseline Scores - Académie française: {baseline_acad_fr:.2f}%, QFrCoLA: {baseline_qfrcola:.2f}%"
         )
 
         valid_data = all_data[all_data.index != baseline_row.index[0]].copy()
@@ -65,7 +65,7 @@ def compute_comprehensive_z_test(file_path):
         valid_data = all_data.copy()
 
     # --- CONFIGURATION ---
-    n_left = 4938  # FrCoE test set size
+    n_left = 2675  # Académie française OOD test set size
     n_right = 7546  # QFrCoLA test set size
     alpha = 0.001
     critical_z = stats.norm.ppf(1 - (alpha / 2))
@@ -102,7 +102,7 @@ def compute_comprehensive_z_test(file_path):
         # --- CLASSIFICATION LOGIC ---
         is_below_baseline = False
         if has_baseline:
-            if p1_pct < baseline_frcoe or p2_pct < baseline_qfrcola:
+            if p1_pct < baseline_acad_fr or p2_pct < baseline_qfrcola:
                 is_below_baseline = True
 
         if p1_pct > 65.0 and p2_pct > 65.0:
@@ -120,14 +120,14 @@ def compute_comprehensive_z_test(file_path):
         if not is_significant:
             direction_cat = "Not Significant"
         elif z > 0:
-            direction_cat = "FrCoE > QFrCoLA"
+            direction_cat = "Acad. fr. > QFrCoLA"
         else:
-            direction_cat = "QFrCoLA > FrCoE"
+            direction_cat = "QFrCoLA > Acad. fr."
 
         results.append(
             {
                 "name": model_name,
-                "acc_frcoe": p1_pct,
+                "acc_academie_francaise": p1_pct,
                 "acc_qfrcola": p2_pct,
                 "diff": diff,
                 "z_score": z,
@@ -171,7 +171,7 @@ def compute_comprehensive_z_test(file_path):
 
     sns.scatterplot(
         data=results_df,
-        x="acc_frcoe",
+        x="acc_academie_francaise",
         y="acc_qfrcola",
         hue="Classification",
         palette=custom_palette,
@@ -184,8 +184,8 @@ def compute_comprehensive_z_test(file_path):
     )
 
     # 1. Diagonal Line (Equal Performance) -> Dash-Dot (-.)
-    min_val = min(results_df["acc_frcoe"].min(), results_df["acc_qfrcola"].min())
-    max_val = max(results_df["acc_frcoe"].max(), results_df["acc_qfrcola"].max())
+    min_val = min(results_df["acc_academie_francaise"].min(), results_df["acc_qfrcola"].min())
+    max_val = max(results_df["acc_academie_francaise"].max(), results_df["acc_qfrcola"].max())
     pad = (max_val - min_val) * 0.05
     limit_min = max(0, min_val - pad)
     limit_max = min(100, max_val + pad)
@@ -203,7 +203,7 @@ def compute_comprehensive_z_test(file_path):
     # 2. Baseline Lines -> Dashed (--)
     if has_baseline:
         plt.axvline(
-            x=baseline_frcoe,
+            x=baseline_acad_fr,
             color="#444444",
             linestyle="--",
             linewidth=1.2,
@@ -239,8 +239,7 @@ def compute_comprehensive_z_test(file_path):
     plt.plot(x_range, y_lower, color="gray", linestyle=":", alpha=0.5, linewidth=2.0)
 
     # Formatting
-    plt.title("Model Accuracy Comparison between FrCoE and QFrCoLA")
-    plt.xlabel("FrCoE Accuracy (%)")
+    plt.xlabel("Académie française Accuracy (%)")
     plt.ylabel("QFrCoLA Accuracy (%)")
     plt.xlim(limit_min, limit_max)
     plt.ylim(limit_min, limit_max)

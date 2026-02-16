@@ -1,4 +1,4 @@
-name,qfrcola.accuracy,frcoe.accuracy
+name,qfrcola.accuracy,academie_francaise.accuracy
 CohereForAI/aya-23-8b,0.6266896368937185,0.09862292426083434
 HuggingFaceTB/SmolLM2-1.7B,0.6330506228465412,0.1059133252328878
 HuggingFaceTB/SmolLM2-1.7B-Instruct,0.5429366551815531,0.23106520858647225

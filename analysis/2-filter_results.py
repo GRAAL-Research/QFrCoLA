@@ -26,7 +26,7 @@ def clean_accuracy_value(val):
 
 def extract_specific_columns(file_path):
     """
-    Loads the experiment results and extracts QFrCoLA and FrCoE accuracy columns,
+    Loads the experiment results and extracts QFrCoLA and Académie française (OOD) accuracy columns,
     cleaning dictionary strings into float values.
     """
     if not os.path.exists(file_path):
@@ -41,12 +41,12 @@ def extract_specific_columns(file_path):
         print(f"Error reading CSV: {e}")
         return
 
-    # Define the columns we want to extract
-    target_columns = ["name", "qfrcola.accuracy", "frcoe.accuracy"]
+    # Define the columns we want to extract (wandb column names)
+    wandb_columns = ["name", "qfrcola.accuracy", "frcoe.accuracy"]
 
     # Verify columns exist
-    available_columns = [col for col in target_columns if col in df.columns]
-    missing_columns = [col for col in target_columns if col not in df.columns]
+    available_columns = [col for col in wandb_columns if col in df.columns]
+    missing_columns = [col for col in wandb_columns if col not in df.columns]
 
     if missing_columns:
         print(
@@ -67,6 +67,11 @@ def extract_specific_columns(file_path):
     for col in cols_to_clean:
         if col in filtered_df.columns:
             filtered_df[col] = filtered_df[col].apply(clean_accuracy_value)
+
+    # Rename wandb column to proper dataset name
+    if "frcoe.accuracy" in filtered_df.columns:
+        filtered_df.rename(columns={"frcoe.accuracy": "academie_francaise.accuracy"}, inplace=True)
+        cols_to_clean = ["qfrcola.accuracy", "academie_francaise.accuracy"]
 
     # --- SPECIFIC MANIPULATION: Transfer unsloth value to openai and delete unsloth ---
     source_name = "unsloth/gpt-oss-20b-unsloth-bnb-4bit"
