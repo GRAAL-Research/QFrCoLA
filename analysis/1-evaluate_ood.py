@@ -27,7 +27,7 @@ import wandb
 from tqdm import tqdm
 
 # Add COLE to sys.path so we can import its modules
-sys.path.insert(0, "/home/david/Github/COLE")
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "cole"))
 
 from predictions.all_llms import llms, private_llm, small_llm, small_llm_2
 from src.dataset.dataset import Dataset

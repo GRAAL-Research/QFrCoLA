@@ -1,0 +1,1 @@
+COLE_REPOSITORY_NAME = "graalul/COLE"
