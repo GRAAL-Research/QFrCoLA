@@ -2,6 +2,8 @@
 # OOD evaluation — Private/API models (no GPU required)
 set -e
 
+source /home/dabea241/projects/QFrCoLA/.cola/bin/activate
+
 GROUPS=("openai" "anthropic" "xai" "deepseek" "mistral" "cohere" "openrouter")
 
 for group in "${GROUPS[@]}"; do

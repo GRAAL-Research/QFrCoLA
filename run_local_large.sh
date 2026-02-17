@@ -3,6 +3,8 @@
 # Mirrors COLE's evaluation_pipeline.py
 set -e
 
+source /home/dabea241/projects/QFrCoLA/.cola/bin/activate
+
 BATCH_SIZE=32
 
 MODELS=$(cat <<'LIST'
