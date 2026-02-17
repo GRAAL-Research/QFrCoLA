@@ -6,6 +6,9 @@ __pycache__/
 # Environment secrets
 .env
 
+# Weights & Biases
+wandb/
+
 # C extensions
 *.so
 
