@@ -4,9 +4,9 @@ set -e
 
 source /home/dabea241/projects/QFrCoLA/.cola/bin/activate
 
-GROUPS=("openai" "anthropic" "xai" "deepseek" "mistral" "cohere" "openrouter")
+MODEL_GROUPS=("openai" "anthropic" "xai" "deepseek" "mistral" "cohere" "openrouter")
 
-for group in "${GROUPS[@]}"; do
+for group in "${MODEL_GROUPS[@]}"; do
     echo "=== Evaluating private group: $group ==="
     python3 analysis/1-evaluate_ood.py --models_name "$group"
 done
