@@ -65,7 +65,7 @@ def compute_comprehensive_z_test(file_path):
         valid_data = all_data.copy()
 
     # --- CONFIGURATION ---
-    n_left = 2675  # Académie française OOD test set size
+    n_left = 1651  # Académie française OOD test set size (ood/ood.tsv)
     n_right = 7546  # QFrCoLA test set size
     alpha = 0.001
     critical_z = stats.norm.ppf(1 - (alpha / 2))
