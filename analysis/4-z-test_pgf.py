@@ -56,55 +56,43 @@ def compute_and_generate_latex(file_path):
         valid_data = all_data.copy()
 
     # --- CONFIGURATION ---
-    n_left = 2675  # Académie française OOD test set size
+    n_left = 1651  # Académie française OOD test set size (ood/ood.tsv)
     n_right = 7546  # QFrCoLA test set size
     alpha = 0.001
     critical_z = stats.norm.ppf(1 - (alpha / 2))
 
     # ==========================================
-    # CLASSIFICATION LOGIC
+    # CLASSIFICATION LOGIC (vectorized)
     # ==========================================
     print("Classifying data...")
 
-    results = []
-
-    for index, row in valid_data.iterrows():
-        p1_pct = row[col_left]
-        p2_pct = row[col_right]
-
-        # Classification Logic
-        is_below_baseline = False
-        if has_baseline:
-            if p1_pct < baseline_acad_fr or p2_pct < baseline_qfrcola:
-                is_below_baseline = True
-
-        if p1_pct > 65.0 and p2_pct > 65.0:
-            tex_class = "green_dot"
-        elif is_below_baseline:
-            tex_class = "red_dot"
-        else:
-            tex_class = "blue_dot"
-
-        results.append(
-            {"acc_academie_francaise": p1_pct, "acc_qfrcola": p2_pct, "tex_class": tex_class}
+    results_df = valid_data[[col_left, col_right]].copy().rename(
+        columns={col_left: "acc_academie_francaise", col_right: "acc_qfrcola"}
+    )
+    is_green = (results_df["acc_academie_francaise"] > 65.0) & (results_df["acc_qfrcola"] > 65.0)
+    is_red = False
+    if has_baseline:
+        is_red = (results_df["acc_academie_francaise"] < baseline_acad_fr) | (
+            results_df["acc_qfrcola"] < baseline_qfrcola
         )
-
-    results_df = pd.DataFrame(results)
+    results_df["tex_class"] = np.select(
+        [is_green, is_red], ["green_dot", "red_dot"], default="blue_dot"
+    )
 
     # ==========================================
     # PREPARE DATA FOR PGFPLOTS
     # ==========================================
 
-    # 1. Save Scatter Data
-    os.makedirs(os.path.join("figures_tables", "data"), exist_ok=True)
-
-    scatter_csv = os.path.join("figures_tables", "data", "qfrcola_pgf_scatter_data.csv")
-    results_df.to_csv(scatter_csv, index=False)
-    print(f"Saved scatter data to {scatter_csv}")
-
     if results_df.empty:
         print("No valid data points to plot.")
         return
+
+    # 1. Save Scatter Data
+    os.makedirs(os.path.join("figures_tables", "data"), exist_ok=True)
+
+    scatter_filename = "data/qfrcola_pgf_scatter_data.csv"
+    results_df.to_csv(os.path.join("figures_tables", scatter_filename), index=False)
+    print(f"Saved scatter data to figures_tables/{scatter_filename}")
 
     # 2. Save Significance Curve Data
     min_val = min(results_df["acc_academie_francaise"].min(), results_df["acc_qfrcola"].min())
@@ -124,9 +112,9 @@ def compute_and_generate_latex(file_path):
     y_lower = x_range - margin_curve
 
     sig_df = pd.DataFrame({"x": x_range, "y_upper": y_upper, "y_lower": y_lower})
-    sig_csv = "qfrcola_pgf_sig_curves.csv"
-    sig_df.to_csv(os.path.join("figures_tables", "data", sig_csv), index=False)
-    print(f"Saved significance curves to {sig_csv}")
+    sig_filename = "data/qfrcola_pgf_sig_curves.csv"
+    sig_df.to_csv(os.path.join("figures_tables", sig_filename), index=False)
+    print(f"Saved significance curves to figures_tables/{sig_filename}")
 
     # ==========================================
     # GENERATE LATEX FILE
@@ -168,12 +156,12 @@ def compute_and_generate_latex(file_path):
 
     tex_content += rf"""
 % 3. Significance Bands (Dotted, Bolder Gray)
-\addplot [gray, dotted, line width=2pt] table [x=x, y=y_upper, col sep=comma] {{{sig_csv}}};
-\addplot [gray, dotted, line width=2pt] table [x=x, y=y_lower, col sep=comma] {{{sig_csv}}};
+\addplot [gray, dotted, line width=2pt] table [x=x, y=y_upper, col sep=comma] {{{sig_filename}}};
+\addplot [gray, dotted, line width=2pt] table [x=x, y=y_lower, col sep=comma] {{{sig_filename}}};
 
 % 4. Scatter Points
 \addplot [scatter, only marks, scatter src=explicit symbolic]
-    table [x=acc_academie_francaise, y=acc_qfrcola, meta=tex_class, col sep=comma] {{{scatter_csv}}};
+    table [x=acc_academie_francaise, y=acc_qfrcola, meta=tex_class, col sep=comma] {{{scatter_filename}}};
 
 \end{{axis}}
 \end{{tikzpicture}}
