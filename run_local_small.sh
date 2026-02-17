@@ -18,4 +18,4 @@ LIST
 MODELS=$(echo "$MODELS" | tr -d '\n' | sed 's/,$//')
 
 echo "=== Evaluating small local models (batch_size=$BATCH_SIZE) ==="
-python analysis/1-evaluate_ood.py --models_name "$MODELS" --batch_size "$BATCH_SIZE" "$@"
+python3 analysis/1-evaluate_ood.py --models_name "$MODELS" --batch_size "$BATCH_SIZE" "$@"
