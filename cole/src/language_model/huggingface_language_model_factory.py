@@ -28,7 +28,11 @@ def hugging_face_language_model_tokenizer_factory(
             bnb_4bit_use_double_quant=True,
         )
         if "chocolatine" in model_name.lower() or "mixtral" in model_name.lower():
-            attn_implementation = "flash_attention_2"
+            try:
+                import flash_attn  # noqa: F401
+                attn_implementation = "flash_attention_2"
+            except ImportError:
+                attn_implementation = "sdpa"
         else:
             attn_implementation = "sdpa"
         model = AutoModelForCausalLM.from_pretrained(
