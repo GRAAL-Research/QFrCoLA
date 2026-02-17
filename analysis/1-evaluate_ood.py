@@ -18,8 +18,11 @@ import os
 import sys
 from datetime import datetime
 
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
+
 import pandas as pd
-import torch
 import wandb
 from tqdm import tqdm
 
@@ -30,7 +33,6 @@ from predictions.all_llms import llms, private_llm, small_llm, small_llm_2
 from src.dataset.dataset import Dataset
 from src.dataset.prompt_builder import PromptBuilder
 from src.evaluation.llm_evaluator import ModelEvaluator
-from src.evaluation.llm_factory import model_factory
 from src.evaluation.tools import split_llm_list
 from src.task.task import Task, TaskType
 
@@ -147,7 +149,16 @@ def main():
 
     for model_name in tqdm(models, total=len(models), desc="Evaluating on OOD"):
         try:
-            model = model_factory(model_name, batch_size=args.batch_size)
+            # Lazy import: avoid pulling in unsloth/torch when only using API models
+            if model_name in private_llm["all"]:
+                from src.language_model.private_lm import RemoteLLMModel
+                model = RemoteLLMModel(model_name=model_name)
+            elif model_name == "RandomBaselineModel":
+                from src.language_model.baseline import RandomBaselineModel
+                model = RandomBaselineModel(model_name="random_baseline")
+            else:
+                from src.evaluation.llm_factory import model_factory
+                model = model_factory(model_name, batch_size=args.batch_size)
             evaluator = ModelEvaluator()
 
             wandb.init(
@@ -183,7 +194,11 @@ def main():
             if "evaluator" in locals():
                 del evaluator
             gc.collect()
-            torch.cuda.empty_cache()
+            try:
+                import torch
+                torch.cuda.empty_cache()
+            except ImportError:
+                pass
             wandb.finish(exit_code=0)
 
     time_end = datetime.now()
