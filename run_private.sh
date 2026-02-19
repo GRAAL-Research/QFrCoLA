@@ -4,7 +4,7 @@
 
 source /home/dabea241/projects/QFrCoLA/.cola/bin/activate
 
-MODEL_GROUPS=("openai" "anthropic" "xai" "deepseek" "mistral" "cohere" "openrouter")
+MODEL_GROUPS=("anthropic" "xai" "deepseek" "mistral" "cohere" "openrouter")
 PIDS=()
 
 for group in "${MODEL_GROUPS[@]}"; do
