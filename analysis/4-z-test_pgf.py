@@ -95,11 +95,8 @@ def compute_and_generate_latex(file_path):
     print(f"Saved scatter data to figures_tables/{scatter_filename}")
 
     # 2. Save Significance Curve Data
-    min_val = min(results_df["acc_academie_francaise"].min(), results_df["acc_qfrcola"].min())
-    max_val = max(results_df["acc_academie_francaise"].max(), results_df["acc_qfrcola"].max())
-    pad = (max_val - min_val) * 0.05
-    limit_min = max(0, min_val - pad)
-    limit_max = min(100, max_val + pad)
+    limit_min = 0
+    limit_max = 100
 
     x_range = np.linspace(limit_min, limit_max, 200)
     x_prop = x_range / 100.0

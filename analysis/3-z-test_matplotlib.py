@@ -184,11 +184,8 @@ def compute_comprehensive_z_test(file_path):
     )
 
     # 1. Diagonal Line (Equal Performance) -> Dash-Dot (-.)
-    min_val = min(results_df["acc_academie_francaise"].min(), results_df["acc_qfrcola"].min())
-    max_val = max(results_df["acc_academie_francaise"].max(), results_df["acc_qfrcola"].max())
-    pad = (max_val - min_val) * 0.05
-    limit_min = max(0, min_val - pad)
-    limit_max = min(100, max_val + pad)
+    limit_min = 0
+    limit_max = 100
 
     plt.plot(
         [limit_min, limit_max],
