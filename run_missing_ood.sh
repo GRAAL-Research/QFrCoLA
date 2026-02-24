@@ -40,9 +40,27 @@ python3 analysis/1-evaluate_ood.py --models_name "unsloth/gpt-oss-20b-unsloth-bn
 PIDS+=($!)
 NAMES+=("unsloth/gpt-oss-20b-unsloth-bnb-4bit")
 
-# 5. RandomBaselineModel
-echo "=== Launching RandomBaselineModel ==="
-python3 analysis/1-evaluate_ood.py --models_name "RandomBaselineModel" &
+# 5. RandomBaselineModel — majority class baselines
+#    Académie française: 53.91% acceptability (890/1651)
+#    QFrCoLA: 69.49% acceptability
+echo "=== Logging majority-class baselines for RandomBaselineModel ==="
+python3 -c "
+import wandb
+
+# OOD (Académie française) — 53.91%
+wandb.init(project='QFrCoLA-OOD', entity='doctorate',
+           config={'model_name': 'RandomBaselineModel', 'note': 'majority class baseline'},
+           name='RandomBaselineModel')
+wandb.log({'qfrcola_ood.accuracy': {'accuracy': 0.5391}})
+wandb.finish()
+
+# In-domain (QFrCoLA) — 69.49%
+wandb.init(project='COLE-final', entity='doctorate',
+           config={'model_name': 'RandomBaselineModel', 'note': 'majority class baseline'},
+           name='RandomBaselineModel')
+wandb.log({'qfrcola.accuracy': {'accuracy': 0.6949}})
+wandb.finish()
+" &
 PIDS+=($!)
 NAMES+=("RandomBaselineModel")
 

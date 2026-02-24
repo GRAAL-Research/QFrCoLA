@@ -25,8 +25,8 @@
 \addplot [black, dashdotted, domain=0:100] {x};
 
 % 2. Baseline Lines (Dashed, Dark Gray)
-\draw [black!70, dashed, line width=1pt] (axis cs:48.87946698970321, 0) -- (axis cs:48.87946698970321, 100);
-\draw [black!70, dashed, line width=1pt] (axis cs:0, 49.4566657831964) -- (axis cs:100, 49.4566657831964);
+\draw [black!70, dashed, line width=1pt] (axis cs:53.910000000000004, 0) -- (axis cs:53.910000000000004, 100);
+\draw [black!70, dashed, line width=1pt] (axis cs:0, 69.49) -- (axis cs:100, 69.49);
 
 % 3. Significance Bands (Dotted, Bolder Gray)
 \addplot [gray, dotted, line width=2pt] table [x=x, y=y_upper, col sep=comma] {data/qfrcola_pgf_sig_curves.csv};
